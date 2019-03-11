@@ -39,8 +39,6 @@ public class GameManager : MonoBehaviour {
 
             ao = SceneManager.LoadSceneAsync(scenesToLoad[i], LoadSceneMode.Additive);
 
-            SceneManager.sceneLoaded += OnSceneLoaded;
-
             yield return ao;
 
             // After Level Loaded
@@ -63,8 +61,6 @@ public class GameManager : MonoBehaviour {
             // Before Unloading Level in Array
 
             ao = SceneManager.UnloadSceneAsync(scenesToUnload[i]);
-
-            SceneManager.sceneLoaded -= OnSceneLoaded;
 
             yield return ao;
 
