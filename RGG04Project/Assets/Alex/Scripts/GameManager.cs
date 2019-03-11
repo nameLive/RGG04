@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+public class GameManager : MonoBehaviour {
+
+    public enum GameState { StartingGame, InMainMenu, InPauseMenu, LoadingGame, InGame };
+    public GameState gameState;
+
+    public GameObject PlayerToSpawn;
+
+    
+    void Start() {
+        
+    }
+    
+    void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Win() {
+
     }
 }
