@@ -834,10 +834,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1319478593, guid: 0e7089c111ceaf84ea8dfc78e2db24e2, type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e7089c111ceaf84ea8dfc78e2db24e2, type: 3}
 --- !u!1001 &7059283427282040767
