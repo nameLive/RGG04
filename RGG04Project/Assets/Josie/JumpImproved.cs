@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class JumpImproved : MonoBehaviour
 {
     public float fallMultiplier = 2f;
     public float lowJumpMultiplier = 1f;
