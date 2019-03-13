@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    private Animator anim;
 
     public float speed = 1f;
     public string horizontalKey = "Horizontal";
@@ -31,12 +32,17 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        anim = gameObject.GetComponentInChildren<Animator>();
         // playerSprite = GetComponent<SpriteRenderer>();
     }
 
 
     private void Update()
     {
+        anim.SetBool("IsGrounded", grounded);
+        anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis(horizontalKey)));
+
+
         float horizontal = Input.GetAxis(horizontalKey);
         if (!Mathf.Approximately(horizontal, 0f))
         {
