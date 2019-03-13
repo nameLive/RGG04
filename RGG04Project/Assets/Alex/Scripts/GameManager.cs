@@ -19,16 +19,17 @@ public class GameManager : MonoBehaviour {
 
     private string[] scenesToUnload = new string[0];
 
+    public string[] level1;
+
     public Image fadeImage;
 
-    private Animator animator;
+    private delegate void functionToCallDelegate();
 
 
     //-----------------------------------------------
+    // If Debugging then starts the game right away, otherwise loads the Boot Menu
 
     void Start() {
-
-        animator = fadeImage.GetComponent<Animator>();
 
         if (isDebugging) {
 
@@ -38,75 +39,93 @@ public class GameManager : MonoBehaviour {
 
             SetScenesToLoad(new string[] { "Boot" }); // Sets the added field to be Boot so it loads Boot Scene
 
-            StartCoroutine(LoadScenes(false));
+            StartCoroutine(LoadScenes(null, null));
         }
     }
 
     //-----------------------------------------------
+    // Unloads Boot Menu, Fades screen In, sets state to be Main Menu, Loads Main Menu
 
     public void BootMenuFinished() {
 
         SetScenesToUnload(new string[] { "Boot" });
 
-        StartCoroutine(UnloadScenes());
-
-        StartCoroutine(ScreenFade(true));
-
+        StartCoroutine(UnloadScenes(null, null));
+        
+        StartCoroutine(FadeScreen(true, 1, null));
 
         gameState = GameState.InMainMenu;
 
         SetScenesToLoad(new string[] { "MainMenu" });
 
-        StartCoroutine(LoadScenes(false));
+        StartCoroutine(LoadScenes(null, null));
     }
+    
 
-    IEnumerator ScreenFade (bool fadeIn) {
+    //-----------------------------------------------
+    // Fade screen In/Out with a certain duration and can call a function after finished
 
-        animator.SetBool("FadeOut", false);
-        animator.SetBool("FadeIn", false);
+    IEnumerator FadeScreen(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
 
-        if (fadeIn) {
-            animator.SetBool("FadeIn", true);
+        if (fadeIn)
+            fadeImage.CrossFadeAlpha(0, duration, true); 
+        else
+            fadeImage.CrossFadeAlpha(1, duration, true);
+            
+        
+        yield return new WaitForSeconds(duration);
 
-            yield return new WaitUntil(() => fadeImage.color.a == 0);
-
-            Debug.Log("is clear");
-        }
-
-        else {
-
-            animator.SetBool("FadeOut", true);
-
-            yield return new WaitUntil(() => fadeImage.color.a == 1);
-
-            Debug.Log("is black");
-        }
-
-
-
-
+        if (functionToCallAfterFade != null)
+            functionToCallAfterFade();
     }
 
     //-----------------------------------------------
+    // Starts Game, get called from MainMenu when pressing Start Game.
 
     public void StartGame() {
 
-        StartCoroutine(UnloadScenes());
+        StartCoroutine(UnloadScenes(null, null)); // Unloads scenes
 
-        SetScenesToLoad(new string[] { "Alex" });
+        SetScenesToLoad(level1); // Set scenes to load
 
-        gameState = GameState.LoadingGame;
-
-        StartCoroutine(LoadScenes(true));
-
-        // Visa loading screen o loada level, ha att den syns i minst 1 sek
-
-        // Efter loading är klar eller 1 sek gått så ta bort loading screen. 
-
-        // Sätt att va i In Game State
+        StartCoroutine(FadeScreen(false, 1, LoadGame)); // Fades screen in, when finished it calls function LoadGame
     }
 
     //-----------------------------------------------
+    // Sets game state to LoadingGame, LoadsScenes In
+
+    void LoadGame() {
+
+        gameState = GameState.LoadingGame;
+
+        StartCoroutine(LoadScenes(LoadScreen, LoadScreen));
+    }
+
+    //-----------------------------------------------
+    // Shows/Hides Loading Screen. When Hide it Fades screen in again and calls InGame when finished
+
+    void LoadScreen() {
+
+        if (loadingScreen.activeSelf) {
+
+            loadingScreen.SetActive(false);
+            StartCoroutine(FadeScreen(true, 1, InGame));
+        }
+
+        else
+            loadingScreen.SetActive(true);
+    }
+
+    //-----------------------------------------------
+    // When in game, called when loading is finished and faded out
+
+    void InGame() {
+
+        gameState = GameState.InGame;
+    }
+    
+    //-----------------------------------------------
+    // Sets scenes to load
 
     public void SetScenesToLoad (string[] setScenesToLoad) {
 
@@ -116,15 +135,15 @@ public class GameManager : MonoBehaviour {
     //-----------------------------------------------
     // Takes in Array of Strings with the scenes that is going to be loaded
 
-    IEnumerator LoadScenes(bool loadingLevel) {
+    IEnumerator LoadScenes(functionToCallDelegate methodToCallBeforeLoading, functionToCallDelegate methodToCallAfterLoadComplete) {
 
         AsyncOperation ao;
 
         // Before Any level has started loading
 
-        if (loadingLevel)
-            loadingScreen.SetActive(true);
-
+        if (methodToCallBeforeLoading != null)
+            methodToCallBeforeLoading();
+        
         for (int i = 0; i < scenesToLoad.Length; i++) {
             
             // Before Level in array is Loaded
@@ -140,21 +159,14 @@ public class GameManager : MonoBehaviour {
 
         scenesToLoad = null; // Clears the array when finished loading the levels
 
-        yield return new WaitForSecondsRealtime(5); // After all levels finished loading, waits an additional second
+        yield return new WaitForSecondsRealtime(2); // After all levels finished loading, waits 2 additional seconds
 
-        if (loadingLevel)
-            loadingScreen.SetActive(false);
-        
-    }
-
-    IEnumerator LoadingScreen() {
-
-
-
-        return null;
+        if (methodToCallAfterLoadComplete != null)
+            methodToCallAfterLoadComplete();
     }
 
     //-----------------------------------------------
+    // Set scenes to Unload
 
     public void SetScenesToUnload(string[] setScenesToUnload) {
 
@@ -164,9 +176,12 @@ public class GameManager : MonoBehaviour {
     //-----------------------------------------------
     // Unloading Array of levels, after for loop all the levels have been unloaded
 
-    IEnumerator UnloadScenes() {
+    IEnumerator UnloadScenes(functionToCallDelegate methodToCallBeforeUnLoading, functionToCallDelegate methodToCallAfterUnLoadComplete) {
 
         AsyncOperation ao;
+
+        if (methodToCallBeforeUnLoading != null)
+            methodToCallBeforeUnLoading();
 
         for (int i = 0; i < scenesToUnload.Length; i++) {
 
@@ -181,9 +196,12 @@ public class GameManager : MonoBehaviour {
         }
 
         scenesToUnload = null; // Clears the array when finished unloading
-        
+
+        if (methodToCallAfterUnLoadComplete != null)
+            methodToCallAfterUnLoadComplete();
+
         // All Levels Finished Unloading
-        
+
     }
 
     //-----------------------------------------------
@@ -191,5 +209,6 @@ public class GameManager : MonoBehaviour {
 
     public void Win() {
 
+        Debug.Log("Got minimum required donuts");
     }
 }
