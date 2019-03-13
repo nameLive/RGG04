@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerPickup : MonoBehaviour {
 
+    GameManager gameManager;
 
     public enum PlayerState {Normal, HaveHammer, Invincible, Killed};
     public PlayerState playerState = PlayerState.Normal;
@@ -32,6 +33,8 @@ public class PlayerPickup : MonoBehaviour {
 
     void Start() {
 
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
         maxAmountOfCollectibles = GameObject.FindObjectsOfType<Collectible>().Length;
 
         amountOfDonuts.text = "Donuts: " + amountOfCollectiblesPickedUp + " / " + maxAmountOfCollectibles;
@@ -54,7 +57,7 @@ public class PlayerPickup : MonoBehaviour {
 
         if (amountOfCollectiblesPickedUp >= minAmountOfCollectiblesRequired) {
 
-            Debug.Log("gg no re");
+            gameManager.Win();
         }
     }
 

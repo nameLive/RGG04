@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Alex/Scenes/MainMenu.unity
     guid: a74e6063f1855814ebe870e3b8b506dd
   - enabled: 1
-    path: Assets/Alex/Scenes/Alex.unity
+    path: Assets/Alex/Scenes/Level1_Geo.unity
     guid: adf880162ca90424399ed4c98170707e
+  - enabled: 1
+    path: Assets/Alex/Scenes/Level1_SetDressing.unity
+    guid: 2eeabe4ec3691e64d88c36d762aa2000
   m_configObjects: {}
