@@ -112,8 +112,9 @@ GameObject:
   - component: {fileID: 1594158603801012284}
   - component: {fileID: 1594158603801012287}
   - component: {fileID: 1594158603801012286}
-  - component: {fileID: 1594158603801012272}
   - component: {fileID: 282877653}
+  - component: {fileID: 522106160}
+  - component: {fileID: 522106161}
   m_Layer: 8
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -217,22 +218,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1594158603801012272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594158603801012274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f6858d917d3ff45b1a0e2fe12a1997, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerState: 0
-  amountOfCollectiblesPickedUp: 0
-  minAmountOfCollectiblesRequired: 0
-  amountOfDonuts: {fileID: 0}
 --- !u!212 &282877653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -281,6 +266,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &522106160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594158603801012274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd3aae4f989efe488490986f0381fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScore: 0
+--- !u!114 &522106161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594158603801012274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd02893b9d386f4fa1a2057ed3c2612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4500581724616163802
 GameObject:
   m_ObjectHideFlags: 0

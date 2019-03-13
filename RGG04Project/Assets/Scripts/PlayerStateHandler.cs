@@ -11,6 +11,14 @@ public class PlayerStateHandler : MonoBehaviour
 
     PlayerState currentPlayerState = PlayerState.Normal;
 
+
+    private void Start()
+    {
+        OnHammerState += HammerStatePlaceHolder;
+        OnNormalState += NormalStatePlaceHolder;
+    }
+
+
     //public event called from other scripts(e.g collectibles) to try to change the state. Returns true if state was successfully changed.
     public bool SetNewState(PlayerState NewState)
     {
@@ -19,12 +27,20 @@ public class PlayerStateHandler : MonoBehaviour
         return true;
     }
 
+    public void SetHammerState(float Duration)
+    {
+        ChangeState(PlayerState.Hammer);
+        Invoke("DisableHammerState", Duration);
+    }
+
     //Internal event that actually changes the state
     void ChangeState(PlayerState NewState)
     {
         currentPlayerState = NewState;
 
-        if (NewState == PlayerState.Hammering)
+        Debug.Log("New State: " + NewState);
+
+        if (NewState == PlayerState.Hammer)
         {
             OnHammerState();
         }
@@ -32,5 +48,27 @@ public class PlayerStateHandler : MonoBehaviour
         {
             OnNormalState();
         }
+    }
+
+
+    void DisableHammerState()
+    {
+        ChangeState(PlayerState.Normal);
+    }
+
+
+
+
+    //This is just a placeholder function and doesn't do anything. Will be removed later.
+    void NormalStatePlaceHolder()
+    {
+
+    }
+
+
+    //This is just a placeholder function and doesn't do anything. Will be removed later.
+    void HammerStatePlaceHolder()
+    {
+
     }
 }

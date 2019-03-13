@@ -5,6 +5,6 @@ using UnityEngine;
 public enum PlayerState
 {
     Normal,
-    Hammering
+    Hammer
 }
 
