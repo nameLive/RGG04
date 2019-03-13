@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     bool grounded;
     bool canDoubleJump;
 
+    [SerializeField]
+    GameObject playerSprite;
+
     /* [Header("Wall Jumping")]
     public bool wallSliding;
     public Transform wallCheckPoint;
@@ -28,12 +31,13 @@ public class PlayerMovement : MonoBehaviour
     public void Start()
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+        // playerSprite = GetComponent<SpriteRenderer>();
     }
 
 
     private void Update()
     {
-        float horizontal = Input.GetAxis(horizontalKey); 
+        float horizontal = Input.GetAxis(horizontalKey);
         if (!Mathf.Approximately(horizontal, 0f))
         {
             Move(horizontal);
@@ -77,18 +81,18 @@ public class PlayerMovement : MonoBehaviour
     private void Move(float horizontal)
     {
         transform.Translate(horizontal * speed * Time.deltaTime, 0f, 0f);
-        Vector2 position = transform.position;
-        transform.position = position;
+        // Vector2 position = transform.position;
+        // transform.position = position;
 
-        if (horizontal > 0)
+        if (horizontal > 0 && !facingRight)
         {
-            transform.localScale = new Vector2(1.840318f, 1.813247f);
+            playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
             facingRight = true;
         }
 
-        else if (horizontal < 0)
+        else if (horizontal < 0 && facingRight)
         {
-            transform.localScale = new Vector2(-1.840318f, 1.813247f);
+            playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
             facingRight = false;
         }
     }
@@ -133,23 +137,23 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion JUMPING
 
-/* WALL JUMPING IF WE WANT
-void WallSliding()
-    {
-        rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
-        wallSliding = true;
-
-        if (Input.GetButtonDown(jumpKey))
+    /* WALL JUMPING IF WE WANT
+    void WallSliding()
         {
-            if (facingRight)
-            {
-               rb2d.AddForce(new Vector2(-wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
-            }
+            rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
+            wallSliding = true;
 
-            else
+            if (Input.GetButtonDown(jumpKey))
             {
-                rb2d.AddForce(new Vector2(wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
+                if (facingRight)
+                {
+                   rb2d.AddForce(new Vector2(-wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
+                }
+
+                else
+                {
+                    rb2d.AddForce(new Vector2(wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
+                }
             }
-        }
-    } */
+        } */
 }

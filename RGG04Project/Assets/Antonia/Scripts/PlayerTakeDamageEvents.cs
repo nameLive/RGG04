@@ -10,6 +10,7 @@ public class PlayerTakeDamageEvents : MonoBehaviour
 	bool myBool = false;
 	int counter = 0;
 
+    [SerializeField]
 	SpriteRenderer spriteRenderer;
 
 
@@ -17,7 +18,7 @@ public class PlayerTakeDamageEvents : MonoBehaviour
 	void Start()
 	{
 		PlayerHealth.OnHealthDecreased += TookDamage;
-		spriteRenderer = transform.parent.gameObject.GetComponent<SpriteRenderer>();
+		//spriteRenderer = transform.parent.gameObject.GetComponent<SpriteRenderer>();
 	}
 
 	void TookDamage()
