@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594158603047232359}
   - component: {fileID: 1594158603047232358}
+  - component: {fileID: 34284360}
   m_Layer: 8
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -79,6 +80,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &34284360
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594158603047232377}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec0b2c8bfbb3aef4fb4ba85d030f15d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1594158603801012274
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +113,7 @@ GameObject:
   - component: {fileID: 1594158603801012287}
   - component: {fileID: 1594158603801012286}
   - component: {fileID: 1594158603801012272}
+  - component: {fileID: 282877653}
   m_Layer: 8
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -212,6 +233,54 @@ MonoBehaviour:
   amountOfCollectiblesPickedUp: 0
   minAmountOfCollectiblesRequired: 0
   amountOfDonuts: {fileID: 0}
+--- !u!212 &282877653
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594158603801012274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &4500581724616163802
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,11 +430,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1108131024885738759, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
-        type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 1594158603047232358}
     - target: {fileID: 1108131024885738757, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
         type: 3}
       propertyPath: m_Size.x
@@ -376,6 +440,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2.56
       objectReference: {fileID: 0}
+    - target: {fileID: 1108131024885738759, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
+        type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 1594158603047232358}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
 --- !u!4 &1837268014277233777 stripped
