@@ -9,8 +9,6 @@ public class TestScript : MonoBehaviour
 
 	private void Start()
 	{
-		//playerHealthReference = gameObject.GetComponent<PlayerHealth>();
-		PlayerHealth.OnHealthDecreased += MyTestEvent;
 
 	}
 

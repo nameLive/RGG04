@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerStateHandler : MonoBehaviour
 {
     public delegate void OnPlayerStateChanged();
-    OnPlayerStateChanged OnHammerState;
-    OnPlayerStateChanged OnNormalState;
+	public event OnPlayerStateChanged OnHammerState;
+    public event OnPlayerStateChanged OnNormalState;
 
     PlayerState currentPlayerState = PlayerState.Normal;
 
@@ -62,13 +62,13 @@ public class PlayerStateHandler : MonoBehaviour
     //This is just a placeholder function and doesn't do anything. Will be removed later.
     void NormalStatePlaceHolder()
     {
-
+		Debug.Log("Normal state in Handler");
     }
 
 
     //This is just a placeholder function and doesn't do anything. Will be removed later.
     void HammerStatePlaceHolder()
     {
-
+		Debug.Log("Hammer State in Handler");
     }
 }

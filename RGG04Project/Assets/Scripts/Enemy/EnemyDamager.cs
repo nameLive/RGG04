@@ -10,12 +10,12 @@ public class EnemyDamager : MonoBehaviour
 
 	float canDealDamageTimer = 1f;
 
-	PlayerHealth playerHealthReference;
+	HealthBase playerHealthReference;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 
-		playerHealthReference = collision.gameObject.GetComponent<PlayerHealth>();
+		playerHealthReference = collision.gameObject.GetComponent<HealthBase>();
 		canDealDamageTimer = 1f;
 
 
@@ -23,7 +23,7 @@ public class EnemyDamager : MonoBehaviour
 
 	private void OnTriggerExit2D(Collider2D collision)
 	{
-		if (collision.gameObject.GetComponent<PlayerHealth>() == playerHealthReference)
+		if (collision.gameObject.GetComponent<HealthBase>() == playerHealthReference)
 		{
 			playerHealthReference = null;
 		}

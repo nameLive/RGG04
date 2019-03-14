@@ -13,19 +13,19 @@ public class PlayerTakeDamageEvents : MonoBehaviour
     [SerializeField]
 	SpriteRenderer spriteRenderer;
 
+	[SerializeField]
+	PlayerHealth playerHealth;
 
-	// Start is called before the first frame update
 	void Start()
 	{
-		PlayerHealth.OnHealthDecreased += TookDamage;
-		//spriteRenderer = transform.parent.gameObject.GetComponent<SpriteRenderer>();
+		playerHealth.EventOnHealthDecreased += TookDamage;
 	}
 
 	void TookDamage()
 	{
 		tookDamage = true;
 		myBool = true;
-		Debug.Log("TookDamage event fired");
+		//Debug.Log("TookDamage event fired");
 	}
 
 	void CharacterSpriteAnimationThing()
