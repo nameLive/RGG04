@@ -16,17 +16,11 @@ public class PlayerMovement : MonoBehaviour
     public string jumpKey = "Jump";
     bool grounded;
     bool canDoubleJump;
+    bool isFalling;
 
     [SerializeField]
     GameObject playerSprite;
-
-    /* [Header("Wall Jumping")]
-    public bool wallSliding;
-    public Transform wallCheckPoint;
-    public bool wallCheck;
-    public LayerMask wallLayerMask;
-    public float wallPushOff;
-    public float wallPushUp; */
+    
 
 
     public void Start()
@@ -42,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsGrounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis(horizontalKey)));
         anim.SetBool("CanDoubleJump", canDoubleJump);
+        anim.SetBool("IsFalling", isFalling);
         
         
 
@@ -52,37 +47,23 @@ public class PlayerMovement : MonoBehaviour
             Move(horizontal);
         }
 
-        if (Input.GetButtonDown(jumpKey) /* && !wallSliding */)
+        if (Input.GetButtonDown(jumpKey))
         {
             Jump();
         }
 
-        /*
-        if (!grounded)
+        if (rb2d.velocity.y > 0)
         {
-            wallCheck = Physics2D.OverlapCircle(wallCheckPoint.position, 0.1f, wallLayerMask);
-
-            if (facingRight && horizontal > 0f || !facingRight && horizontal < 0f)
-            {
-                if (wallCheck)
-                {
-                    WallSliding();
-                }
-
-            }
-          
-
+            isFalling = false;
         }
-
-        if (wallCheck == false || grounded)
+        else if (rb2d.velocity.y < 0)
         {
-            wallSliding = false;
+            isFalling = true;
         }
-
-        if (grounded)
+        else if (rb2d.velocity.y == 0)
         {
-            wallCheck = false;
-        } */
+            isFalling = false;
+        }
 
     }
 
@@ -136,6 +117,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.layer == 9 && !grounded)
         {
             grounded = true;
+            anim.ResetTrigger("HasDoubleJumped");
         }
     }
 
@@ -149,23 +131,4 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion JUMPING
 
-    /* WALL JUMPING IF WE WANT
-    void WallSliding()
-        {
-            rb2d.velocity = new Vector2(rb2d.velocity.x, -0.7f);
-            wallSliding = true;
-
-            if (Input.GetButtonDown(jumpKey))
-            {
-                if (facingRight)
-                {
-                   rb2d.AddForce(new Vector2(-wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
-                }
-
-                else
-                {
-                    rb2d.AddForce(new Vector2(wallPushOff, wallPushUp) * jumpVelocity, ForceMode2D.Impulse);
-                }
-            }
-        } */
 }
