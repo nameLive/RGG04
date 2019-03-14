@@ -41,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
     {
         anim.SetBool("IsGrounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis(horizontalKey)));
+        anim.SetBool("CanDoubleJump", canDoubleJump);
+        
+        
 
 
         float horizontal = Input.GetAxis(horizontalKey);
@@ -117,9 +120,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (canDoubleJump)
             {
+                
                 canDoubleJump = false;
                 rb2d.velocity = new Vector2(rb2d.velocity.x, 0);
                 rb2d.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);
+                anim.SetTrigger("HasDoubleJumped");
+
             }
         }
 
