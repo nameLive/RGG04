@@ -5,6 +5,8 @@ using UnityEngine;
 public class PoliceEnemy : MonoBehaviour
 {
 
+	public bool isStunned = false;
+
 	[SerializeField]
 	GameObject player;
 
@@ -23,17 +25,34 @@ public class PoliceEnemy : MonoBehaviour
 	Vector3 targetPosition = new Vector3();
 	Vector3 startPosition = new Vector3();
 
+	EnemyStunState stunState;
+
 	// Start is called before the first frame update
 	void Start()
 	{
 		CalculateTargetPosition();
+		stunState = GetComponentInChildren<EnemyStunState>();
+		stunState.EventOnBeginStun += StartStunState;
+		stunState.EventOnEndStun += EndStunState;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
+		if (isStunned) return;
+
 		CalculateTargetPosition();
 		MoveTowardsPlayer();
+	}
+
+	void StartStunState()
+	{
+		isStunned = true;
+	}
+
+	void EndStunState()
+	{
+		isStunned = false;
 	}
 
 	void CalculateTargetPosition()

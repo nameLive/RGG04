@@ -62,13 +62,13 @@ public class PlayerStateHandler : MonoBehaviour
     //This is just a placeholder function and doesn't do anything. Will be removed later.
     void NormalStatePlaceHolder()
     {
-		Debug.Log("Normal state in Handler");
+		//Debug.Log("Normal state in Handler");
     }
 
 
     //This is just a placeholder function and doesn't do anything. Will be removed later.
     void HammerStatePlaceHolder()
     {
-		Debug.Log("Hammer State in Handler");
+		//Debug.Log("Hammer State in Handler");
     }
 }

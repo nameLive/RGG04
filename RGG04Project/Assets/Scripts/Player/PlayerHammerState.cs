@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerHammerState : MonoBehaviour
 {
-	[SerializeField]
-	BoxCollider2D hammerCollision;
+
+	Damager damager;
 
 	bool hammerState = false;
 
@@ -14,24 +14,30 @@ public class PlayerHammerState : MonoBehaviour
 		PlayerStateHandler myHandler = gameObject.GetComponentInParent<PlayerStateHandler>();
 		myHandler.OnHammerState += StartHammerState;
 		myHandler.OnNormalState += EndHammerState;
-		//hammerCollision.enabled = false;
-	
+		damager = GetComponent<Damager>();
+		damager.canDealDamage = false;
+
 	}
 
 	void StartHammerState()
 	{
-		Debug.Log("Start hammer state in Hammer State");
-		hammerState = true;
-		hammerCollision.enabled = true;
+		if (!hammerState)
+		{
+			Debug.Log("Start hammer state");
+			hammerState = true;
+			damager.canDealDamage = true;
+			damager.ActivateCollider();
+		}
 	}
 
 	void EndHammerState()
 	{
 		if (hammerState)
 		{
-			Debug.Log("End hammer state in Hammer State");
+			Debug.Log("End Hammer state");
 			hammerState = false;
-			hammerCollision.enabled = false;
+			damager.canDealDamage = false;
+			damager.DeactivateCollider();
 		}
 
 	}
