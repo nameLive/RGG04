@@ -169,6 +169,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasHammer: 0
   hammerSprite: {fileID: 1726890350}
+--- !u!1 &2079646842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2079646843}
+  m_Layer: 8
+  m_Name: PlayerFeet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2079646843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079646842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1594158603801012273}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594158603047232377
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +338,7 @@ Transform:
   - {fileID: 1594158603047232359}
   - {fileID: 1837868785}
   - {fileID: 1134790099722702635}
+  - {fileID: 2079646843}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -452,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScore: 0
   currentAmountOfDonutsPickedUp: 0
-  minAmountOfCollectiblesRequired: 1
+  minAmountOfCollectiblesRequired: 0
   maxAmountOfCollectibles: 0
   donutsText: {fileID: 1134790098719630516}
   scoreText: {fileID: 706285028545693424}
