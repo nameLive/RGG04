@@ -6,6 +6,10 @@ TagManager:
   tags:
   - GameManager
   - Fire
+  - HUD
+  - DonutText
+  - FadeImage
+  - ScoreText
   layers:
   - Default
   - TransparentFX

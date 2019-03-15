@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Damager : MonoBehaviour
 {
+	public bool canDealDamage = true;
+
 	[SerializeField]
 	[Tooltip("This is the damage it deals at the interval of \"DamageInterval\" ")]
 	int damageAmount = 1;
@@ -27,7 +29,7 @@ public class Damager : MonoBehaviour
 		if (targetHealth)
 		{
 			DealDamage();
-			colliderReference.enabled = false;
+			DeactivateCollider();
 			Invoke("ActivateCollider", damageInterval);
 			//Debug.Log("Overlapped Component with health comp: " + collision.gameObject.name);
 
@@ -36,11 +38,22 @@ public class Damager : MonoBehaviour
 
 	void DealDamage()
 	{
-		targetHealth.DecreaseHealth(damageAmount);
+		if (canDealDamage)
+		{
+			targetHealth.DecreaseHealth(damageAmount);
+		}
 	}
 
-	void ActivateCollider()
+	public void ActivateCollider()
 	{
-		colliderReference.enabled = true;
+		if (canDealDamage)
+		{
+			colliderReference.enabled = true;
+		}
+	}
+
+	public void DeactivateCollider()
+	{
+		colliderReference.enabled = false;
 	}
 }

@@ -11,7 +11,7 @@ public class PlayerTakeDamageEvents : MonoBehaviour
 	int counter = 0;
 
     [SerializeField]
-	SpriteRenderer spriteRenderer;
+	SpriteRenderer spriteRenderer = null;
 
 	[SerializeField]
 	PlayerHealth playerHealth;

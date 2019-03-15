@@ -61,7 +61,7 @@ public class DamageBlinkColorEffect : MonoBehaviour
 		}
 	}
 
-	void StopTakingDamage()
+	public void StopTakingDamage()
 	{
 		spriteToAffect.color = normalColor;
 		CancelInvoke();

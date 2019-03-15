@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1108131024885738872}
   - component: {fileID: 1108131024885738758}
-  - component: {fileID: 1108131024885738759}
   - component: {fileID: 1108131024885738757}
+  - component: {fileID: 791173091}
   m_Layer: 8
   m_Name: PlayerHealthComponent
   m_TagString: Untagged
@@ -45,19 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769a1d1b323b90f46bd0ea4e451002df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canTakeDamage: 1
   maxHealth: 10
---- !u!114 &1108131024885738759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108131024885738873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61b5fbcba13577458f5d93cab906637, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  invincible: 0
 --- !u!61 &1108131024885738757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82,5 +72,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 1.25, y: 2.56}
   m_EdgeRadius: 0
+--- !u!114 &791173091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108131024885738873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f838e72529358954885b0d750f8871fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteToAffect: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  blinkSpeed: 0.075
+  blinkTime: 1

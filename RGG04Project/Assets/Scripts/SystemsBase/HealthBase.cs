@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HealthBase : MonoBehaviour
 {
+	public bool canTakeDamage = true;
+
 	[SerializeField]
 	protected int maxHealth = 5;
 
@@ -29,11 +31,14 @@ public class HealthBase : MonoBehaviour
 
 	public virtual void DecreaseHealth(int Amount)
 	{
+		if (!canTakeDamage) return; 
+
 		currentHealth -= Mathf.Abs(Amount);
 		EventOnHealthDecreased();
 		if (currentHealth == 0)
 		{
 			EventOnDeath();
+			canTakeDamage = false;
 		}
 	}
 

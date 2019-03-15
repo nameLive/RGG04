@@ -426,7 +426,7 @@ PrefabInstance:
         type: 3}
       propertyPath: fadeImage
       value: 
-      objectReference: {fileID: 887384640}
+      objectReference: {fileID: 0}
     - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
       propertyPath: level1SubScenes.Array.data[0]
@@ -753,6 +753,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180412030933933233, guid: 800067bc1b74eb242976f790a5b1461a,
+        type: 3}
+      propertyPath: m_TagString
+      value: FadeImage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800067bc1b74eb242976f790a5b1461a, type: 3}
