@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 0
-  playerToSpawn: {fileID: 0}
   fadeImage: {fileID: 1435015403}
   loadingScreen: {fileID: 2086038177}
   isDebugging: 0
@@ -170,10 +169,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1685351768890733312, guid: 33f54d4468f437642be4a85e6fabd727,
+    - target: {fileID: 1685351768890733314, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
-      propertyPath: m_Controller
-      value: 
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f54d4468f437642be4a85e6fabd727, type: 3}
@@ -310,11 +309,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6180412030933933233, guid: 800067bc1b74eb242976f790a5b1461a,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800067bc1b74eb242976f790a5b1461a, type: 3}

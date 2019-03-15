@@ -8,7 +8,6 @@ TagManager:
   - Fire
   - HUD
   - DonutText
-  - FadeImage
   - ScoreText
   layers:
   - Default
