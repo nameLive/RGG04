@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     GameObject playerSprite;
-    
+    PlayerHammerState hammerState;
 
 
     public void Start()
@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponentInChildren<Animator>();
         // playerSprite = GetComponent<SpriteRenderer>();
+        hammerState = GetComponentInChildren<PlayerHammerState>();
     }
 
 
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis(horizontalKey)));
         anim.SetBool("CanDoubleJump", canDoubleJump);
         anim.SetBool("IsFalling", isFalling);
+        anim.SetBool("HasHammer", hammerState.hasHammer);
         
         
 
