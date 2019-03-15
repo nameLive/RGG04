@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6182972744296171984}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fd639118d4afa49abea4e447dc602a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  playerToSpawn: {fileID: 0}
+  loadingScreen: {fileID: 0}
+  isDebugging: 0
+  level1: []
