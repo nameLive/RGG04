@@ -33,7 +33,8 @@ public class GameManager : MonoBehaviour {
 
         if (isDebugging) {
 
-            StartGame();
+            StartCoroutine(FadeScreen(true, 1, null));
+            //StartGame();
         }
         else {
 
