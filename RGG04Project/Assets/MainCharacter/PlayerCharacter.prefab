@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4319c1e55721ef14190153457de5d9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasHammer: 0
   hammerSprite: {fileID: 1726890350}
 --- !u!1 &1594158603047232377
 GameObject:
@@ -449,6 +450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScore: 0
+  currentAmountOfDonutsPickedUp: 0
+  minAmountOfCollectiblesRequired: 1
+  maxAmountOfCollectibles: 0
 --- !u!114 &522106161
 MonoBehaviour:
   m_ObjectHideFlags: 0
