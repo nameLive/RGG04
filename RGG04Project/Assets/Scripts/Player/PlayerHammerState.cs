@@ -8,6 +8,7 @@ public class PlayerHammerState : MonoBehaviour
 	Damager damager;
 
 	bool hammerState = false;
+    public bool hasHammer;
 
 	[SerializeField]
 	SpriteRenderer hammerSprite;
@@ -67,6 +68,7 @@ public class PlayerHammerState : MonoBehaviour
 			damager.canDealDamage = true;
 			damager.ActivateCollider();
 			hammerSprite.enabled = true;
+            hasHammer = true; 
 		}
 	}
 
@@ -79,6 +81,7 @@ public class PlayerHammerState : MonoBehaviour
 			damager.canDealDamage = false;
 			damager.DeactivateCollider();
 			hammerSprite.enabled = false;
+            hasHammer = false;
 		}
 
 	}
