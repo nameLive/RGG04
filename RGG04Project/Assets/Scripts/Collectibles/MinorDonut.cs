@@ -10,7 +10,7 @@ public class MinorDonut : CollectibleBase
         ScoreManager scoreManager = collision.GetComponent<ScoreManager>();
         if (scoreManager)
         {
-            scoreManager.IncreaseScore(scoreValue, 1);
+            scoreManager.IncreaseScore(scoreValue, 0);
             Destroy(gameObject);
         }
     }
