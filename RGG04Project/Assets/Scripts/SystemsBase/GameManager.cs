@@ -7,25 +7,53 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     public enum GameState { StartingGame, InMainMenu, InPauseMenu, LoadingGame, InGame };
+
     public GameState gameState;
 
-    public Image fadeImage;
+    [SerializeField]
+    private Image fadeImage;
 
-    public GameObject loadingScreen;
+    [SerializeField]
+    private GameObject HUD;
 
-    public bool isDebugging;
+    [SerializeField]
+    private GameObject loadingScreen;
+
+    [SerializeField]
+    private Text donutsText;
+
+    [SerializeField]
+    private Text scoreText;
+    
+    [SerializeField]
+    private int currentScore = 0;
+
+    [SerializeField]
+    private int currentAmountOfDonutsPickedUp;
+
+    [SerializeField]
+    private int minAmountOfCollectiblesRequired = 1;
+
+    [SerializeField]
+    private int maxAmountOfCollectibles = 0;
+
+    [SerializeField]
+    private float fadeDurationWhenStartingLevel = 1f;
+
+    [SerializeField]
+    private string[] level1;
+
+    [SerializeField]
+    private string[] levelsToLoadWhenDebug;
 
     private string[] scenesToLoad = new string[0];
 
     private string[] scenesToUnload = new string[0];
 
-    public string[] level1;
-
-    public string[] levelsToLoadWhenDebug;
-
-    public float fadeDurationWhenStartingLevel = 1f;
-
     private delegate void functionToCallDelegate();
+    
+    [SerializeField]
+    private bool isDebugging;
 
 
     //-----------------------------------------------
@@ -38,7 +66,7 @@ public class GameManager : MonoBehaviour {
             SceneManager.UnloadSceneAsync(i);
         }
 
-        fadeImage.color = Color.black;
+        fadeImage.color = Color.black; // Sets fadeImage to be black on start. It cant be it otherwise because then you cant edit stuff
 
         if (isDebugging) { // If debugs then instnatly loads level 1 and starts game
 
@@ -138,6 +166,13 @@ public class GameManager : MonoBehaviour {
     void InGame() {
 
         gameState = GameState.InGame;
+
+        HUD.SetActive(true);
+
+        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MajorDonut>().Length;
+
+        scoreText.text = "Score: " + currentScore;
+        donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
     }
     
     //-----------------------------------------------
@@ -218,6 +253,29 @@ public class GameManager : MonoBehaviour {
 
         // All Levels Finished Unloading
 
+    }
+
+    //-----------------------------------------------
+    // Increasing of Score, checks if enough amount is collected and will if so call Win();
+
+    public void IncreaseScore(int scoreAmount, int donutAmount) {
+
+        currentScore += scoreAmount;
+
+        scoreText.text = "Score: " + currentScore;
+
+        currentAmountOfDonutsPickedUp += donutAmount;
+
+        donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
+
+
+        if (donutAmount > 0) { // If its thats been picked up
+
+            if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
+
+                Win();
+            }
+        }
     }
 
     //-----------------------------------------------
