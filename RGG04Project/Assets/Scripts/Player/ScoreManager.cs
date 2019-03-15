@@ -15,15 +15,15 @@ public class ScoreManager : MonoBehaviour {
     public int minAmountOfCollectiblesRequired = 0;
     public int maxAmountOfCollectibles = 0;
 
-    private Text donutsText;
-    private Text scoreText;
+    public Text donutsText;
+    public Text scoreText;
 
     //----------------------------
 
     private void Start() {
 
-        donutsText = GameObject.FindGameObjectWithTag("DonutText").GetComponent<Text>();
-        scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
+        //donutsText = GameObject.FindGameObjectWithTag("DonutText").GetComponent<Text>();
+       // scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         maxAmountOfCollectibles += GameObject.FindObjectsOfType<MinorDonut>().Length; 
