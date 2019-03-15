@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 632926986}
   - component: {fileID: 632926985}
   - component: {fileID: 632926987}
+  - component: {fileID: 447095941}
   m_Layer: 11
   m_Name: DamagerComponent
   m_TagString: Untagged
@@ -72,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d49f07674b12545bc967cdd71a4caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDealDamage: 1
   damageAmount: 1
   damageInterval: 1
   colliderReference: {fileID: 865607649}
@@ -87,7 +89,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7740deea236cc3541be0813efe868715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  canTakeDamage: 1
+  maxHealth: 3
 --- !u!114 &632926987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +108,22 @@ MonoBehaviour:
   damageColor: {r: 0.4339623, g: 0, b: 0, a: 1}
   blinkSpeed: 0.2
   blinkTime: 1
+--- !u!114 &447095941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865607646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153e9b521d96c64449c1e8db8ba27287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stunDuration: 3
+  spriteToAffect: {fileID: 7059283427762787458}
+  stunColor: {r: 1, g: 1, b: 1, a: 0.40392157}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &7059283427762787459
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7059283427762787457
 Transform:
   m_ObjectHideFlags: 0
@@ -198,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbe6a135320d4844a0cd0f72c820246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isStunned: 0
   player: {fileID: 0}
   maxDistanceToPlayer: 20
   movementSpeed: 0.03
