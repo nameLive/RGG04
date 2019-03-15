@@ -18,8 +18,6 @@ public class ScoreManager : MonoBehaviour {
     private Text donutsText;
     private Text scoreText;
 
-    //public CollectibleBase[] collectibles;
-
     //----------------------------
 
     private void Start() {
@@ -28,9 +26,7 @@ public class ScoreManager : MonoBehaviour {
         scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        //collectibles = GameObject.FindObjectsOfType<CollectibleBase>();
-
-        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MinorDonut>().Length; // funkar ej :( hitta nada så blir alltid / 0
+        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MinorDonut>().Length; 
         maxAmountOfCollectibles += GameObject.FindObjectsOfType<MajorDonut>().Length;
 
         scoreText.text = "Score: " + currentScore;
@@ -55,4 +51,5 @@ public class ScoreManager : MonoBehaviour {
                 gameManager.Win();
         }
     }
+
 }
