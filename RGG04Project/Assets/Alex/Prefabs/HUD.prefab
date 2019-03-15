@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2323321146194600347}
   m_Layer: 5
   m_Name: DonutText
-  m_TagString: Untagged
+  m_TagString: DonutText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

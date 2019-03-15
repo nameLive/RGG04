@@ -673,15 +673,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -122
       objectReference: {fileID: 0}
-    - target: {fileID: 2323321146194600326, guid: 4912cc08326681e459b30390564fa8e4,
-        type: 3}
-      propertyPath: m_TagString
-      value: DonutText
-      objectReference: {fileID: 0}
     - target: {fileID: 3377007316633578854, guid: 4912cc08326681e459b30390564fa8e4,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323321146194600326, guid: 4912cc08326681e459b30390564fa8e4,
+        type: 3}
+      propertyPath: m_TagString
+      value: DonutText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4912cc08326681e459b30390564fa8e4, type: 3}
