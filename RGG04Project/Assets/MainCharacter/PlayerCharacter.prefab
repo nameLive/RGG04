@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d49f07674b12545bc967cdd71a4caa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDealDamage: 1
   damageAmount: 1
   damageInterval: 1
   colliderReference: {fileID: 1837868787}
@@ -86,7 +87,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4319c1e55721ef14190153457de5d9a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hammerCollision: {fileID: 1837868787}
 --- !u!1 &1594158603047232377
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,23 +406,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2239889, y: 2.5665598}
   m_EdgeRadius: 0
---- !u!114 &791173091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837268014277233776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f838e72529358954885b0d750f8871fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteToAffect: {fileID: 1594158603047232358}
-  normalColor: {r: 1, g: 1, b: 1, a: 1}
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  blinkSpeed: 0.075
-  blinkTime: 1
 --- !u!1 &4500581724616163802
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,25 +555,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1108131024885738757, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1108131024885738757, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.56
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1108131024885738759, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
+    - target: {fileID: 791173091, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
+      propertyPath: spriteToAffect
+      value: 
+      objectReference: {fileID: 1594158603047232358}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
---- !u!1 &1837268014277233776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1108131024885738873, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1594158602787610889}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1837268014277233777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1108131024885738872, guid: 581e0123f3fd5e94c9b4ade0eb72310f,

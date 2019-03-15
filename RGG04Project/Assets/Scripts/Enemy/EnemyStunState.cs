@@ -7,6 +7,15 @@ public class EnemyStunState : MonoBehaviour
 	[SerializeField]
 	float stunDuration = 3f;
 
+	[SerializeField]
+	SpriteRenderer spriteToAffect;
+
+	[SerializeField]
+	Color stunColor;
+
+	[SerializeField]
+	Color normalColor = Color.white;
+
 	EnemyHealth healthRef;
 	Damager damager;
 	DamageBlinkColorEffect colorEffect;
@@ -20,7 +29,9 @@ public class EnemyStunState : MonoBehaviour
 	{
 		healthRef = GetComponent<EnemyHealth>();
 		healthRef.EventOnDeath += BeginStun;
+
 		damager = GetComponent<Damager>();
+
 		colorEffect = GetComponent<DamageBlinkColorEffect>();
 		EventOnBeginStun += colorEffect.StopTakingDamage;
 	}
@@ -29,6 +40,7 @@ public class EnemyStunState : MonoBehaviour
 	{
 		EventOnBeginStun();
 		Debug.Log("Enter Stun State");
+		spriteToAffect.color = stunColor;
 		damager.DeactivateCollider();
 		damager.canDealDamage = false;
 		Invoke("EndStun", stunDuration);
@@ -38,6 +50,7 @@ public class EnemyStunState : MonoBehaviour
 	{
 		EventOnEndStun();
 		Debug.Log("Exit Stun State");
+		spriteToAffect.color = normalColor;
 		damager.canDealDamage = true;
 		damager.ActivateCollider();
 	}
