@@ -7,8 +7,8 @@ public class PoliceEnemy : MonoBehaviour
 
 	public bool isStunned = false;
 
-	[SerializeField]
-	GameObject player;
+	//[SerializeField]
+	GameObject targetPlayerLocation;
 
 	[SerializeField]
 	[Tooltip("The enemy will always keep this distance to the player no matter how fast the player moves")]
@@ -30,6 +30,8 @@ public class PoliceEnemy : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+        targetPlayerLocation = GameObject.Find("PlayerFeet");
+
 		CalculateTargetPosition();
 		stunState = GetComponentInChildren<EnemyStunState>();
 		stunState.EventOnBeginStun += StartStunState;
@@ -59,7 +61,7 @@ public class PoliceEnemy : MonoBehaviour
 	{
 
 		startPosition = transform.position;
-		targetPosition = player.transform.position;
+		targetPosition = targetPlayerLocation.transform.position;
 
 	}
 
@@ -79,10 +81,10 @@ public class PoliceEnemy : MonoBehaviour
 		else
 		{
 			//Calculates the exact point of maxDistanceToPlayer(20) units from the player pointing towards the enemy
-			Vector3 PlayerToEnemyPos = transform.position - player.transform.position;
+			Vector3 PlayerToEnemyPos = transform.position - targetPlayerLocation.transform.position;
 			PlayerToEnemyPos = PlayerToEnemyPos / PlayerToEnemyPos.magnitude;
 			PlayerToEnemyPos *= maxDistanceToPlayer;
-			Vector3 EndPos = player.transform.position + PlayerToEnemyPos;
+			Vector3 EndPos = targetPlayerLocation.transform.position + PlayerToEnemyPos;
 
 			transform.position = EndPos;
 		}
@@ -92,7 +94,7 @@ public class PoliceEnemy : MonoBehaviour
 
 	bool IsWithinPlayerRange()
 	{
-		directionToPlayer = player.transform.position - transform.position;
+		directionToPlayer = targetPlayerLocation.transform.position - transform.position;
 		distanceToPlayer = directionToPlayer.magnitude;
 
 		if (distanceToPlayer <= maxDistanceToPlayer)
@@ -107,7 +109,7 @@ public class PoliceEnemy : MonoBehaviour
 
 	bool HitThresholdDistanceToPlayer()
 	{
-		directionToPlayer = player.transform.position - transform.position;
+		directionToPlayer = targetPlayerLocation.transform.position - transform.position;
 		distanceToPlayer = directionToPlayer.magnitude;
 
 		if (distanceToPlayer >= 1f)
