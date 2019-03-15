@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
 
     public string[] level1;
 
-    public Image fadeImage;
+    private Image fadeImage;
 
     private delegate void functionToCallDelegate();
 
@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour {
     // If Debugging then starts the game right away, otherwise loads the Boot Menu
 
     void Start() {
+
+        fadeImage = GameObject.FindGameObjectWithTag("FadeImage").GetComponent<Image>();
 
         if (isDebugging) {
 
@@ -209,6 +211,6 @@ public class GameManager : MonoBehaviour {
 
     public void Win() {
 
-        Debug.Log("Got minimum required donuts");
+        Debug.Log("Win");
     }
 }

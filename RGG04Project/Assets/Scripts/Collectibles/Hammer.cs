@@ -14,7 +14,7 @@ public class Hammer : CollectibleBase
         ScoreManager scoreManager = collision.GetComponent<ScoreManager>();
         if (scoreManager)
         {
-            scoreManager.IncreaseScore(scoreValue);
+            scoreManager.IncreaseScore(scoreValue, 0);
             collision.GetComponent<PlayerStateHandler>()?.SetHammerState(hammerDuration);
             Destroy(gameObject);
         }
