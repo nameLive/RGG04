@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
     public enum GameState { StartingGame, InMainMenu, InPauseMenu, LoadingGame, InGame };
     public GameState gameState;
 
-    public GameObject playerToSpawn;
+    public Image fadeImage;
 
     public GameObject loadingScreen;
 
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
 
     public string[] level1;
 
-    private Image fadeImage;
+    
 
     private delegate void functionToCallDelegate();
 
@@ -30,8 +30,6 @@ public class GameManager : MonoBehaviour {
     // If Debugging then starts the game right away, otherwise loads the Boot Menu
 
     void Start() {
-
-        fadeImage = GameObject.FindGameObjectWithTag("FadeImage").GetComponent<Image>();
 
         if (isDebugging) {
 
