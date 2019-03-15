@@ -21,12 +21,9 @@ public class ScoreManager : MonoBehaviour {
     //----------------------------
 
     private void Start() {
-
-        //donutsText = GameObject.FindGameObjectWithTag("DonutText").GetComponent<Text>();
-       // scoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Text>();
+        
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MinorDonut>().Length; 
         maxAmountOfCollectibles += GameObject.FindObjectsOfType<MajorDonut>().Length;
 
         scoreText.text = "Score: " + currentScore;
@@ -45,10 +42,14 @@ public class ScoreManager : MonoBehaviour {
 
         donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
 
-        if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
 
-            if (gameManager)
-                gameManager.Win();
+        if (donutAmount > 0) { // If its thats been picked up
+
+            if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
+
+                if (gameManager)
+                    gameManager.Win();
+            }
         }
     }
 

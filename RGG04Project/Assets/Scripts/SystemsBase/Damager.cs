@@ -20,12 +20,23 @@ public class Damager : MonoBehaviour
 	[Tooltip("This is the collider that checks for damageable objects")]
 	Collider2D colliderReference;
 
+    GameObject damagedObject;
 
-	private void OnTriggerEnter2D(Collider2D collision)
+    public delegate void DidDamage(GameObject ToObject);
+    public event DidDamage EventOnDidDamage;
+
+
+    private void Start()
+    {
+        EventOnDidDamage += EventOnDidDamagePlaceholder;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
 	{
-		//Debug.Log("Overlapped Thing: " + collision.gameObject.name);
+        //Debug.Log("Overlapped Thing: " + collision.gameObject.name);
+        damagedObject = collision.gameObject;
 
-		targetHealth = collision.gameObject.GetComponent<HealthBase>();
+		targetHealth = damagedObject.GetComponent<HealthBase>();
 		if (targetHealth)
 		{
 			DealDamage();
@@ -41,6 +52,7 @@ public class Damager : MonoBehaviour
 		if (canDealDamage)
 		{
 			targetHealth.DecreaseHealth(damageAmount);
+            EventOnDidDamage(damagedObject);
 		}
 	}
 
@@ -56,4 +68,9 @@ public class Damager : MonoBehaviour
 	{
 		colliderReference.enabled = false;
 	}
+
+    void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
+    {
+        //blabla
+    }
 }

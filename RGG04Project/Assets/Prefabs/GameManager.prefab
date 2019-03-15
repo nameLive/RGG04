@@ -52,6 +52,8 @@ MonoBehaviour:
   level1:
   - Level1_Geo
   - Level1_SetDressing
+  fadeDurationWhenStartingLevel: 0.5
+  fadeDurationWhenDebugging: 0.5
 --- !u!1001 &1685351769893804452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77,22 +79,22 @@ PrefabInstance:
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.2148438
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
@@ -122,12 +124,12 @@ PrefabInstance:
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.0225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.46747005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685351768890733313, guid: 33f54d4468f437642be4a85e6fabd727,
         type: 3}
@@ -173,6 +175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685351769758372798, guid: 33f54d4468f437642be4a85e6fabd727,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f54d4468f437642be4a85e6fabd727, type: 3}
@@ -309,6 +316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180412030933933260, guid: 800067bc1b74eb242976f790a5b1461a,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.003921569
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 800067bc1b74eb242976f790a5b1461a, type: 3}
