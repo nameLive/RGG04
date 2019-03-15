@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour {
 
     public string[] level1;
 
+    public float fadeDurationWhenStartingLevel = 1f;
+
+    public float fadeDurationWhenDebugging = 1f;
+
     
 
     private delegate void functionToCallDelegate();
@@ -31,9 +35,12 @@ public class GameManager : MonoBehaviour {
 
     void Start() {
 
+        fadeImage.color = Color.black;
+
         if (isDebugging) {
-            
-            StartCoroutine(FadeScreen(true, 0, null));
+
+            fadeImage.color = Color.black;
+            StartCoroutine(FadeScreen(true, fadeDurationWhenDebugging, null));
             //StartGame();
         }
         else {
@@ -89,7 +96,7 @@ public class GameManager : MonoBehaviour {
 
         SetScenesToLoad(level1); // Set scenes to load
 
-        StartCoroutine(FadeScreen(false, 1, LoadGame)); // Fades screen in, when finished it calls function LoadGame
+        StartCoroutine(FadeScreen(false, fadeDurationWhenStartingLevel, LoadGame)); // Fades screen in, when finished it calls function LoadGame
     }
 
     //-----------------------------------------------
@@ -110,7 +117,7 @@ public class GameManager : MonoBehaviour {
         if (loadingScreen.activeSelf) {
 
             loadingScreen.SetActive(false);
-            StartCoroutine(FadeScreen(true, 1, InGame));
+            StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
         }
 
         else
