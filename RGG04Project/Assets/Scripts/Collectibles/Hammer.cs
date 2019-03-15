@@ -12,10 +12,11 @@ public class Hammer : CollectibleBase
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ScoreManager scoreManager = collision.GetComponent<ScoreManager>();
-        if (scoreManager)
+        PlayerStateHandler stateHandler = collision.GetComponent<PlayerStateHandler>();
+        if (scoreManager && stateHandler)
         {
             scoreManager.IncreaseScore(scoreValue, 0);
-            collision.GetComponent<PlayerStateHandler>()?.SetHammerState(hammerDuration);
+            stateHandler.SetHammerState(hammerDuration);
             Destroy(gameObject);
         }
 
