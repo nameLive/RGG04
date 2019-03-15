@@ -21,11 +21,9 @@ public class GameManager : MonoBehaviour {
 
     public string[] level1;
 
+    public string[] levelsToLoadWhenDebug;
+
     public float fadeDurationWhenStartingLevel = 1f;
-
-    public float fadeDurationWhenDebugging = 1f;
-
-    
 
     private delegate void functionToCallDelegate();
 
@@ -35,14 +33,21 @@ public class GameManager : MonoBehaviour {
 
     void Start() {
 
+        for (int i = 1; i < SceneManager.sceneCount; i++) { // Unloads all scenes that are in the Persistent Level on start
+
+            SceneManager.UnloadSceneAsync(i);
+        }
+
         fadeImage.color = Color.black;
 
-        if (isDebugging) {
+        if (isDebugging) { // If debugs then instnatly loads level 1 and starts game
 
-            fadeImage.color = Color.black;
-            StartCoroutine(FadeScreen(true, fadeDurationWhenDebugging, null));
-            //StartGame();
+            fadeImage.color = Color.black; // Sets fade to be black at start so it can fade in if wanted
+
+            SetScenesToLoad(levelsToLoadWhenDebug); 
+            LoadGame();
         }
+
         else {
 
             SetScenesToLoad(new string[] { "Boot" }); // Sets the added field to be Boot so it loads Boot Scene
@@ -117,7 +122,10 @@ public class GameManager : MonoBehaviour {
         if (loadingScreen.activeSelf) {
 
             loadingScreen.SetActive(false);
-            StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
+            if (isDebugging)
+                StartCoroutine(FadeScreen(true, 0, InGame));
+            else
+                StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
         }
 
         else
@@ -167,7 +175,7 @@ public class GameManager : MonoBehaviour {
 
         scenesToLoad = null; // Clears the array when finished loading the levels
 
-        yield return new WaitForSecondsRealtime(2); // After all levels finished loading, waits 2 additional seconds
+        //yield return new WaitForSecondsRealtime(2); // After all levels finished loading, waits 2 additional seconds
 
         if (methodToCallAfterLoadComplete != null)
             methodToCallAfterLoadComplete();

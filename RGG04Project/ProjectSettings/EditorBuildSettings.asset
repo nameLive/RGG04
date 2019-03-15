@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1_SetDressing.unity
     guid: 2eeabe4ec3691e64d88c36d762aa2000
+  - enabled: 1
+    path: Assets/Scenes/Antonia.unity
+    guid: 378df211b69880645988c144734f0dd0
+  - enabled: 1
+    path: Assets/Scenes/Josie.unity
+    guid: 9f3d3cbf5cfc0624f89a3ac7132d8994
   m_configObjects: {}

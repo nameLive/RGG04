@@ -48,12 +48,14 @@ MonoBehaviour:
   gameState: 0
   fadeImage: {fileID: 1435015403}
   loadingScreen: {fileID: 2086038177}
-  isDebugging: 0
+  isDebugging: 1
   level1:
   - Level1_Geo
   - Level1_SetDressing
+  levelsToLoadWhenDebug:
+  - Level1_Geo
+  - Level1_SetDressing
   fadeDurationWhenStartingLevel: 0.5
-  fadeDurationWhenDebugging: 0.5
 --- !u!1001 &1685351769893804452
 PrefabInstance:
   m_ObjectHideFlags: 0
