@@ -304,8 +304,23 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: da0d352c506729c45b7060ecf2da2c47, type: 2}
     - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
+      propertyPath: levelsToLoadWhenDebug.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
+        type: 3}
       propertyPath: isDebugging
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
+        type: 3}
+      propertyPath: levelsToLoadWhenDebug.Array.data[0]
+      value: Level1_Geo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
+        type: 3}
+      propertyPath: levelsToLoadWhenDebug.Array.data[1]
+      value: Level1_SetDressing
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}

@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour {
 
     public string[] level1;
 
+    public string[] levelsToLoadWhenDebug;
+
     public float fadeDurationWhenStartingLevel = 1f;
 
     private delegate void functionToCallDelegate();
@@ -42,7 +44,7 @@ public class GameManager : MonoBehaviour {
 
             fadeImage.color = Color.black; // Sets fade to be black at start so it can fade in if wanted
 
-            SetScenesToLoad(level1); 
+            SetScenesToLoad(levelsToLoadWhenDebug); 
             LoadGame();
         }
 
