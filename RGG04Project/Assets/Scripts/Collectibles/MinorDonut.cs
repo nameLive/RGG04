@@ -17,8 +17,32 @@ public class MinorDonut : CollectibleBase {
         if (collision.tag == "Player") {
 
             gameManager.IncreaseScore(scoreValue, 0);
-            
-            Destroy(gameObject);
+
+            StartCoroutine(DestroyAnim(.25f));
         }
+    }
+
+    //------------------------------------------------
+    // Lerps the scale down to 0 over a period of time
+
+    IEnumerator DestroyAnim(float scaleTime) {
+
+        Vector3 originalScale = gameObject.transform.localScale;
+
+        Vector3 targetScale = new Vector3(0, 0, 0);
+
+        float currentTime = 0;
+
+        do {
+            gameObject.transform.localScale = Vector3.Lerp(originalScale, targetScale, currentTime / scaleTime);
+
+            currentTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        while (currentTime <= scaleTime);
+
+        Destroy(gameObject);
     }
 }

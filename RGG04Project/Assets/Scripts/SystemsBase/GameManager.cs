@@ -7,8 +7,6 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
-    public enum GameState { StartingGame, InMainMenu, InPauseMenu, LoadingGame, InGame };
-
     public GameState gameState;
 
     [SerializeField]
@@ -18,7 +16,7 @@ public class GameManager : MonoBehaviour {
     private GameObject HUD;
 
     [SerializeField]
-    private GameObject loadingScreen;
+    private GameObject pauseMenu;
 
     [SerializeField]
     private Text donutsText;
@@ -26,8 +24,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private Text scoreText;
     
-    [SerializeField]
-    private int currentScore = 0;
+    public int currentScore = 0;
 
     [SerializeField]
     private int currentAmountOfDonutsPickedUp;
@@ -40,21 +37,21 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private float fadeDurationWhenStartingLevel = 1f;
-
-    [SerializeField]
-    private string[] level1;
+    
+    public string[] level1;
 
     [SerializeField]
     private string[] levelsToLoadWhenDebug;
 
-    private string[] scenesToLoad = new string[0];
+    public string[] scenesToLoad = new string[0];
 
-    private string[] scenesToUnload = new string[0];
+    public string[] scenesToUnload = new string[0];
 
-    private delegate void functionToCallDelegate();
+    public delegate void functionToCallDelegate();
 
-    [SerializeField]
-    private bool IsPaused;
+    private bool isLoading;
+    
+    private bool isPaused;
     
     [SerializeField]
     private bool isDebugging;
@@ -76,8 +73,11 @@ public class GameManager : MonoBehaviour {
 
             fadeImage.color = Color.black; // Sets fade to be black at start so it can fade in if wanted
 
-            SetScenesToLoad(levelsToLoadWhenDebug); 
-            LoadGame();
+            SetScenesToLoad(levelsToLoadWhenDebug);
+
+            gameState = GameState.LoadingToGame;
+
+            Loading();
         }
 
         else {
@@ -94,35 +94,58 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Escape)) {
             
-            if (gameState == GameState.InGame) {
+            if (gameState == GameState.InGame)
 
-                PauseGame();
-            }
+                PauseGame(true);
+
+            else if (gameState == GameState.InPauseMenu)
+                PauseGame(true);
         }
     }
 
     //-----------------------------------------------
 
-    void PauseGame() {
-
+    public void PauseGame(bool pausedByInput) {
+      
+        /* // Turns out this was unncessary as it affected everything by just doing it in any script what so ever
         var ss = FindObjectsOfType<MonoBehaviour>().OfType<PauseInterface>();
 
         foreach (PauseInterface s in ss) { // Loops through all objects using PauseInterface
 
-            if (IsPaused)
+            if (isPaused)
                 s.UnPaused();
 
             else
                 s.Paused();
         }
-
+        */
         // When loop is done
+        
+        if (isPaused) {
 
-        if (IsPaused)
-            IsPaused = false;
+            isPaused = false;
 
-        else
-            IsPaused = true;
+            Time.timeScale = 1; // Sets Time to normal
+
+            if (pausedByInput) {
+
+                gameState = GameState.InGame;
+                pauseMenu.SetActive(false);
+            }
+
+        }
+
+        else {
+            isPaused = true;
+
+            Time.timeScale = 0; // Sets Time to paused
+
+            if (pausedByInput) {
+                gameState = GameState.InPauseMenu;
+                pauseMenu.SetActive(true);
+            }
+        }
+            
     }
 
     //-----------------------------------------------
@@ -134,31 +157,46 @@ public class GameManager : MonoBehaviour {
 
         StartCoroutine(UnloadScenes(null, null));
         
-        StartCoroutine(FadeScreen(true, 1, null));
+        //StartCoroutine(FadeScreen(true, 1, null));
 
-        gameState = GameState.InMainMenu;
+        ScreenFade(true, 1, null);
 
         SetScenesToLoad(new string[] { "MainMenu" });
 
-        StartCoroutine(LoadScenes(null, null));
+        gameState = GameState.LoadingToMenu;
+
+        StartCoroutine(LoadScenes(null, InMainMenu));
     }
-    
 
     //-----------------------------------------------
-    // Fade screen In/Out with a certain duration and can call a function after finished
 
-    IEnumerator FadeScreen(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
+    void InMainMenu() {
 
-        if (fadeIn)
-            fadeImage.CrossFadeAlpha(0, duration, true); 
-        else
-            fadeImage.CrossFadeAlpha(1, duration, true);
-            
-        
-        yield return new WaitForSeconds(duration);
+        currentScore = 0;
+        currentAmountOfDonutsPickedUp = 0;
 
-        if (functionToCallAfterFade != null)
-            functionToCallAfterFade();
+        gameState = GameState.InMainMenu;
+    }
+
+    //-----------------------------------------------
+    // GÖR DETTA SEN, DVS: OM DU TRYCKER TYP EXIT I PAUSE ELLER QUIT I WIN SCREEN
+
+    public void BackToMenu() {
+
+        gameState = GameState.LoadingToMenu;
+
+        StartCoroutine(UnloadScenes(null, null));
+
+        SetScenesToLoad(new string[] { "MainMenu" });
+
+        //StartCoroutine(FadeScreen(false, .5f, Loading));
+
+        ScreenFade(false, .5f, Loading);
+    }
+
+    public void ScreenFade(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
+
+        StartCoroutine(FadeScreen(fadeIn, duration, functionToCallAfterFade));
     }
 
     //-----------------------------------------------
@@ -166,39 +204,97 @@ public class GameManager : MonoBehaviour {
 
     public void StartGame() {
 
-        StartCoroutine(UnloadScenes(null, null)); // Unloads scenes
+        //SetScenesToUnload(new string[] { "MainMenu" });
+
+        //StartCoroutine(UnloadScenes(null, null)); // Unloads scenes
 
         SetScenesToLoad(level1); // Set scenes to load
 
-        StartCoroutine(FadeScreen(false, fadeDurationWhenStartingLevel, LoadGame)); // Fades screen in, when finished it calls function LoadGame
+        gameState = GameState.LoadingToGame;
+
+        ScreenFade(false, .5f, Loading);
+
+        //StartCoroutine(FadeScreen(false, .5f, Loading)); // Fades screen in, when finished it calls function LoadGame
     }
 
     //-----------------------------------------------
     // Sets game state to LoadingGame, LoadsScenes In
 
-    void LoadGame() {
+    void Loading() {
 
-        gameState = GameState.LoadingGame;
+        if (scenesToUnload != null)
+            StartCoroutine(UnloadScenes(null, null));
 
-        StartCoroutine(LoadScenes(LoadScreen, LoadScreen));
+        if (scenesToLoad != null)
+            StartCoroutine(LoadScenes(LoadScreen, LoadScreen));
     }
 
     //-----------------------------------------------
-    // Shows/Hides Loading Screen. When Hide it Fades screen in again and calls InGame when finished
+    // Shows/Hides Loading Screen, switches between them when called like a flip flop kind of
 
     void LoadScreen() {
+        
+        if (isLoading) { // If function is called and loading true, then fades in screen and removes loading screen (if any)
 
-        if (loadingScreen.activeSelf) {
+            isLoading = false;
 
-            loadingScreen.SetActive(false);
-            if (isDebugging)
-                StartCoroutine(FadeScreen(true, 0, InGame));
-            else
-                StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
+            switch (gameState) {
+
+                case GameState.LoadingToGame:
+
+                    ScreenFade(true, fadeDurationWhenStartingLevel, InGame);
+
+                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
+
+                    break;
+
+                case GameState.LoadingToMenu:
+                    
+                    HUD.SetActive(false);
+
+                    ScreenFade(true, fadeDurationWhenStartingLevel, InMainMenu);
+
+                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InMainMenu));
+
+                    break;
+
+                case GameState.WonGame:
+
+                    HUD.SetActive(false);
+
+                    ScreenFade(true, fadeDurationWhenStartingLevel, WinScreen);
+
+                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, WinScreen));
+
+                    break;
+            }
         }
 
-        else
-            loadingScreen.SetActive(true);
+        else if (!isLoading) { // If Function is called and is not in loading then sets it to be that and show loading screen (if any)
+
+            isLoading = true;
+
+             switch (gameState) {
+
+                case GameState.LoadingToGame:
+
+                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
+
+                    
+
+                    break;
+
+                case GameState.LoadingToMenu:
+
+                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InMainMenu));
+
+                    break;
+
+                case GameState.WonGame:
+
+                    break;
+            }
+        }
     }
 
     //-----------------------------------------------
@@ -295,6 +391,23 @@ public class GameManager : MonoBehaviour {
         // All Levels Finished Unloading
 
     }
+    
+    //-----------------------------------------------
+    // Fade screen In/Out with a certain duration and can call a function after finished
+
+    IEnumerator FadeScreen(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
+
+        if (fadeIn)
+            fadeImage.CrossFadeAlpha(0, duration, true);
+        else
+            fadeImage.CrossFadeAlpha(1, duration, true);
+
+
+        yield return new WaitForSeconds(duration);
+
+        if (functionToCallAfterFade != null)
+            functionToCallAfterFade();
+    }
 
     //-----------------------------------------------
     // Increasing of Score, checks if enough amount is collected and will if so call Win();
@@ -314,16 +427,38 @@ public class GameManager : MonoBehaviour {
 
             if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
 
-                Win();
+                gameState = GameState.WonGame;
+
+                PauseGame(false); // Pauses the game when getting the last donut. MOVE THIS TO WHEN WHEN ENTERING TRIGGER LATER
+
+                StartCoroutine(CollectedAllDonuts(2)); // Delay that ignores the pause
             }
         }
     }
 
     //-----------------------------------------------
-    // Win Condition
 
-    public void Win() {
+    IEnumerator CollectedAllDonuts (float delay) {
 
-        Debug.Log("Win");
+        yield return new WaitForSecondsRealtime(delay);
+
+        PauseGame(false); // Un Pauses it
+
+        SetScenesToUnload(level1);
+
+        SetScenesToLoad(new string[] { "WinScreen" });
+
+        //gameState = GameState.WonGame;
+
+        ScreenFade(false, .15f, Loading);
+
+        //StartCoroutine(FadeScreen(false, .15f, Loading));
+    }
+
+    //-----------------------------------------------
+
+    void WinScreen() {
+
+        gameState = GameState.AtWinScreen;
     }
 }
