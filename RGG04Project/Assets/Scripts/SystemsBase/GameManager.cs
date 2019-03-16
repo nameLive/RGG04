@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
@@ -51,6 +52,9 @@ public class GameManager : MonoBehaviour {
     private string[] scenesToUnload = new string[0];
 
     private delegate void functionToCallDelegate();
+
+    [SerializeField]
+    private bool IsPaused;
     
     [SerializeField]
     private bool isDebugging;
@@ -82,6 +86,43 @@ public class GameManager : MonoBehaviour {
 
             StartCoroutine(LoadScenes(null, null));
         }
+    }
+
+    //-----------------------------------------------
+
+    void Update() {
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            
+            if (gameState == GameState.InGame) {
+
+                PauseGame();
+            }
+        }
+    }
+
+    //-----------------------------------------------
+
+    void PauseGame() {
+
+        var ss = FindObjectsOfType<MonoBehaviour>().OfType<PauseInterface>();
+
+        foreach (PauseInterface s in ss) { // Loops through all objects using PauseInterface
+
+            if (IsPaused)
+                s.UnPaused();
+
+            else
+                s.Paused();
+        }
+
+        // When loop is done
+
+        if (IsPaused)
+            IsPaused = false;
+
+        else
+            IsPaused = true;
     }
 
     //-----------------------------------------------
