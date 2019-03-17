@@ -156,8 +156,6 @@ public class GameManager : MonoBehaviour {
         SetScenesToUnload(new string[] { "Boot" });
 
         StartCoroutine(UnloadScenes(null, null));
-        
-        //StartCoroutine(FadeScreen(true, 1, null));
 
         ScreenFade(true, 1, null);
 
@@ -179,7 +177,6 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // GÖR DETTA SEN, DVS: OM DU TRYCKER TYP EXIT I PAUSE ELLER QUIT I WIN SCREEN
 
     public void BackToMenu() {
 
@@ -189,10 +186,10 @@ public class GameManager : MonoBehaviour {
 
         SetScenesToLoad(new string[] { "MainMenu" });
 
-        //StartCoroutine(FadeScreen(false, .5f, Loading));
-
         ScreenFade(false, .5f, Loading);
     }
+
+    //-----------------------------------------------
 
     public void ScreenFade(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
 
@@ -204,17 +201,11 @@ public class GameManager : MonoBehaviour {
 
     public void StartGame() {
 
-        //SetScenesToUnload(new string[] { "MainMenu" });
-
-        //StartCoroutine(UnloadScenes(null, null)); // Unloads scenes
-
         SetScenesToLoad(level1); // Set scenes to load
 
         gameState = GameState.LoadingToGame;
 
         ScreenFade(false, .5f, Loading);
-
-        //StartCoroutine(FadeScreen(false, .5f, Loading)); // Fades screen in, when finished it calls function LoadGame
     }
 
     //-----------------------------------------------
@@ -244,8 +235,6 @@ public class GameManager : MonoBehaviour {
 
                     ScreenFade(true, fadeDurationWhenStartingLevel, InGame);
 
-                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
-
                     break;
 
                 case GameState.LoadingToMenu:
@@ -254,8 +243,6 @@ public class GameManager : MonoBehaviour {
 
                     ScreenFade(true, fadeDurationWhenStartingLevel, InMainMenu);
 
-                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InMainMenu));
-
                     break;
 
                 case GameState.WonGame:
@@ -263,8 +250,6 @@ public class GameManager : MonoBehaviour {
                     HUD.SetActive(false);
 
                     ScreenFade(true, fadeDurationWhenStartingLevel, WinScreen);
-
-                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, WinScreen));
 
                     break;
             }
@@ -427,18 +412,25 @@ public class GameManager : MonoBehaviour {
 
             if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
 
-                gameState = GameState.WonGame;
-
-                PauseGame(false); // Pauses the game when getting the last donut. MOVE THIS TO WHEN WHEN ENTERING TRIGGER LATER
-
-                StartCoroutine(CollectedAllDonuts(2)); // Delay that ignores the pause
+                GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor(); // Opens door when all required donuts are picked up
             }
         }
     }
 
     //-----------------------------------------------
 
-    IEnumerator CollectedAllDonuts (float delay) {
+    public void EnteredWinTrigger() {
+
+        gameState = GameState.WonGame;
+
+        PauseGame(false); // Pauses the game when getting the last donut
+
+        StartCoroutine(DelayBeforeGettingToWinScreen(5)); // Delay that ignores the pause
+    }
+
+    //-----------------------------------------------
+
+    IEnumerator DelayBeforeGettingToWinScreen (float delay) {
 
         yield return new WaitForSecondsRealtime(delay);
 
@@ -448,11 +440,7 @@ public class GameManager : MonoBehaviour {
 
         SetScenesToLoad(new string[] { "WinScreen" });
 
-        //gameState = GameState.WonGame;
-
         ScreenFade(false, .15f, Loading);
-
-        //StartCoroutine(FadeScreen(false, .15f, Loading));
     }
 
     //-----------------------------------------------
