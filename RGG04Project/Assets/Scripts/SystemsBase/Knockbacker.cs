@@ -34,6 +34,8 @@ public class Knockbacker : MonoBehaviour
 
             Vector2 knockbackDirection = new Vector2(pushBackStrengthRight * right, pushBackStrengthUp);
 
+            rb.velocity = new Vector2();
+
             rb.AddForce(knockbackDirection);
 
         }
