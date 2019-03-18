@@ -120,7 +120,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837868784}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2079646843}
   m_Layer: 8
-  m_Name: PlayerFeet
+  m_Name: EnemyTargetLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,10 +392,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064d210f486cc1a42a2840a647bc50bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageStunDuration: 0.5
   speed: 7
   horizontalKey: Horizontal
   facingRight: 0
-  jumpVelocity: 10
+  jumpVelocity: 13
   jumpKey: Jump
   playerSprite: {fileID: 1594158603047232377}
 --- !u!50 &1594158603801012286
