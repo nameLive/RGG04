@@ -38,6 +38,11 @@ public class PlayerHammerState : MonoBehaviour
 
 		playerMovement = GetComponentInParent<PlayerMovement>();
 
+        if (hasHammer)
+        {
+            StartHammerState();
+        }
+
 	}
 
 	private void Update()
@@ -63,7 +68,6 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (!hammerState)
 		{
-			Debug.Log("Start hammer state");
 			hammerState = true;
 			damager.canDealDamage = true;
 			damager.ActivateCollider();
@@ -76,7 +80,6 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (hammerState)
 		{
-			Debug.Log("End Hammer state");
 			hammerState = false;
 			damager.canDealDamage = false;
 			damager.DeactivateCollider();

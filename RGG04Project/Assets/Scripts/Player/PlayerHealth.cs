@@ -25,13 +25,18 @@ public class PlayerHealth : HealthBase
 		invincible = false;
 	}
 
-	public override void DecreaseHealth(int Amount)
+	public override bool DecreaseHealth(int Amount)
 	{
 		if (!invincible)
 		{
 			base.DecreaseHealth(Amount);
+            return true;
 			//Debug.Log("Player Current Health: " + currentHealth);
 		}
+        else
+        {
+            return false;
+        }
 	}
 
 	public override void IncreaseHealth(int Amount)

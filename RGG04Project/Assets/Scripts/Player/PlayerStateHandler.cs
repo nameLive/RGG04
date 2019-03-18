@@ -38,7 +38,7 @@ public class PlayerStateHandler : MonoBehaviour
     {
         currentPlayerState = NewState;
 
-        Debug.Log("New State: " + NewState);
+        //Debug.Log("New State: " + NewState);
 
         if (NewState == PlayerState.Hammer)
         {
