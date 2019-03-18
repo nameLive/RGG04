@@ -28,7 +28,7 @@ public class MinorDonut : CollectibleBase {
 
                 gameManager.IncreaseScore(scoreValue, 0);
 
-                animator.SetBool("PickedUp", true);
+                //animator.SetBool("PickedUp", true);
 
                 StartCoroutine(DestroyAnim(.25f));
             }

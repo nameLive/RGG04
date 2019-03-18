@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private string[] levelsToLoadWhenDebug;
 
-    public string[] scenesToLoad = new string[0];
+    private string[] scenesToLoad = new string[0];
 
-    public string[] scenesToUnload = new string[0];
+    private string[] scenesToUnload = new string[0];
 
     public delegate void functionToCallDelegate();
 
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour {
 
 
     //-----------------------------------------------
-    // If Debugging then starts the game right away, otherwise loads the Boot Menu
+    // If Debugging then Loads Levels to Load When Debug right away. Othewise Loads Boot Scene
 
     void Start() {
 
@@ -67,28 +67,27 @@ public class GameManager : MonoBehaviour {
             SceneManager.UnloadSceneAsync(i);
         }
 
-        fadeImage.color = Color.black; // Sets fadeImage to be black on start. It cant be it otherwise because then you cant edit stuff
+        fadeImage.color = Color.black; // Sets fadeImage to be black on start.
 
-        if (isDebugging) { // If debugs then instnatly loads level 1 and starts game
-
-            fadeImage.color = Color.black; // Sets fade to be black at start so it can fade in if wanted
+        if (isDebugging) { 
 
             SetScenesToLoad(levelsToLoadWhenDebug);
 
             gameState = GameState.LoadingToGame;
 
-            Loading();
+            ScreenFade(false, 0, UnloadAndLoadScenes);
         }
 
         else {
 
             SetScenesToLoad(new string[] { "Boot" }); // Sets the added field to be Boot so it loads Boot Scene
 
-            StartCoroutine(LoadScenes(null, null));
+            ScreenFade(false, .5f, UnloadAndLoadScenes);
         }
     }
 
     //-----------------------------------------------
+    // Input
 
     void Update() {
 
@@ -101,72 +100,58 @@ public class GameManager : MonoBehaviour {
             else if (gameState == GameState.InPauseMenu)
                 PauseGame(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.K)) { // TODO TA BORT SEN
+
+            LostGame();
+        }
     }
 
     //-----------------------------------------------
+    // Pauses / UnPauses the game. If Paused by Input from player then opens Pause Menu
 
     public void PauseGame(bool pausedByInput) {
-      
-        /* // Turns out this was unncessary as it affected everything by just doing it in any script what so ever
-        var ss = FindObjectsOfType<MonoBehaviour>().OfType<PauseInterface>();
-
-        foreach (PauseInterface s in ss) { // Loops through all objects using PauseInterface
-
-            if (isPaused)
-                s.UnPaused();
-
-            else
-                s.Paused();
-        }
-        */
-        // When loop is done
         
-        if (isPaused) {
+        if (isPaused) { // UnPauses
 
             isPaused = false;
-
-            Time.timeScale = 1; // Sets Time to normal
+            Time.timeScale = 1;
 
             if (pausedByInput) {
 
                 gameState = GameState.InGame;
                 pauseMenu.SetActive(false);
             }
-
         }
 
-        else {
-            isPaused = true;
+        else { // Pauses
 
-            Time.timeScale = 0; // Sets Time to paused
+            isPaused = true;
+            Time.timeScale = 0;
 
             if (pausedByInput) {
                 gameState = GameState.InPauseMenu;
                 pauseMenu.SetActive(true);
             }
         }
-            
     }
 
     //-----------------------------------------------
-    // Unloads Boot Menu, Fades screen In, sets state to be Main Menu, Loads Main Menu
+    // Boot Menu Finished. Called from BootMenu. Sets scenes to unload and load, state and fades out. 
 
     public void BootMenuFinished() {
 
         SetScenesToUnload(new string[] { "Boot" });
 
-        StartCoroutine(UnloadScenes(null, null));
-
-        ScreenFade(true, 1, null);
-
         SetScenesToLoad(new string[] { "MainMenu" });
 
         gameState = GameState.LoadingToMenu;
 
-        StartCoroutine(LoadScenes(null, InMainMenu));
+        ScreenFade(false, .5f, UnloadAndLoadScenes);
     }
 
     //-----------------------------------------------
+    // Main Menu. Called when it finished loading and fading out to it. 
 
     void InMainMenu() {
 
@@ -177,6 +162,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
+    // Back to Main Menu. Called from Pause Menu, Win Screen and Lose Screen
 
     public void BackToMenu() {
 
@@ -186,10 +172,11 @@ public class GameManager : MonoBehaviour {
 
         SetScenesToLoad(new string[] { "MainMenu" });
 
-        ScreenFade(false, .5f, Loading);
+        ScreenFade(false, .5f, UnloadAndLoadScenes);
     }
 
     //-----------------------------------------------
+    // Calls the Fade Screen Coroutine that can call a function when the fade is finished. 
 
     public void ScreenFade(bool fadeIn, float duration, functionToCallDelegate functionToCallAfterFade) {
 
@@ -197,21 +184,21 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Starts Game, get called from MainMenu when pressing Start Game.
+    // Starts Game. Gets called from Main Menu, Win Screen and Lose Screen
 
     public void StartGame() {
 
-        SetScenesToLoad(level1); // Set scenes to load
+        SetScenesToLoad(level1);
 
         gameState = GameState.LoadingToGame;
 
-        ScreenFade(false, .5f, Loading);
+        ScreenFade(false, .5f, UnloadAndLoadScenes);
     }
 
     //-----------------------------------------------
-    // Sets game state to LoadingGame, LoadsScenes In
+    // Unloads and Loads Scenes. Calls Load Screen Before and After Loading scenes.  
 
-    void Loading() {
+    void UnloadAndLoadScenes() {
 
         if (scenesToUnload != null)
             StartCoroutine(UnloadScenes(null, null));
@@ -221,11 +208,11 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Shows/Hides Loading Screen, switches between them when called like a flip flop kind of
+    // Load Screen gets called before and after scenes are loaded
 
     void LoadScreen() {
         
-        if (isLoading) { // If function is called and loading true, then fades in screen and removes loading screen (if any)
+        if (isLoading) { // Called after Scenes Loading is Finished, depending on state it fades in screen and calls specific function
 
             isLoading = false;
 
@@ -233,7 +220,10 @@ public class GameManager : MonoBehaviour {
 
                 case GameState.LoadingToGame:
 
-                    ScreenFade(true, fadeDurationWhenStartingLevel, InGame);
+                    if (isDebugging)
+                        ScreenFade(true, 0, InGame);
+                    else
+                        ScreenFade(true, fadeDurationWhenStartingLevel, InGame);
 
                     break;
 
@@ -252,27 +242,29 @@ public class GameManager : MonoBehaviour {
                     ScreenFade(true, fadeDurationWhenStartingLevel, WinScreen);
 
                     break;
+
+                case GameState.LostGame:
+
+                    HUD.SetActive(false);
+
+                    ScreenFade(true, fadeDurationWhenStartingLevel, LostScreen);
+
+                    break;
             }
         }
 
-        else if (!isLoading) { // If Function is called and is not in loading then sets it to be that and show loading screen (if any)
+        else if (isLoading == false) { // Called before scenes have started loading
 
             isLoading = true;
 
              switch (gameState) {
 
                 case GameState.LoadingToGame:
-
-                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InGame));
-
                     
-
                     break;
 
                 case GameState.LoadingToMenu:
-
-                    //StartCoroutine(FadeScreen(true, fadeDurationWhenStartingLevel, InMainMenu));
-
+                    
                     break;
 
                 case GameState.WonGame:
@@ -283,7 +275,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // When in game, called when loading is finished and faded out
+    // When in game, called when loading is finished when LoadingToGame was true
 
     void InGame() {
 
@@ -300,7 +292,7 @@ public class GameManager : MonoBehaviour {
     }
     
     //-----------------------------------------------
-    // Sets scenes to load
+    // Sets scenes to are going to be loaded
 
     public void SetScenesToLoad (string[] setScenesToLoad) {
 
@@ -308,15 +300,13 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Takes in Array of Strings with the scenes that is going to be loaded
+    // Loads Array of Scenes. Can call functions before load starts and after its finished
 
     IEnumerator LoadScenes(functionToCallDelegate methodToCallBeforeLoading, functionToCallDelegate methodToCallAfterLoadComplete) {
 
         AsyncOperation ao;
-
-        // Before Any level has started loading
-
-        if (methodToCallBeforeLoading != null)
+        
+        if (methodToCallBeforeLoading != null) // Before Any level has started loading
             methodToCallBeforeLoading();
         
         for (int i = 0; i < scenesToLoad.Length; i++) {
@@ -329,19 +319,17 @@ public class GameManager : MonoBehaviour {
 
             // After Level in array is Loaded
         }
-
-        // After All Level Finished Loading
-
+        
         scenesToLoad = null; // Clears the array when finished loading the levels
 
-        //yield return new WaitForSecondsRealtime(2); // After all levels finished loading, waits 2 additional seconds
+        //yield return new WaitForSecondsRealtime(2); // After all levels finished loading, can wait additional seconds before continuing
 
-        if (methodToCallAfterLoadComplete != null)
+        if (methodToCallAfterLoadComplete != null) // After All Level Finished Loading
             methodToCallAfterLoadComplete();
     }
 
     //-----------------------------------------------
-    // Set scenes to Unload
+    // Sets scenes that are going to be Unloaded
 
     public void SetScenesToUnload(string[] setScenesToUnload) {
 
@@ -349,7 +337,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Unloading Array of levels, after for loop all the levels have been unloaded
+    // UnLoads Array of Scenes. Can call functions before load starts and after its finished
 
     IEnumerator UnloadScenes(functionToCallDelegate methodToCallBeforeUnLoading, functionToCallDelegate methodToCallAfterUnLoadComplete) {
 
@@ -397,7 +385,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Increasing of Score, checks if enough amount is collected and will if so call Win();
+    // Increasing of Score. Checks amount of donuts collected, if enough then opens win door. 
 
     public void IncreaseScore(int scoreAmount, int donutAmount) {
 
@@ -410,16 +398,17 @@ public class GameManager : MonoBehaviour {
         donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
 
 
-        if (donutAmount > 0) { // If its thats been picked up
+        if (donutAmount > 0) {
 
             if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
 
-                GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor(); // Opens door when all required donuts are picked up
+                GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor();
             }
         }
     }
 
     //-----------------------------------------------
+    // Called from Win Door when entered its trigger. Sets State, Pauses Game and sets which scene to load after fade out
 
     public void EnteredWinTrigger() {
 
@@ -427,12 +416,43 @@ public class GameManager : MonoBehaviour {
 
         PauseGame(false); // Pauses the game when getting the last donut
 
-        StartCoroutine(DelayBeforeGettingToWinScreen(5)); // Delay that ignores the pause
+        StartCoroutine(PauseDelayBeforeGettingToScreen(5, "WinScreen")); // Delay that ignores the pause
     }
 
     //-----------------------------------------------
+    // Win Screen. Called when after Loading Win Screen when Entered Win Trigger
 
-    IEnumerator DelayBeforeGettingToWinScreen (float delay) {
+    void WinScreen() {
+
+        gameState = GameState.AtWinScreen;
+    }
+
+    //-----------------------------------------------
+    // Lost Game. Sets state, pauses game and which screen to load after fade out.  CURRENTLY CALLED WHEN PRESSING K. 
+
+    public void LostGame() { // This code could be in the player char
+
+        gameState = GameState.LostGame;
+
+        PauseGame(false); // Pauses Game while playing death anim
+
+        // Play Death Animation
+
+        StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+    }
+
+    //-----------------------------------------------
+    // Lost Screen. Called when finished loading LoseScreen. 
+
+    void LostScreen() {
+
+        gameState = GameState.AtLoseScreen;
+    }
+
+    //-----------------------------------------------
+    // Delay before Unpausing and Fading Screen Out and unloading. 
+
+    IEnumerator PauseDelayBeforeGettingToScreen(float delay, string screenToGetLoad) {
 
         yield return new WaitForSecondsRealtime(delay);
 
@@ -440,15 +460,8 @@ public class GameManager : MonoBehaviour {
 
         SetScenesToUnload(level1);
 
-        SetScenesToLoad(new string[] { "WinScreen" });
+        SetScenesToLoad(new string[] { screenToGetLoad });
 
-        ScreenFade(false, .15f, Loading);
-    }
-
-    //-----------------------------------------------
-
-    void WinScreen() {
-
-        gameState = GameState.AtWinScreen;
+        ScreenFade(false, .15f, UnloadAndLoadScenes);
     }
 }

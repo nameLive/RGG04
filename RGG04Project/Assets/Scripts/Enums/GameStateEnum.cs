@@ -11,5 +11,7 @@ public enum GameState {
     LoadingToMenu,
     InGame,
     WonGame,
-    AtWinScreen
+    LostGame,
+    AtWinScreen,
+    AtLoseScreen
 }

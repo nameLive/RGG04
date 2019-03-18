@@ -3,36 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WinScreen : MonoBehaviour {
+public class LooseScreen : MonoBehaviour {
 
     GameManager gameManager;
 
     public Text scoreText;
 
 
-    //---------------------------------------
+    //--------------------------------------
 
     void Start() {
+
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         scoreText.text = "Total Score: " + gameManager.currentScore;
     }
 
-    //---------------------------------------
+    //--------------------------------------
 
-    public void ContinueButtonClicked() {
+    public void RetryButtonClicked() {
 
-        gameManager.SetScenesToUnload(new string[] { "WinScreen" });
+        gameManager.SetScenesToUnload(new string[] { "LoseScreen" });
+
+        gameManager.currentScore = 0;
 
         gameManager.StartGame();
     }
 
-    //---------------------------------------
+    //--------------------------------------
 
-    public void MainMenuButtonCliked() {
+    public void MainMenuButtonClicked() {
 
-        gameManager.SetScenesToUnload(new string[] { "WinScreen" });
+        gameManager.SetScenesToUnload(new string[] { "LoseScreen" });
 
         gameManager.BackToMenu();
     }
+
 }

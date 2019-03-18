@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WinScreen.unity
     guid: 59d88ac8990edf5448640067058dde02
   - enabled: 1
+    path: Assets/Scenes/LoseScreen.unity
+    guid: b5595ff0ef8ae5446bcf935e20415376
+  - enabled: 1
     path: Assets/Scenes/Antonia.unity
     guid: 378df211b69880645988c144734f0dd0
   - enabled: 1

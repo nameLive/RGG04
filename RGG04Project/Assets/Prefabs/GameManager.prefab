@@ -1107,6 +1107,4 @@ MonoBehaviour:
   levelsToLoadWhenDebug:
   - Level1_Geo
   - Level1_SetDressing
-  scenesToLoad: []
-  scenesToUnload: []
   isDebugging: 1
