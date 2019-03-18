@@ -5,6 +5,9 @@ using UnityEngine;
 public class PoliceEnemy : MonoBehaviour
 {
 
+    GameManager gameManager;
+
+
 	public bool isStunned = false;
 
 	//[SerializeField]
@@ -30,6 +33,9 @@ public class PoliceEnemy : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         targetPlayerLocation = GameObject.Find("PlayerFeet");
 
 		CalculateTargetPosition();
@@ -41,10 +47,13 @@ public class PoliceEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (isStunned) return;
+        if (gameManager.gameState != GameState.InPauseMenu && gameManager.gameState != GameState.WonGame) {
 
-		CalculateTargetPosition();
-		MoveTowardsPlayer();
+            if (isStunned) return;
+
+            CalculateTargetPosition();
+            MoveTowardsPlayer();
+        }
 	}
 
 	void StartStunState()

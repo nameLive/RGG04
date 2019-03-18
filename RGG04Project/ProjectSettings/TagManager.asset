@@ -9,6 +9,7 @@ TagManager:
   - HUD
   - DonutText
   - ScoreText
+  - WinDoor
   layers:
   - Default
   - TransparentFX
