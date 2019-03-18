@@ -267,7 +267,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 339774d5f23f4454bb0febc3aa8d4797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -392,11 +392,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064d210f486cc1a42a2840a647bc50bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageStunDuration: 0.5
   speed: 7
   horizontalKey: Horizontal
   facingRight: 0
-  jumpVelocity: 13
+  jumpVelocity: 10
   jumpKey: Jump
   playerSprite: {fileID: 1594158603047232377}
 --- !u!50 &1594158603801012286
@@ -532,7 +531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4500581724616163802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -10.2}
+  m_LocalPosition: {x: 0, y: 2.6, z: -10.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1594158603801012273}
@@ -562,8 +561,8 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 100
-  orthographic: 0
+  field of view: 60
+  orthographic: 1
   orthographic size: 6
   m_Depth: -1
   m_CullingMask:
@@ -653,10 +652,6 @@ PrefabInstance:
     - target: {fileID: 1108131024885738872, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 791173091, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 791173091, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}

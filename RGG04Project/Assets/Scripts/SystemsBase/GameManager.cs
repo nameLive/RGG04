@@ -287,13 +287,11 @@ public class GameManager : MonoBehaviour {
 
     void InGame() {
 
-        currentAmountOfDonutsPickedUp = 0;
-
         gameState = GameState.InGame;
 
         HUD.SetActive(true);
 
-        maxAmountOfCollectibles = GameObject.FindObjectsOfType<MajorDonut>().Length;
+        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MajorDonut>().Length;
 
         scoreText.text = "Score: " + currentScore;
         donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;

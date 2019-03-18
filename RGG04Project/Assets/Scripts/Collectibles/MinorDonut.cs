@@ -6,15 +6,9 @@ public class MinorDonut : CollectibleBase {
 
     GameManager gameManager;
 
-    bool hasBeenPickedUp;
-
-    Animator animator;
-
     void Start() {
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
-        animator = GetComponent<Animator>();
     }
     
     //Because this object only interacts with the player layer it will always and only ever be the player entering and triggering this event
@@ -22,16 +16,9 @@ public class MinorDonut : CollectibleBase {
 
         if (collision.tag == "Player") {
 
-            if (!hasBeenPickedUp) {
+            gameManager.IncreaseScore(scoreValue, 0);
 
-                hasBeenPickedUp = true;
-
-                gameManager.IncreaseScore(scoreValue, 0);
-
-                animator.SetBool("PickedUp", true);
-
-                StartCoroutine(DestroyAnim(.25f));
-            }
+            StartCoroutine(DestroyAnim(.25f));
         }
     }
 

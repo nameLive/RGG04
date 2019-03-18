@@ -47,7 +47,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("CanDoubleJump", canDoubleJump);
         anim.SetBool("IsFalling", isFalling);
         anim.SetBool("HasHammer", hammerState.hasHammer);
-        anim.SetBool("TakingDamage", isTakingDamage);
         
 
         float horizontal = Input.GetAxis(horizontalKey);
