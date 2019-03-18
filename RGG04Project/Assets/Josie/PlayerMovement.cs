@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     GameObject playerSprite;
     PlayerHammerState hammerState;
+    PlayerHealth playerHealth;
 
 
     public void Start()
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponentInChildren<Animator>();
         // playerSprite = GetComponent<SpriteRenderer>();
         hammerState = GetComponentInChildren<PlayerHammerState>();
+        playerHealth = GetComponentInChildren<PlayerHealth>();
     }
 
 
@@ -40,8 +42,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsFalling", isFalling);
         anim.SetBool("HasHammer", hammerState.hasHammer);
         
-        
-
 
         float horizontal = Input.GetAxis(horizontalKey);
         if (!Mathf.Approximately(horizontal, 0f))
@@ -67,8 +67,17 @@ public class PlayerMovement : MonoBehaviour
             isFalling = false;
         }
 
+        playerHealth.EventOnHealthDecreased += TookDamage;
     }
 
+  
+
+    void TookDamage()
+    {
+        anim.SetTrigger("GotDamaged");
+       // delay here (no idea how)
+        anim.ResetTrigger("GotDamaged");
+    }
 
     private void Move(float horizontal)
     {
