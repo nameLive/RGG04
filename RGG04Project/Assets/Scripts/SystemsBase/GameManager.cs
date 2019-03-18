@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private int minAmountOfCollectiblesRequired = 1;
 
+    private bool hasPickedUpMinimum;
+
     [SerializeField]
     private int maxAmountOfCollectibles = 0;
 
@@ -283,7 +285,11 @@ public class GameManager : MonoBehaviour {
 
         HUD.SetActive(true);
 
-        maxAmountOfCollectibles += GameObject.FindObjectsOfType<MajorDonut>().Length;
+        hasPickedUpMinimum = false;
+
+        currentAmountOfDonutsPickedUp = 0;
+
+        maxAmountOfCollectibles = GameObject.FindObjectsOfType<MajorDonut>().Length;
 
         scoreText.text = "Score: " + currentScore;
         donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
@@ -400,7 +406,14 @@ public class GameManager : MonoBehaviour {
 
             if (currentAmountOfDonutsPickedUp >= minAmountOfCollectiblesRequired) {
 
-                GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor();
+                if (!hasPickedUpMinimum) {
+
+                    GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor();
+
+                    hasPickedUpMinimum = true;
+                }
+
+                
             }
         }
     }

@@ -6,12 +6,18 @@ public class MajorDonut : CollectibleBase {
 
     GameManager gameManager;
 
+    bool hasBeenPickedUp;
+
+    Animator animator;
+
 
     //------------------------------------------------
 
     void Start() {
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+        animator = GetComponent<Animator>();
     }
 
     //------------------------------------------------
@@ -21,32 +27,20 @@ public class MajorDonut : CollectibleBase {
 
         if (collision.tag == "Player") {
 
-            gameManager.IncreaseScore(scoreValue, 1);
+            if (!hasBeenPickedUp) {
 
-            StartCoroutine(DestroyAnim(.5f));
+                hasBeenPickedUp = true;
+
+                gameManager.IncreaseScore(scoreValue, 1);
+
+                animator.SetBool("PickedUp", true);
+            }
         }
     }
 
     //------------------------------------------------
-    // Lerps the scale down to 0 over a period of time
 
-    IEnumerator DestroyAnim(float scaleTime) {
-
-        Vector3 originalScale = gameObject.transform.localScale;
-
-        Vector3 targetScale = new Vector3(0, 0, 0);
-
-        float currentTime = 0;
-
-        do {
-            gameObject.transform.localScale = Vector3.Lerp(originalScale, targetScale, currentTime / scaleTime);
-
-            currentTime += Time.deltaTime;
-
-            yield return null;
-        }
-
-        while (currentTime <= scaleTime);
+    public void PickedUpFinished() {
 
         Destroy(gameObject);
     }
