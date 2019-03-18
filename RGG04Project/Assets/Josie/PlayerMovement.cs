@@ -7,6 +7,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator anim;
 
+    bool isTakingDamage = false;
+    [Tooltip("When the player takes damage this is the duration of not being able to move")]
+    public float damageStunDuration = 0.5f;
+
     public float speed = 1f;
     public string horizontalKey = "Horizontal";
     public bool facingRight;
@@ -21,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     GameObject playerSprite;
     PlayerHammerState hammerState;
+    PlayerHealth playerHealth;
 
 
     public void Start()
@@ -29,6 +34,9 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponentInChildren<Animator>();
         // playerSprite = GetComponent<SpriteRenderer>();
         hammerState = GetComponentInChildren<PlayerHammerState>();
+        playerHealth = GetComponentInChildren<PlayerHealth>();
+
+        playerHealth.EventOnHealthDecreased += TookDamage;
     }
 
 
@@ -40,8 +48,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsFalling", isFalling);
         anim.SetBool("HasHammer", hammerState.hasHammer);
         
-        
-
 
         float horizontal = Input.GetAxis(horizontalKey);
         if (!Mathf.Approximately(horizontal, 0f))
@@ -67,11 +73,30 @@ public class PlayerMovement : MonoBehaviour
             isFalling = false;
         }
 
+      
     }
 
+  
+
+    void TookDamage()
+    {
+        isTakingDamage = true;
+        anim.SetTrigger("GotDamaged");
+       // delay here (no idea how)
+        anim.ResetTrigger("GotDamaged");
+
+        Invoke("StoppedTakingDamage", 0.5f);
+    }
+
+    void StoppedTakingDamage()
+    {
+        isTakingDamage = false;
+    }
 
     private void Move(float horizontal)
     {
+        if (isTakingDamage) return;
+
         transform.Translate(horizontal * speed * Time.deltaTime, 0f, 0f);
         // Vector2 position = transform.position;
         // transform.position = position;
@@ -93,6 +118,8 @@ public class PlayerMovement : MonoBehaviour
     #region JUMPING
     private void Jump()
     {
+        if (isTakingDamage) return;
+
         if (grounded)
         {
             rb2d.AddForce(Vector2.up * jumpVelocity, ForceMode2D.Impulse);

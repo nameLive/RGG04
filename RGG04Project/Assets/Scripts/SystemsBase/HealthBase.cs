@@ -29,9 +29,9 @@ public class HealthBase : MonoBehaviour
 		EventOnHealthDecreased += OnHealthDecreased;
 	}
 
-	public virtual void DecreaseHealth(int Amount)
+	public virtual bool DecreaseHealth(int Amount)
 	{
-		if (!canTakeDamage) return; 
+		if (!canTakeDamage) return false; 
 
 		currentHealth -= Mathf.Abs(Amount);
 		EventOnHealthDecreased();
@@ -40,6 +40,8 @@ public class HealthBase : MonoBehaviour
 			EventOnDeath();
 			canTakeDamage = false;
 		}
+
+        return true;
 	}
 
 	public virtual void IncreaseHealth(int Amount)

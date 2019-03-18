@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Damager : MonoBehaviour
 {
-	public bool canDealDamage = true;
+    public bool canDealDamage = true;
 
-	[SerializeField]
-	[Tooltip("This is the damage it deals at the interval of \"DamageInterval\" ")]
-	int damageAmount = 1;
+    [SerializeField]
+    [Tooltip("This is the damage it deals at the interval of \"DamageInterval\" ")]
+    int damageAmount = 1;
 
-	[SerializeField]
-	[Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
-	float damageInterval = 1f;
+    [SerializeField]
+    [Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
+    float damageInterval = 1f;
 
-	HealthBase targetHealth;
+    HealthBase targetHealth;
 
-	[SerializeField]
-	[Tooltip("This is the collider that checks for damageable objects")]
-	Collider2D colliderReference;
+    [SerializeField]
+    [Tooltip("This is the collider that checks for damageable objects")]
+    Collider2D colliderReference;
 
     GameObject damagedObject;
 
@@ -26,48 +26,58 @@ public class Damager : MonoBehaviour
     public event DidDamage EventOnDidDamage;
 
 
-    private void Start()
+    protected void Start()
     {
         EventOnDidDamage += EventOnDidDamagePlaceholder;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-	{
+    {
         //Debug.Log("Overlapped Thing: " + collision.gameObject.name);
         damagedObject = collision.gameObject;
 
-		targetHealth = damagedObject.GetComponent<HealthBase>();
-		if (targetHealth)
-		{
-			DealDamage();
-			DeactivateCollider();
-			Invoke("ActivateCollider", damageInterval);
-			//Debug.Log("Overlapped Component with health comp: " + collision.gameObject.name);
+        targetHealth = damagedObject.GetComponent<HealthBase>();
+        if (targetHealth)
+        {
+            DealDamage();
+            DeactivateCollider();
+            Invoke("ActivateCollider", damageInterval);
+            //Debug.Log("Overlapped Component with health comp: " + collision.gameObject.name);
 
-		}
-	}
+        }
+    }
 
-	void DealDamage()
-	{
-		if (canDealDamage)
-		{
-			targetHealth.DecreaseHealth(damageAmount);
-            EventOnDidDamage(damagedObject);
-		}
-	}
+    void DealDamage()
+    {
+        if (canDealDamage)
+        {
+            bool dealtDamage = targetHealth.DecreaseHealth(damageAmount);
 
-	public void ActivateCollider()
-	{
-		if (canDealDamage)
-		{
-			colliderReference.enabled = true;
-		}
-	}
+            if (dealtDamage)
+            {
+                if (damagedObject)
+                {
 
-	public void DeactivateCollider()
-	{
-		colliderReference.enabled = false;
-	}
+                    EventOnDidDamage(damagedObject);
+                }
+            }
+
+
+        }
+    }
+
+    public void ActivateCollider()
+    {
+        if (canDealDamage)
+        {
+            colliderReference.enabled = true;
+        }
+    }
+
+    public void DeactivateCollider()
+    {
+        colliderReference.enabled = false;
+    }
 
     void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
     {

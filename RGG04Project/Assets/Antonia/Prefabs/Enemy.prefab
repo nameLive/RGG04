@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 632926985}
   - component: {fileID: 632926987}
   - component: {fileID: 447095941}
+  - component: {fileID: 1653639985}
   m_Layer: 11
   m_Name: DamagerComponent
   m_TagString: Untagged
@@ -124,6 +125,20 @@ MonoBehaviour:
   spriteToAffect: {fileID: 7059283427762787458}
   stunColor: {r: 1, g: 1, b: 1, a: 0.40392157}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &1653639985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865607646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad1c92b669fe79443ba85ad52d0dd21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushBackStrengthRight: 500
+  pushBackStrengthUp: 500
 --- !u!1 &7059283427762787459
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +233,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isStunned: 0
-  targetPlayerLocation: {fileID: 0}
   maxDistanceToPlayer: 20
   movementSpeed: 0.03
