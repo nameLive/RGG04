@@ -40,9 +40,19 @@ public class HealthBase : MonoBehaviour
 			EventOnDeath();
 			canTakeDamage = false;
 		}
+        else
+        {
+            canTakeDamage = false;
+            Invoke("CanTakeDamageReset", 1f);
+        }
 
         return true;
 	}
+
+    void CanTakeDamageReset()
+    {
+        canTakeDamage = true;
+    }
 
 	public virtual void IncreaseHealth(int Amount)
 	{

@@ -68,9 +68,9 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (!hammerState)
 		{
+            Debug.Log("Start Hammer state");
 			hammerState = true;
 			damager.canDealDamage = true;
-			damager.ActivateCollider();
 			hammerSprite.enabled = true;
             hasHammer = true; 
 		}
@@ -80,9 +80,9 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (hammerState)
 		{
+            Debug.Log("End hammer state");
 			hammerState = false;
 			damager.canDealDamage = false;
-			damager.DeactivateCollider();
 			hammerSprite.enabled = false;
             hasHammer = false;
 		}

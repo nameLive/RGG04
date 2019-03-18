@@ -12,7 +12,7 @@ public class Damager : MonoBehaviour
 
     [SerializeField]
     [Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
-    float damageInterval = 1f;
+    float damageInterval = 0.1f;
 
     HealthBase targetHealth;
 
@@ -31,19 +31,64 @@ public class Damager : MonoBehaviour
         EventOnDidDamage += EventOnDidDamagePlaceholder;
     }
 
+    /*
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            Debug.Log("Overlapped Thing: " + collision.gameObject.name);
+            damagedObject = collision.gameObject;
+
+            targetHealth = damagedObject.GetComponent<HealthBase>();
+            if (targetHealth)
+            {
+                DealDamage();
+                DeactivateCollider();
+                Invoke("ActivateCollider", damageInterval);
+                Debug.Log("Overlapped Component with health comp: " + collision.gameObject.name);
+
+            }
+        }*/
+
+/*
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Overlapped Thing: " + collision.gameObject.name);
-        damagedObject = collision.gameObject;
 
-        targetHealth = damagedObject.GetComponent<HealthBase>();
+        StartCoroutine("DealDamageThing");
+    }
+
+    int myInt = 0;
+
+    IEnumerator DealDamageThing()
+    {
+        while (true)
+        {
+            Debug.Log("Damage Coroutine");
+            myInt++;
+            if (myInt >= 10)
+            {
+                StopCoroutine("DealDamageThing");
+            }
+            else
+            {
+                yield return new WaitForSeconds(damageInterval);
+
+            }
+        }
+    }*/
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.gameObject != damagedObject)
+        {
+
+            damagedObject = collision.gameObject;
+            targetHealth = damagedObject.GetComponent<HealthBase>();
+        }
+
         if (targetHealth)
         {
             DealDamage();
-            DeactivateCollider();
-            Invoke("ActivateCollider", damageInterval);
-            //Debug.Log("Overlapped Component with health comp: " + collision.gameObject.name);
-
         }
     }
 
@@ -51,33 +96,18 @@ public class Damager : MonoBehaviour
     {
         if (canDealDamage)
         {
-            bool dealtDamage = targetHealth.DecreaseHealth(damageAmount);
-
-            if (dealtDamage)
+            //Debug.Log("Deals Damage");
+            if (targetHealth.DecreaseHealth(damageAmount))
             {
-                if (damagedObject)
-                {
 
-                    EventOnDidDamage(damagedObject);
-                }
+                EventOnDidDamage(damagedObject);
+
             }
 
 
         }
     }
 
-    public void ActivateCollider()
-    {
-        if (canDealDamage)
-        {
-            colliderReference.enabled = true;
-        }
-    }
-
-    public void DeactivateCollider()
-    {
-        colliderReference.enabled = false;
-    }
 
     void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
     {

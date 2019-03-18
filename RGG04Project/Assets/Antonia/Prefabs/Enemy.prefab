@@ -15,8 +15,10 @@ GameObject:
   - component: {fileID: 632926987}
   - component: {fileID: 447095941}
   - component: {fileID: 1653639985}
+  - component: {fileID: 1653639986}
+  - component: {fileID: 1653639987}
   m_Layer: 11
-  m_Name: DamagerComponent
+  m_Name: EnemyComponents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,15 +54,15 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.25, y: 1.2}
+  m_Size: {x: 3, y: 1.2}
   m_EdgeRadius: 0
 --- !u!114 &632926986
 MonoBehaviour:
@@ -104,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f838e72529358954885b0d750f8871fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteToAffect: {fileID: 7059283427762787458}
+  spriteToAffect: {fileID: 1653639986}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   damageColor: {r: 0.4339623, g: 0, b: 0, a: 1}
   blinkSpeed: 0.2
@@ -122,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stunDuration: 3
-  spriteToAffect: {fileID: 7059283427762787458}
-  stunColor: {r: 1, g: 1, b: 1, a: 0.40392157}
+  spriteToAffect: {fileID: 1653639986}
+  stunColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 0.40392157}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1653639985
 MonoBehaviour:
@@ -139,46 +141,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushBackStrengthRight: 500
   pushBackStrengthUp: 500
---- !u!1 &7059283427762787459
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7059283427762787457}
-  - component: {fileID: 7059283427762787458}
-  - component: {fileID: 7059283427762787583}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7059283427762787457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7059283427762787459}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.6, y: 4.670081, z: -1.0515625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 865607647}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7059283427762787458
+--- !u!212 &1653639986
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7059283427762787459}
+  m_GameObject: {fileID: 865607646}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -214,12 +183,59 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1653639987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865607646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3451a55680cc513429b1fa355e66f31c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldBob: 1
+  bobMagnitude: 0.25
+  bobSpeed: 2.5
+--- !u!1 &7059283427762787459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7059283427762787457}
+  - component: {fileID: 7059283427762787583}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7059283427762787457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7059283427762787459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 45.6, y: 4.670081, z: -1.0515625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 865607647}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7059283427762787583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,6 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dbe6a135320d4844a0cd0f72c820246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStunned: 0
-  maxDistanceToPlayer: 20
   movementSpeed: 0.03
+  maxDistanceToPlayer: 20
+  minDistanceToPlayer: 5

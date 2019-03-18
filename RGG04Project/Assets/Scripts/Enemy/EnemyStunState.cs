@@ -41,7 +41,7 @@ public class EnemyStunState : MonoBehaviour
 		EventOnBeginStun();
 		Debug.Log("Enter Stun State");
 		spriteToAffect.color = stunColor;
-		damager.DeactivateCollider();
+
 		damager.canDealDamage = false;
 		Invoke("EndStun", stunDuration);
 	}
@@ -52,7 +52,6 @@ public class EnemyStunState : MonoBehaviour
 		Debug.Log("Exit Stun State");
 		spriteToAffect.color = normalColor;
 		damager.canDealDamage = true;
-		damager.ActivateCollider();
 	}
 
 

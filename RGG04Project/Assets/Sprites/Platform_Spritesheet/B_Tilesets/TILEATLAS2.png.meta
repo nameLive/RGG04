@@ -1,0 +1,2427 @@
+fileFormatVersion: 2
+guid: 758f91db931ffed498bcb368320551b6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TILEATLAS2_0
+    21300002: TILEATLAS2_1
+    21300004: TILEATLAS2_2
+    21300006: TILEATLAS2_3
+    21300008: TILEATLAS2_4
+    21300010: TILEATLAS2_5
+    21300012: TILEATLAS2_6
+    21300014: TILEATLAS2_7
+    21300016: TILEATLAS2_8
+    21300018: TILEATLAS2_9
+    21300020: TILEATLAS2_10
+    21300022: TILEATLAS2_11
+    21300024: TILEATLAS2_12
+    21300026: TILEATLAS2_13
+    21300028: TILEATLAS2_14
+    21300030: TILEATLAS2_15
+    21300032: TILEATLAS2_16
+    21300034: TILEATLAS2_17
+    21300036: TILEATLAS2_18
+    21300038: TILEATLAS2_19
+    21300040: TILEATLAS2_20
+    21300042: TILEATLAS2_21
+    21300044: TILEATLAS2_22
+    21300046: TILEATLAS2_23
+    21300048: TILEATLAS2_24
+    21300050: TILEATLAS2_25
+    21300052: TILEATLAS2_26
+    21300054: TILEATLAS2_27
+    21300056: TILEATLAS2_28
+    21300058: TILEATLAS2_29
+    21300060: TILEATLAS2_30
+    21300062: TILEATLAS2_31
+    21300064: TILEATLAS2_32
+    21300066: TILEATLAS2_33
+    21300068: TILEATLAS2_34
+    21300070: TILEATLAS2_35
+    21300072: TILEATLAS2_36
+    21300074: TILEATLAS2_37
+    21300076: TILEATLAS2_38
+    21300078: TILEATLAS2_39
+    21300080: TILEATLAS2_40
+    21300082: TILEATLAS2_41
+    21300084: TILEATLAS2_42
+    21300086: TILEATLAS2_43
+    21300088: TILEATLAS2_44
+    21300090: TILEATLAS2_45
+    21300092: TILEATLAS2_46
+    21300094: TILEATLAS2_47
+    21300096: TILEATLAS2_48
+    21300098: TILEATLAS2_49
+    21300100: TILEATLAS2_50
+    21300102: TILEATLAS2_51
+    21300104: TILEATLAS2_52
+    21300106: TILEATLAS2_53
+    21300108: TILEATLAS2_54
+    21300110: TILEATLAS2_55
+    21300112: TILEATLAS2_56
+    21300114: TILEATLAS2_57
+    21300116: TILEATLAS2_58
+    21300118: TILEATLAS2_59
+    21300120: TILEATLAS2_60
+    21300122: TILEATLAS2_61
+    21300124: TILEATLAS2_62
+    21300126: TILEATLAS2_63
+    21300128: TILEATLAS2_64
+    21300130: TILEATLAS2_65
+    21300132: TILEATLAS2_66
+    21300134: TILEATLAS2_67
+    21300136: TILEATLAS2_68
+    21300138: TILEATLAS2_69
+    21300140: TILEATLAS2_70
+    21300142: TILEATLAS2_71
+    21300144: TILEATLAS2_72
+    21300146: TILEATLAS2_73
+    21300148: TILEATLAS2_74
+    21300150: TILEATLAS2_75
+    21300152: TILEATLAS2_76
+    21300154: TILEATLAS2_77
+    21300156: TILEATLAS2_78
+    21300158: TILEATLAS2_79
+    21300160: TILEATLAS2_80
+    21300162: TILEATLAS2_81
+    21300164: TILEATLAS2_82
+    21300166: TILEATLAS2_83
+    21300168: TILEATLAS2_84
+    21300170: TILEATLAS2_85
+    21300172: TILEATLAS2_86
+    21300174: TILEATLAS2_87
+    21300176: TILEATLAS2_88
+    21300178: TILEATLAS2_89
+    21300180: TILEATLAS2_90
+    21300182: TILEATLAS2_91
+    21300184: TILEATLAS2_92
+    21300186: TILEATLAS2_93
+    21300188: TILEATLAS2_94
+    21300190: TILEATLAS2_95
+    21300192: TILEATLAS2_96
+    21300194: TILEATLAS2_97
+    21300196: TILEATLAS2_98
+    21300198: TILEATLAS2_99
+    21300200: TILEATLAS2_100
+    21300202: TILEATLAS2_101
+    21300204: TILEATLAS2_102
+    21300206: TILEATLAS2_103
+    21300208: TILEATLAS2_104
+    21300210: TILEATLAS2_105
+    21300212: TILEATLAS2_106
+    21300214: TILEATLAS2_107
+    21300216: TILEATLAS2_108
+    21300218: TILEATLAS2_109
+    21300220: TILEATLAS2_110
+    21300222: TILEATLAS2_111
+    21300224: TILEATLAS2_112
+    21300226: TILEATLAS2_113
+    21300228: TILEATLAS2_114
+    21300230: TILEATLAS2_115
+    21300232: TILEATLAS2_116
+    21300234: TILEATLAS2_117
+    21300236: TILEATLAS2_118
+    21300238: TILEATLAS2_119
+    21300240: TILEATLAS2_120
+    21300242: TILEATLAS2_121
+    21300244: TILEATLAS2_122
+    21300246: TILEATLAS2_123
+    21300248: TILEATLAS2_124
+    21300250: TILEATLAS2_125
+    21300252: TILEATLAS2_126
+    21300254: TILEATLAS2_127
+    21300256: TILEATLAS2_128
+    21300258: TILEATLAS2_129
+    21300260: TILEATLAS2_130
+    21300262: TILEATLAS2_131
+    21300264: TILEATLAS2_132
+    21300266: TILEATLAS2_133
+    21300268: TILEATLAS2_134
+    21300270: TILEATLAS2_135
+    21300272: TILEATLAS2_136
+    21300274: TILEATLAS2_137
+    21300276: TILEATLAS2_138
+    21300278: TILEATLAS2_139
+    21300280: TILEATLAS2_140
+    21300282: TILEATLAS2_141
+    21300284: TILEATLAS2_142
+    21300286: TILEATLAS2_143
+    21300288: TILEATLAS2_144
+    21300290: TILEATLAS2_145
+    21300292: TILEATLAS2_146
+    21300294: TILEATLAS2_147
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TILEATLAS2_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6da31af1e1e9174c91038a7b15d08cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0c457c1acf4394faa411c93a8cff4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b06bb8ef8ea96840b89b4d10879a5c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363055a8b5ed8b2499be6b71f54855c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d760d70a9ef94459b4aecaf808280c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1544e2b543e4847be6afa549771b5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a12a500e189c88449f11f24b177e3e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d185e8201216f94884acfbce8877e0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03aefdb07ee66924f8e139ec16438aa7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1107c44a50f0f214c95dca1ad5471c50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e6e9611ca53df43a247cb796dcf117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7092c144de0660439341136dd95d9b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480f20b3827c7224c8ddec8fc94d63b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_18
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5f995f172fdb44281c0909a0df4376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_19
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd64a00d1aaa0344a96a27eb4a34b367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_20
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bb32e76b771d64c919a86c21c0934e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_21
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2756
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7023083d4d28474ca7ad0170c17d476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_22
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 2739
+        width: 160
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c74dcb04bead54f8ece2e3d17542c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_23
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 2758
+        width: 220
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6329bc1bdd4dfa46bd0b01d29a1d490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_25
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0863d133989aa1647b1c3326a191d343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_26
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2758
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4da4d2f96c247042b11e9990111f6e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8498646f6fa868243b986f6b937791e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01d2eef9ec5ab8418899dfccfc56e14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69721684b465bfb439a6fbb44e69d769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1382b08372aebde4ca323c0288afe488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_31
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490e1e1c9f4afdd4789eb4657c2422bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f89b1bb67948a0429d8cbde489c58ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_33
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578d88a84f7057844a7bda0ab035d875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_34
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c285ac65c5d584c815059ec5bf15d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_35
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2502
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0466e1b8e0b8d439d764ccf4d3a4fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_37
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 2272
+        width: 106
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d37a47576c06544a0a6eebad36fb83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_38
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2272
+        width: 256
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dd5e52ba3718d4c98e4b5efcbb19ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_39
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2272
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84151786abe152b4ba53b3eb315a765a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_40
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 2246
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00285ed8d2fca3448063a46a1d4cee0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_41
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 2246
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2dea50e814467e46a3a4e5ea782d63c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_42
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 2246
+        width: 170
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e39a98ccc84944f8caaca1a5e72701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0120486d5c87645890a61ef121d574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc211c51eeca61a4480a178b433227e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90afde0f993ece34c88b338ed47e4685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_47
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98578032c2f27d74a8104306ae7544c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f846f26bcea324b4485bc4b328bc813d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_49
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1990
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4075e691688c5bf4da13a11ed8290080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_50
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1992
+        width: 256
+        height: 254
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddc6a0b2acb4f049b3b255c9a2bdf76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_51
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1992
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21d94c15bac1914db0789772af1b030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1992
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bd7aebb40431c40b5115c3321f9ea5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a426a9f9eab7f8741bc0bebb4565af7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815d9491d4cc8bf47b8a3609089b7b6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_59
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d67d23222a2d449a14bc003ba797d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b832da6e522f5a49a6ba7051256449b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_61
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254aebeb4dc46b24eb769c7a2541a375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1734
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f2046daeac8aa4da1693723d63b61f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_63
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1738
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c3a28efc2d3a147a36522b858dfa28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_64
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1738
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e822ae6241deb440aeb20f467a6dcd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_65
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1738
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1feb04f44e3cfec4db7bb6541c3e51b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_66
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 1734
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffccb5602bda168498f095ea8ba45bb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_67
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 1734
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad971e1517dd1a24f8fb7b9f344b7309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_68
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 1734
+        width: 135
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e559360fe0f90498f66cfc0585ccfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025a6f80c8aa04f41ad8b3f42759d339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36123e6f1cd664d4da79345f61c5d29c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_71
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2a7c450c8653246b4bb45c0cb99e7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461c2855eb8fa794a92068af2980f18e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_73
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f123bc905761299498c88d50668bbd8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_74
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791c88a32ad83f243970eb9a13ce54a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_75
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1486
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4266f34f993da0b439562b86a2f26378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_76
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1486
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babab9dbbadbbc54393a734147324730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_77
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1486
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4946ddc786045aa4eae6ce16b754c84e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_79
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e65129c4a7b446b0a4c91210214ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_80
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f47ffe96bd4dfb45a23179ca8841a91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_81
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 1478
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cf60a7272ef594b9fbd7e86b85ae60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_88
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1232
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68df44e27aaf1d4c818fd42fea44d4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_89
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1232
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400cef03a10abb0499f022fde1debdd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_90
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1232
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a36b5d771fdba249a281e8dc41935d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 962
+        width: 256
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a67bb9f2e18e334eb8043a1c2acc008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 962
+        width: 256
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518af4ec57f856f44a6ba49f0ece6fbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_97
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 962
+        width: 256
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1303e708870cb44b9ca772741947a06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_98
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 978
+        width: 256
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d152a79a7f89e458413ff11fe48d22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_99
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 978
+        width: 256
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c570080f07d4004ab80775ac9ac1c30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 978
+        width: 256
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46600bdf31edd864095f8d265c166656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_101
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 978
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edcfeaa92274a84884282f2883dcc16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_102
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 978
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83d3e8b145b7234eb3056f6bb512f2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_103
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 978
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a603ca2daf3444fb7e6e8162ae955f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 708
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79ec241566f1ec4c982bc6f09c09768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_109
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 708
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fb9da07d207764bb27db522e9f6d31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_110
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 708
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1aa281900a40d34ab9a2681edcefbc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_111
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 724
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e40118d20429d42b68bee853e20229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_112
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 724
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1ff07fc119b3f43934f53639a58495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_113
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 724
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daea0c8258cedde4c881f96dc733d97b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_114
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 709
+        width: 256
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b726fe05e9f894e8bb24ab0fe50dff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_115
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 710
+        width: 256
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44ec3b007ea80b46913ef3dec228165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_116
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 710
+        width: 256
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6968fdea8e1cc24a86834e5fb960265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_117
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 710
+        width: 270
+        height: 538
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c0da0912e09244a79328735e269f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 454
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3418ea18fd118bd48976f1615efd6640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_122
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 454
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d89ddd8d18bf734fb81ed7d87e3b473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_123
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 454
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427f9bc3a7f80964da402f88f7e4ab58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_124
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 455
+        width: 256
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1853f813311eb43a19decb842a8054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_125
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 454
+        width: 256
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70cc5e5e6d342e8479151abd0781e675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_126
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 454
+        width: 256
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014ad143902c62841b1f712f49bf67f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_132
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 438
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1190ed0f7830ef84ab4620de384f4c5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_137
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 29
+        width: 291
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b4ee0c65433164eb96a6a1104819e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_138
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 22
+        width: 291
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e75748ee6e357d44b6e3ab675017918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_139
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 22
+        width: 292
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b1369dd058b7242a839146dbeed55b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_140
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 22
+        width: 291
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3daa0f8a2da6de4b93032cdff5db79a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_142
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 29
+        width: 291
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf185289a9857b54cae87ad1c6742be2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_143
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 32
+        width: 291
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b791554106a22c49b0a0314a3fdc452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_144
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 32
+        width: 291
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ccc9de5413cf542a02388c32aa28c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_146
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 32
+        width: 291
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1667800b56a54ce4d9fc07695781ddcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_9
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 710
+        width: 240
+        height: 538
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c044f43545bcd489f8657dfe8659cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_10
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 710
+        width: 245
+        height: 538
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b2d0121817e841997cf61d56b0620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILEATLAS2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3010
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8382030e800c08d4f814d2586db16cfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 73c11ea6eec8c704899bdc6ca8e574ed
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
