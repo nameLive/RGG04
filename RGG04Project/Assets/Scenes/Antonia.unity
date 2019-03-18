@@ -1149,11 +1149,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 1594158603801012274, guid: 9e486642f49f2ba45947f4084306c11d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1594158603801012273, guid: 9e486642f49f2ba45947f4084306c11d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1208,19 +1203,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2079646842, guid: 9e486642f49f2ba45947f4084306c11d, type: 3}
-      propertyPath: m_Name
-      value: EnemyTargetLocation
-      objectReference: {fileID: 0}
-    - target: {fileID: 1594158603801012287, guid: 9e486642f49f2ba45947f4084306c11d,
-        type: 3}
-      propertyPath: jumpVelocity
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1837868787, guid: 9e486642f49f2ba45947f4084306c11d, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e486642f49f2ba45947f4084306c11d, type: 3}
