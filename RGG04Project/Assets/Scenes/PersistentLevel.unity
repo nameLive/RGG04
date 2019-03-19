@@ -251,6 +251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1972533270677297499, guid: 6475fba23952efc479d2344c1edbd96a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6501253266904480202, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -309,7 +314,12 @@ PrefabInstance:
     - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
       propertyPath: isDebugging
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
+        type: 3}
+      propertyPath: minAmountOfCollectiblesRequired
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1120256360, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
       propertyPath: m_LocalPosition.z

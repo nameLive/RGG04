@@ -103,17 +103,26 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontal > 0 && !facingRight)
         {
-            playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
+            //playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
+            Flip();
             facingRight = true;
         }
 
         else if (horizontal < 0 && facingRight)
         {
-            playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
+            //playerSprite.transform.localScale = new Vector2(playerSprite.transform.localScale.x * -1, transform.localScale.y);
+            Flip();
             facingRight = false;
         }
     }
 
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
 
     #region JUMPING
     private void Jump()
