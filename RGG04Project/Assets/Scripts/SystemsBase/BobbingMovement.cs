@@ -23,6 +23,12 @@ public class BobbingMovement : MonoBehaviour
     protected void Start()
     {
         endBobLocation.y = -bobMagnitude;
+		if (shouldBob)
+		{
+			shouldBob = false;
+			float rand = Random.Range(0f, 2f);
+			Invoke("SetShouldBob", rand);
+		}
     }
 
     // Update is called once per frame
@@ -33,6 +39,11 @@ public class BobbingMovement : MonoBehaviour
             BobbingMovementFunction();
         }
     }
+
+	private void SetShouldBob()
+	{
+		shouldBob = true;
+	}
 
     private void BobbingMovementFunction()
     {

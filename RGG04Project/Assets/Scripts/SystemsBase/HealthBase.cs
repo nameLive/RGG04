@@ -6,6 +6,9 @@ public class HealthBase : MonoBehaviour
 {
 	public bool canTakeDamage = true;
 
+	[Tooltip("After damage is taken you become \"Invincible\" and can't take damage for this duration")]
+	float takeDamageInterval = 1.5f;
+
 	[SerializeField]
 	protected int maxHealth = 5;
 

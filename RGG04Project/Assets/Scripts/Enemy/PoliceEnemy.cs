@@ -102,8 +102,12 @@ public class PoliceEnemy : MonoBehaviour
     //Intended for internal use only
     private void SetState(PatrolingPoliceStateEnum NewState)
     {
+		if (currentState == NewState) return;
+
         previousState = currentState;
         currentState = NewState;
+
+		Debug.Log("New State: " + currentState + " Previous State: " + previousState);
     }
 
     public void SetStateChasePlayer()
