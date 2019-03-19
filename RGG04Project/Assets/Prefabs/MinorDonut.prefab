@@ -74,6 +74,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibleType: 2
   scoreValue: 5
+  spawnPoints: {fileID: 8512635833094708590, guid: 12cbc02ad31607f41b9d7c1f9dfeb5af,
+    type: 3}
 --- !u!212 &7212275348709083879
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private Text scoreText;
+
+    public Image arrow;
+
+    private GameObject winDoor;
     
     public int currentScore = 0;
 
@@ -89,7 +93,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Input
+    // Input for Pause Menu
 
     void Update() {
 
@@ -103,10 +107,35 @@ public class GameManager : MonoBehaviour {
                 PauseGame(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.K)) { // TODO TA BORT SEN
+        //if (hasPickedUpMinimum) {
 
-            LostGame();
-        }
+        //arrow.GetComponent<RectTransform>().LookAt(winDoor.transform);
+        //}
+
+        /*Vector3 arrowPos = arrow.transform.position;
+
+        Vector3 target = winDoor.transform.position;
+
+        arrow.transform.rotation = Quaternion.LookRotation(arrowPos - target, arrow.transform.forwa);
+
+        */
+        /*
+        Vector3 dir;
+
+        float angle;
+
+        Vector3 v = winDoor.transform.position;
+
+        v.z = 0;
+
+        arrow.transform.LookAt(arrow.transform.position + arrow.transform.forward, v);
+        */
+       // dir = winDoor.transform.position - arrow.transform.position;
+
+        //angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+
+        //arrow.transform.eulerAngles = new Vector3(0, 0, angle);
+
     }
 
     //-----------------------------------------------
@@ -281,6 +310,8 @@ public class GameManager : MonoBehaviour {
 
     void InGame() {
 
+        winDoor = GameObject.FindGameObjectWithTag("WinDoor");
+
         gameState = GameState.InGame;
 
         HUD.SetActive(true);
@@ -408,12 +439,10 @@ public class GameManager : MonoBehaviour {
 
                 if (!hasPickedUpMinimum) {
 
-                    GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor();
+                    winDoor.GetComponent<WinDoor>().OpenDoor();
 
                     hasPickedUpMinimum = true;
                 }
-
-                
             }
         }
     }
@@ -442,14 +471,17 @@ public class GameManager : MonoBehaviour {
     // Lost Game. Sets state, pauses game and which screen to load after fade out.  CURRENTLY CALLED WHEN PRESSING K. 
 
     public void LostGame() { // This code could be in the player char
+        
+        if (gameState != GameState.LostGame) {
 
-        gameState = GameState.LostGame;
+            gameState = GameState.LostGame;
 
-        PauseGame(false); // Pauses Game while playing death anim
+            PauseGame(false); // Pauses Game while playing death anim
 
-        // Play Death Animation
+            // Play Death Animation
 
-        StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+            StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+        }
     }
 
     //-----------------------------------------------

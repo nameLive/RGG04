@@ -10,6 +10,9 @@ public class MinorDonut : CollectibleBase {
 
     Animator animator;
 
+    [SerializeField]
+    private GameObject spawnPoints;
+
     void Start() {
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -29,6 +32,9 @@ public class MinorDonut : CollectibleBase {
                 gameManager.IncreaseScore(scoreValue, 0);
 
                 //animator.SetBool("PickedUp", true);
+
+                GameObject spawnedPointTemp = Instantiate(spawnPoints, transform.position, Quaternion.identity);
+                spawnedPointTemp.GetComponent<SpawnedPoints>().scoreAmount = scoreValue;
 
                 StartCoroutine(DestroyAnim(.25f));
             }
