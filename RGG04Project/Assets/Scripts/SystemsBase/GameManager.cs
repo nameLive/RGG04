@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //-----------------------------------------------
-    // Input
+    // Input for Pause Menu
 
     void Update() {
 
@@ -101,11 +101,6 @@ public class GameManager : MonoBehaviour {
 
             else if (gameState == GameState.InPauseMenu)
                 PauseGame(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.K)) { // TODO TA BORT SEN
-
-            LostGame();
         }
     }
 
@@ -442,14 +437,17 @@ public class GameManager : MonoBehaviour {
     // Lost Game. Sets state, pauses game and which screen to load after fade out.  CURRENTLY CALLED WHEN PRESSING K. 
 
     public void LostGame() { // This code could be in the player char
+        
+        if (gameState != GameState.LostGame) {
 
-        gameState = GameState.LostGame;
+            gameState = GameState.LostGame;
 
-        PauseGame(false); // Pauses Game while playing death anim
+            PauseGame(false); // Pauses Game while playing death anim
 
-        // Play Death Animation
+            // Play Death Animation
 
-        StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+            StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+        }
     }
 
     //-----------------------------------------------

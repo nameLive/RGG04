@@ -7,8 +7,12 @@ public class PlayerHealth : HealthBase
 
 	public bool invincible = false;
 
+    GameManager gameManager;
+
 	void Start()
 	{
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
 		base.Start();
 		PlayerStateHandler myHandler = gameObject.GetComponentInParent<PlayerStateHandler>();
 		myHandler.OnHammerState += SetInvincible;
@@ -30,9 +34,15 @@ public class PlayerHealth : HealthBase
 		if (!invincible)
 		{
 			base.DecreaseHealth(Amount);
+
+            if (base.health == 0) {
+
+                gameManager.LostGame();
+            }
+
             return true;
-			//Debug.Log("Player Current Health: " + currentHealth);
-		}
+            //Debug.Log("Player Current Health: " + currentHealth);
+        }
         else
         {
             return false;
@@ -48,5 +58,5 @@ public class PlayerHealth : HealthBase
 		}
 	}
 
-
+    
 }
