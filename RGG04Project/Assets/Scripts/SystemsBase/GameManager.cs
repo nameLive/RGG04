@@ -412,7 +412,7 @@ public class GameManager : MonoBehaviour {
 
                     winDoor.GetComponent<WinDoor>().OpenDoor();
 
-                    Instantiate(arrowPointingToDoor, transform);
+                    Instantiate(arrowPointingToDoor, transform.position, Quaternion.identity);
 
                     hasPickedUpMinimum = true;
                 }
