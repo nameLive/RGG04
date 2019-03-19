@@ -53,7 +53,7 @@ public class PoliceEnemy : MonoBehaviour
     {
         //if (gameManager.gameState != GameState.InPauseMenu && gameManager.gameState != GameState.WonGame) return;
 
-        if (currentState != PatrolingPoliceStateEnum.Stunned)
+        if (currentState != PatrolingPoliceStateEnum.Stunned && currentState != PatrolingPoliceStateEnum.None)
         {
             UpdateTargetLocation();
             MoveToTargetLocation();
@@ -127,6 +127,17 @@ public class PoliceEnemy : MonoBehaviour
     {
         SetState(previousState);
     }
+
+	public void SetStateNoneForDuration(float Duration)
+	{
+		SetState(PatrolingPoliceStateEnum.None);
+		Invoke("ResetState", Duration);
+	}
+
+	private void ResetState()
+	{
+		SetState(previousState);
+	}
 
 
     bool ArrivedAtTargetLocation()

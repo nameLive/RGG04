@@ -2,54 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyDamager : MonoBehaviour
+public class EnemyDamager : Damager
 {
+	PoliceEnemy policeEnemy;
+
 	[SerializeField]
-	[Tooltip("This is the damage that is dealt with a 1 second interval")]
-	int damageAmount = 1;
+	float onHitStopDuration = 2f;
 
-	float canDealDamageTimer = 1f;
-
-	HealthBase playerHealthReference;
-
-	private void OnTriggerEnter2D(Collider2D collision)
+	protected void Start()
 	{
-
-		playerHealthReference = collision.gameObject.GetComponent<HealthBase>();
-		canDealDamageTimer = 1f;
-
-
+		base.Start();
+		policeEnemy = GetComponentInParent<PoliceEnemy>();
 	}
 
-	private void OnTriggerExit2D(Collider2D collision)
+	protected override void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
 	{
-		if (collision.gameObject.GetComponent<HealthBase>() == playerHealthReference)
-		{
-			playerHealthReference = null;
-		}
+		policeEnemy.SetStateNoneForDuration(onHitStopDuration);
 	}
 
-
-	private void Update()
-	{
-		Timer();
-	}
-
-	void Timer()
-	{
-		canDealDamageTimer += Time.deltaTime;
-
-		if (canDealDamageTimer >= 1f)
-		{
-			canDealDamageTimer = 0f;
-
-			if (playerHealthReference)
-			{
-				playerHealthReference.DecreaseHealth(damageAmount);
-
-			}
-		}
-
-	}
 
 }

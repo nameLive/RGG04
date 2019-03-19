@@ -109,7 +109,7 @@ public class Damager : MonoBehaviour
     }
 
 
-    void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
+    protected virtual void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
     {
         //blabla
     }
