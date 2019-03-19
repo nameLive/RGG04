@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField]
     private Text scoreText;
 
-    public Image arrow;
+    [SerializeField]
+    private GameObject arrowPointingToDoor;
 
     private GameObject winDoor;
     
@@ -57,7 +58,7 @@ public class GameManager : MonoBehaviour {
 
     private bool isLoading;
     
-    private bool isPaused;
+    public bool isPaused;
     
     [SerializeField]
     private bool isDebugging;
@@ -106,36 +107,6 @@ public class GameManager : MonoBehaviour {
             else if (gameState == GameState.InPauseMenu)
                 PauseGame(true);
         }
-
-        //if (hasPickedUpMinimum) {
-
-        //arrow.GetComponent<RectTransform>().LookAt(winDoor.transform);
-        //}
-
-        /*Vector3 arrowPos = arrow.transform.position;
-
-        Vector3 target = winDoor.transform.position;
-
-        arrow.transform.rotation = Quaternion.LookRotation(arrowPos - target, arrow.transform.forwa);
-
-        */
-        /*
-        Vector3 dir;
-
-        float angle;
-
-        Vector3 v = winDoor.transform.position;
-
-        v.z = 0;
-
-        arrow.transform.LookAt(arrow.transform.position + arrow.transform.forward, v);
-        */
-       // dir = winDoor.transform.position - arrow.transform.position;
-
-        //angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
-
-        //arrow.transform.eulerAngles = new Vector3(0, 0, angle);
-
     }
 
     //-----------------------------------------------
@@ -440,6 +411,8 @@ public class GameManager : MonoBehaviour {
                 if (!hasPickedUpMinimum) {
 
                     winDoor.GetComponent<WinDoor>().OpenDoor();
+
+                    Instantiate(arrowPointingToDoor, transform.position, Quaternion.identity);
 
                     hasPickedUpMinimum = true;
                 }
