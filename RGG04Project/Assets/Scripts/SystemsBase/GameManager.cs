@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField]
     private Text scoreText;
+
+    public Image arrow;
+
+    private GameObject winDoor;
     
     public int currentScore = 0;
 
@@ -102,6 +106,36 @@ public class GameManager : MonoBehaviour {
             else if (gameState == GameState.InPauseMenu)
                 PauseGame(true);
         }
+
+        //if (hasPickedUpMinimum) {
+
+        //arrow.GetComponent<RectTransform>().LookAt(winDoor.transform);
+        //}
+
+        /*Vector3 arrowPos = arrow.transform.position;
+
+        Vector3 target = winDoor.transform.position;
+
+        arrow.transform.rotation = Quaternion.LookRotation(arrowPos - target, arrow.transform.forwa);
+
+        */
+        /*
+        Vector3 dir;
+
+        float angle;
+
+        Vector3 v = winDoor.transform.position;
+
+        v.z = 0;
+
+        arrow.transform.LookAt(arrow.transform.position + arrow.transform.forward, v);
+        */
+       // dir = winDoor.transform.position - arrow.transform.position;
+
+        //angle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
+
+        //arrow.transform.eulerAngles = new Vector3(0, 0, angle);
+
     }
 
     //-----------------------------------------------
@@ -276,6 +310,8 @@ public class GameManager : MonoBehaviour {
 
     void InGame() {
 
+        winDoor = GameObject.FindGameObjectWithTag("WinDoor");
+
         gameState = GameState.InGame;
 
         HUD.SetActive(true);
@@ -403,12 +439,10 @@ public class GameManager : MonoBehaviour {
 
                 if (!hasPickedUpMinimum) {
 
-                    GameObject.FindGameObjectWithTag("WinDoor").GetComponent<WinDoor>().OpenDoor();
+                    winDoor.GetComponent<WinDoor>().OpenDoor();
 
                     hasPickedUpMinimum = true;
                 }
-
-                
             }
         }
     }

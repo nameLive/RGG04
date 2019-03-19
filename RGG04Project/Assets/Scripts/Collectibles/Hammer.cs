@@ -7,6 +7,9 @@ public class Hammer : CollectibleBase
     [SerializeField]
     float hammerDuration = 5f;
 
+    [SerializeField]
+    private GameObject spawnPoints;
+
     GameManager gameManager;
 
     void Start() {
@@ -23,7 +26,10 @@ public class Hammer : CollectibleBase
         if (collision.tag == "Player" && stateHandler) {
 
             gameManager.IncreaseScore(scoreValue, 0);
-            
+
+            GameObject spawnedPointTemp = Instantiate(spawnPoints, transform.position, Quaternion.identity);
+            spawnedPointTemp.GetComponent<SpawnedPoints>().scoreAmount = scoreValue;
+
             stateHandler.SetHammerState(hammerDuration);
             Destroy(gameObject);
         }

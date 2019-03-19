@@ -10,6 +10,9 @@ public class MajorDonut : CollectibleBase {
 
     Animator animator;
 
+    [SerializeField]
+    private GameObject spawnPoints;
+
 
     //------------------------------------------------
 
@@ -32,6 +35,9 @@ public class MajorDonut : CollectibleBase {
                 hasBeenPickedUp = true;
 
                 gameManager.IncreaseScore(scoreValue, 1);
+
+                GameObject spawnedPointTemp = Instantiate(spawnPoints, transform.position, Quaternion.identity);
+                spawnedPointTemp.GetComponent<SpawnedPoints>().scoreAmount = scoreValue;
 
                 animator.SetBool("PickedUp", true);
             }
