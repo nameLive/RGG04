@@ -16,6 +16,9 @@ public class PoliceEnemy : MonoBehaviour
 
     GameManager gameManager;
 
+	[HideInInspector]
+	public bool movingRight = true;
+
     //EDITABLE VARIABLES
 
     [SerializeField]
@@ -54,6 +57,8 @@ public class PoliceEnemy : MonoBehaviour
         {
             UpdateTargetLocation();
             MoveToTargetLocation();
+
+			movingRight = isMovingRight();
 
             if (currentState == PatrolingPoliceStateEnum.ChasePlayer)
             {
@@ -166,6 +171,15 @@ public class PoliceEnemy : MonoBehaviour
 
         return newTargetLocation;
     }
+
+	bool isMovingRight()
+	{
+		Vector3 movementDirection = transform.position - targetLocationObject.transform.position;
+
+		float dot = Vector3.Dot(movementDirection, transform.right);
+
+		return dot < 0 ? true : false;
+	}
 
 
 }
