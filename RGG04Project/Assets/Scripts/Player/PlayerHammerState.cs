@@ -26,8 +26,8 @@ public class PlayerHammerState : MonoBehaviour
 		facingLeftXOffset = gameObject.transform.localPosition.x;
 		facingRightXOffset = facingLeftXOffset * -1;
 
-		facingLeftSpriteRotation = hammerSprite.gameObject.transform.localRotation;
-		facingRightSpriteRotation = Quaternion.Inverse(facingLeftSpriteRotation);
+		//facingLeftSpriteRotation = hammerSprite.gameObject.transform.localRotation;
+		//facingRightSpriteRotation = Quaternion.Inverse(facingLeftSpriteRotation);
 
 		PlayerStateHandler myHandler = gameObject.GetComponentInParent<PlayerStateHandler>();
 		myHandler.OnHammerState += StartHammerState;
@@ -59,7 +59,7 @@ public class PlayerHammerState : MonoBehaviour
 				Quaternion targetRotation = playerMovement.facingRight ? facingRightSpriteRotation : facingLeftSpriteRotation;
 
 
-				hammerSprite.gameObject.transform.localRotation = targetRotation;
+				//hammerSprite.gameObject.transform.localRotation = targetRotation;
 			}
 		}
 	}
