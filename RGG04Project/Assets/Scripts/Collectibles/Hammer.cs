@@ -11,10 +11,12 @@ public class Hammer : CollectibleBase
     private GameObject spawnPoints;
 
     GameManager gameManager;
+    Animator anim;
 
     void Start() {
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        anim = GetComponentInChildren<Animator>();
     }
 
 
