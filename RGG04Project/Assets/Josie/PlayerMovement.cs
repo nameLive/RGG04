@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsFalling", isFalling);
         anim.SetBool("HasHammer", hammerState.hasHammer);
         anim.SetBool("TakingDamage", isTakingDamage);
+        anim.SetBool("IsDead", playerHealth.isDead);
         
 
         float horizontal = Input.GetAxis(horizontalKey);
@@ -81,9 +82,13 @@ public class PlayerMovement : MonoBehaviour
 
     void TookDamage()
     {
-        isTakingDamage = true;
+        if (!playerHealth.isDead)
+        {
+            isTakingDamage = true;
 
-        Invoke("StoppedTakingDamage", 0.5f);
+                    Invoke("StoppedTakingDamage", 0.5f);
+        }
+        
     }
 
     void StoppedTakingDamage()

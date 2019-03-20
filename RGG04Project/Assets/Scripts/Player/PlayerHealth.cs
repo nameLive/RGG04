@@ -6,6 +6,7 @@ public class PlayerHealth : HealthBase
 {
 
 	public bool invincible = false;
+    public bool isDead = false;
 
     GameManager gameManager;
 
@@ -37,7 +38,10 @@ public class PlayerHealth : HealthBase
 
             if (base.health == 0) {
 
+                isDead = true;
                 gameManager.LostGame();
+                
+
             }
 
             return true;
