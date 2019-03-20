@@ -19,6 +19,8 @@ public class EnemyStunState : MonoBehaviour
 	EnemyHealth healthRef;
 	Damager damager;
 	DamageBlinkColorEffect colorEffect;
+    Animator anim;
+    bool isStunned;
 
 	public delegate void OnStunState();
 	public event OnStunState EventOnBeginStun;
@@ -29,6 +31,7 @@ public class EnemyStunState : MonoBehaviour
 	{
 		healthRef = GetComponent<EnemyHealth>();
 		healthRef.EventOnDeath += BeginStun;
+        anim = GetComponent<Animator>();
 
 		damager = GetComponent<Damager>();
 
@@ -36,11 +39,17 @@ public class EnemyStunState : MonoBehaviour
 		EventOnBeginStun += colorEffect.StopTakingDamage;
 	}
 
+    void Update()
+    {
+        anim.SetBool("IsStunned", isStunned);
+    }
+
 	void BeginStun()
 	{
 		EventOnBeginStun();
 		Debug.Log("Enter Stun State");
 		spriteToAffect.color = stunColor;
+        isStunned = true;
 
 		damager.canDealDamage = false;
 		Invoke("EndStun", stunDuration);
@@ -52,6 +61,7 @@ public class EnemyStunState : MonoBehaviour
 		Debug.Log("Exit Stun State");
 		spriteToAffect.color = normalColor;
 		damager.canDealDamage = true;
+        isStunned = false;
 	}
 
 
