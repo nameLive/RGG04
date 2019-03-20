@@ -55,7 +55,7 @@ public class WinDoor : MonoBehaviour {
 
         if (collision.gameObject.tag == "Player") {
 
-            GetComponent<AudioSource>().Play();
+            //GetComponent<AudioSource>().Play();
 
             gameManager.EnteredWinTrigger();
         }

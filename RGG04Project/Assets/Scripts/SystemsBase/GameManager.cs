@@ -429,7 +429,7 @@ public class GameManager : MonoBehaviour {
 
         PauseGame(false); // Pauses the game when getting the last donut
 
-        StartCoroutine(PauseDelayBeforeGettingToScreen(5, "WinScreen")); // Delay that ignores the pause
+        StartCoroutine(PauseDelayBeforeGettingToScreen(1.5f, "WinScreen")); // Delay that ignores the pause
     }
 
     //-----------------------------------------------
@@ -448,6 +448,8 @@ public class GameManager : MonoBehaviour {
         if (gameState != GameState.LostGame) {
 
             gameState = GameState.LostGame;
+
+            GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Animator>().updateMode = AnimatorUpdateMode.UnscaledTime;
 
             PauseGame(false); // Pauses Game while playing death anim
 
