@@ -15,6 +15,7 @@ public class PoliceEnemy : MonoBehaviour
     Vector3 targetLocation;
 
     GameManager gameManager;
+    Animator anim;
 
 	[HideInInspector]
 	public bool movingRight = true;
@@ -38,6 +39,7 @@ public class PoliceEnemy : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+        anim = GetComponentInChildren<Animator>();
 
         if (targetLocationObject == null)
         {
@@ -51,6 +53,7 @@ public class PoliceEnemy : MonoBehaviour
 
     private void Update()
     {
+        anim.SetBool("FacingRight", movingRight);
         //if (gameManager.gameState != GameState.InPauseMenu && gameManager.gameState != GameState.WonGame) return;
 
         if (currentState != PatrolingPoliceStateEnum.Stunned && currentState != PatrolingPoliceStateEnum.None)
