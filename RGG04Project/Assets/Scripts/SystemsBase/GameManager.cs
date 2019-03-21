@@ -393,7 +393,7 @@ public class GameManager : MonoBehaviour {
     //-----------------------------------------------
     // Increasing of Score. Checks amount of donuts collected, if enough then opens win door. 
 
-    public void IncreaseScore(int scoreAmount, int donutAmount) {
+    public void IncreaseScore(int scoreAmount, int donutAmount = 0) {
 
         currentScore += scoreAmount;
 
@@ -410,7 +410,7 @@ public class GameManager : MonoBehaviour {
 
                 if (!hasPickedUpMinimum) {
 
-                    winDoor.GetComponent<WinDoor>().OpenDoor();
+                    winDoor.GetComponent<WinDoor>().ActivateWinZone();
 
                     Instantiate(arrowPointingToDoor, transform.position, Quaternion.identity);
 

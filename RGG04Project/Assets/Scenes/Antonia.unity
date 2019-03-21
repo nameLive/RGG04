@@ -1171,6 +1171,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1812199875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1837868784, guid: 9e486642f49f2ba45947f4084306c11d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862111278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1812199878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812199875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753cf2ed637423448bf7e80c8b907b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDealDamage: 1
+  damageAmount: 1
+  damageInterval: 0.1
+  colliderReference: {fileID: 1812199879}
+  OnEnemyHitScoreValue: 50
+  OnEnemyStunScoreValue: 500
+--- !u!61 &1812199879 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1837868787, guid: 9e486642f49f2ba45947f4084306c11d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862111278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1862111278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1242,7 +1272,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1837868788, guid: 9e486642f49f2ba45947f4084306c11d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9e486642f49f2ba45947f4084306c11d, type: 3}
 --- !u!1001 &2105480443
 PrefabInstance:

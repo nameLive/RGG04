@@ -10,6 +10,12 @@ public class PoliceEnemy : MonoBehaviour
     PatrolingPoliceStateEnum currentState = PatrolingPoliceStateEnum.ChasePlayer;
     PatrolingPoliceStateEnum previousState = PatrolingPoliceStateEnum.ChasePlayer;
 
+
+	public PatrolingPoliceStateEnum state
+	{
+		get { return currentState; }
+	}
+
     //the location of this object is the location the enemy is headed towards
     GameObject targetLocationObject = null;
     Vector3 targetLocation;
