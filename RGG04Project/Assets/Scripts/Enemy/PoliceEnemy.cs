@@ -31,7 +31,7 @@ public class PoliceEnemy : MonoBehaviour
     [SerializeField]
     [Tooltip("The speed of which the enemy moves towards the player when in range")]
     [Range(0.0f, 0.5f)]
-    float movementSpeed = 0.03f;
+    public static float movementSpeed = 0.045f;
 
     [SerializeField]
     [Tooltip("The enemy will always keep this distance to the player no matter how fast the player moves")]

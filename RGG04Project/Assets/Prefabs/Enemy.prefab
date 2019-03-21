@@ -270,6 +270,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingRight: 1
-  movementSpeed: 0.03
+  movementSpeed: 0.045
   maxDistanceToPlayer: 25
   minDistanceToPlayer: 5
