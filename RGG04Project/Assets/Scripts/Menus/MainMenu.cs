@@ -11,6 +11,10 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject QuitButton;
 
+    public GameObject CopyrightImage;
+
+    public GameObject PressEnterImage;
+
     //----------------------------------------------
 
     void Start() {
@@ -22,6 +26,8 @@ public class MainMenu : MonoBehaviour {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         StartCoroutine(ButtonDelay(2));
+
+        StartCoroutine(CopyrightDelay(15));
     }
 
     IEnumerator ButtonDelay (float delay) {
@@ -31,6 +37,27 @@ public class MainMenu : MonoBehaviour {
         StartGameButton.SetActive(true);
 
         QuitButton.SetActive(true);
+    }
+
+    IEnumerator CopyrightDelay(float delay) {
+
+        yield return new WaitForSeconds(delay);
+
+        CopyrightImage.SetActive(true);
+
+        StartCoroutine(PressEnterBlink(1));
+    }
+
+    IEnumerator PressEnterBlink(float delay) {
+
+        yield return new WaitForSeconds(delay);
+
+        if (PressEnterImage.activeSelf)
+            PressEnterImage.SetActive(false);
+        else
+            PressEnterImage.SetActive(true);
+
+        StartCoroutine(PressEnterBlink(1));
     }
 
     //----------------------------------------------

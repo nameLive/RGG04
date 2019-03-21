@@ -26,6 +26,9 @@ public class EnemyStunState : MonoBehaviour
 	public event OnStunState EventOnBeginStun;
 	public event OnStunState EventOnEndStun;
 
+    [SerializeField]
+    private GameObject spawnedPoints;
+
 
 	private void Start()
 	{
@@ -51,7 +54,10 @@ public class EnemyStunState : MonoBehaviour
 		spriteToAffect.color = stunColor;
         isStunned = true;
 
-		damager.canDealDamage = false;
+        GameObject spawnedPointTemp = Instantiate(spawnedPoints, transform.position, Quaternion.identity);
+        spawnedPointTemp.GetComponent<SpawnedPoints>().scoreAmount = 500;
+
+        damager.canDealDamage = false;
 		Invoke("EndStun", stunDuration);
 	}
 

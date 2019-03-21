@@ -112,6 +112,8 @@ MonoBehaviour:
   spriteToAffect: {fileID: 1653639986}
   stunColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 0.40392157}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
+  spawnedPoints: {fileID: 8512635833094708590, guid: 12cbc02ad31607f41b9d7c1f9dfeb5af,
+    type: 3}
 --- !u!114 &1653639985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +272,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingRight: 1
-  movementSpeed: 0.045
   maxDistanceToPlayer: 25
   minDistanceToPlayer: 5
