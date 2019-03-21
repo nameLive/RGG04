@@ -17,6 +17,7 @@ public class EnemyHealth : HealthBase
 	void StartStunState()
 	{
 		canTakeDamage = false;
+		SetMaxHealth();
 	}
 
 	void EndStunState()
