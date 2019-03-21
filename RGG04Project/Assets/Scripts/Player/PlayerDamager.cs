@@ -16,7 +16,6 @@ public class PlayerDamager : Damager
 		base.Start();
 
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-		Debug.Log("game manager is: " + gameManager.name);
 
 	}
 
@@ -31,16 +30,12 @@ public class PlayerDamager : Damager
 			if (policeEnemyHit.state == PatrolingPoliceStateEnum.Stunned)
 			{
 				gameManager.IncreaseScore(OnEnemyStunScoreValue);
-				Debug.Log("Increased score by: " + OnEnemyStunScoreValue);
 			}
 			else
 			{
 				gameManager.IncreaseScore(OnEnemyHitScoreValue);
-				Debug.Log("Increased score by: " + OnEnemyHitScoreValue);
 			}
 		}
-
-		//gameManager.IncreaseScore()
 
 	}
 
