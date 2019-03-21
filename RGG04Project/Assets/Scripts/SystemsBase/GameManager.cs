@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour {
 
     private GameObject winDoor;
     
+    public int wonGamesInARow;
+
+    public float enemySpeedMultiplier = .5f;
+
+    private float originalEnemyMovementSpeed;
+    
     public int currentScore = 0;
 
     [SerializeField]
@@ -68,6 +74,8 @@ public class GameManager : MonoBehaviour {
     // If Debugging then Loads Levels to Load When Debug right away. Othewise Loads Boot Scene
 
     void Start() {
+
+        originalEnemyMovementSpeed = PoliceEnemy.movementSpeed;
 
         for (int i = 1; i < SceneManager.sceneCount; i++) { // Unloads all scenes that are in the Persistent Level on start
 
@@ -157,6 +165,8 @@ public class GameManager : MonoBehaviour {
 
     void InMainMenu() {
 
+        PoliceEnemy.movementSpeed = originalEnemyMovementSpeed;
+        wonGamesInARow = 0;
         currentScore = 0;
         currentAmountOfDonutsPickedUp = 0;
 
@@ -436,6 +446,10 @@ public class GameManager : MonoBehaviour {
     // Win Screen. Called when after Loading Win Screen when Entered Win Trigger
 
     void WinScreen() {
+        
+        wonGamesInARow++;
+
+        PoliceEnemy.movementSpeed += originalEnemyMovementSpeed * enemySpeedMultiplier;
 
         gameState = GameState.AtWinScreen;
     }
@@ -463,6 +477,10 @@ public class GameManager : MonoBehaviour {
     // Lost Screen. Called when finished loading LoseScreen. 
 
     void LostScreen() {
+
+        wonGamesInARow = 0;
+
+        PoliceEnemy.movementSpeed = originalEnemyMovementSpeed;
 
         gameState = GameState.AtLoseScreen;
     }
