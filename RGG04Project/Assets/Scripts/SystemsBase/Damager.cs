@@ -110,11 +110,6 @@ public class Damager : MonoBehaviour
 		}
 	}
 
-	protected void CallEventOnDidDamage(GameObject DidDamageToObject)
-	{
-	}
-
-
 	protected virtual void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
 	{
 		//blabla

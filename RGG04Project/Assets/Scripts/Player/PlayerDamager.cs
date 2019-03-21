@@ -2,49 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDamager : MonoBehaviour
+public class PlayerDamager : Damager
 {
-	[SerializeField]
-	[Tooltip("This is the damage that is dealt with a 1 second interval")]
-	int damageAmount = 1;
+	
+	int OnEnemyHitScoreValue = 50;
 
-	float canDealDamageTimer = 1f;
+	int OnEnemyStunScoreValue = 500;
 
-	EnemyHealth enemyHealthReference;
+	GameManager gameManager;
 
-	private void OnTriggerEnter2D(Collider2D collision)
+	protected override void Start()
 	{
-		enemyHealthReference = collision.gameObject.GetComponent<EnemyHealth>();
-		canDealDamageTimer = 1f;
+		base.Start();
+
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		Debug.Log("game manager is: " + gameManager.name);
+
 	}
 
-
-	private void OnTriggerExit2D(Collider2D collision)
+	protected override void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
 	{
-		if (collision.gameObject.GetComponent<EnemyHealth>() == enemyHealthReference)
+
+		PoliceEnemy policeEnemyHit = DidDamageTo.GetComponentInParent<PoliceEnemy>();
+
+		if (policeEnemyHit)
 		{
-			enemyHealthReference = null;
-		}
-	}
-
-	private void Update()
-	{
-		Timer();
-	}
-
-	void Timer()
-	{
-		canDealDamageTimer += Time.deltaTime;
-
-		if (canDealDamageTimer >= 1f)
-		{
-			canDealDamageTimer = 0f;
-
-			if (enemyHealthReference)
+			
+			if (policeEnemyHit.state == PatrolingPoliceStateEnum.Stunned)
 			{
-				enemyHealthReference.DecreaseHealth(damageAmount);
-
+				gameManager.IncreaseScore(OnEnemyStunScoreValue);
+				Debug.Log("Increased score by: " + OnEnemyStunScoreValue);
+			}
+			else
+			{
+				gameManager.IncreaseScore(OnEnemyHitScoreValue);
+				Debug.Log("Increased score by: " + OnEnemyHitScoreValue);
 			}
 		}
+
+		//gameManager.IncreaseScore()
+
 	}
+
+
 }

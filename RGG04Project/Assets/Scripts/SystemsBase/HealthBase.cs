@@ -37,13 +37,13 @@ public class HealthBase : MonoBehaviour
 		if (!canTakeDamage) return false;
 
 		canTakeDamage = false;
+		currentHealth -= Mathf.Abs(Amount);
+		EventOnHealthDecreased();
 		if (currentHealth == 0)
 		{
 			EventOnDeath();
-			return false;
+			return true;
 		}
-		currentHealth -= Mathf.Abs(Amount);
-		EventOnHealthDecreased();
 
 		Invoke("CanTakeDamageReset", 1f);
 
@@ -63,11 +63,11 @@ public class HealthBase : MonoBehaviour
 
 	protected virtual void OnDeath()
 	{
-		Debug.Log("Oh noes, " + gameObject.name + " died...");
+		//Debug.Log("Oh noes, " + gameObject.name + " died...");
 	}
 
 	private void OnHealthDecreased()
 	{
-		Debug.Log("Current Health of " + gameObject.name + ": " + currentHealth);
+		//Debug.Log("Current Health of " + gameObject.name + ": " + currentHealth);
 	}
 }
