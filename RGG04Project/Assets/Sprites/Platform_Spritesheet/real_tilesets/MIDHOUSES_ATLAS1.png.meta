@@ -1,7 +1,172 @@
 fileFormatVersion: 2
 guid: 92af0d91e0d07d74cb047593c8b1448f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MIDHOUSES_ATLAS1_0
+    21300002: MIDHOUSES_ATLAS1_1
+    21300004: MIDHOUSES_ATLAS1_2
+    21300006: MIDHOUSES_ATLAS1_3
+    21300008: MIDHOUSES_ATLAS1_4
+    21300010: MIDHOUSES_ATLAS1_5
+    21300012: MIDHOUSES_ATLAS1_6
+    21300014: MIDHOUSES_ATLAS1_7
+    21300016: MIDHOUSES_ATLAS1_8
+    21300018: MIDHOUSES_ATLAS1_9
+    21300020: MIDHOUSES_ATLAS1_10
+    21300022: MIDHOUSES_ATLAS1_11
+    21300024: MIDHOUSES_ATLAS1_12
+    21300026: MIDHOUSES_ATLAS1_13
+    21300028: MIDHOUSES_ATLAS1_14
+    21300030: MIDHOUSES_ATLAS1_15
+    21300032: MIDHOUSES_ATLAS1_16
+    21300034: MIDHOUSES_ATLAS1_17
+    21300036: MIDHOUSES_ATLAS1_18
+    21300038: MIDHOUSES_ATLAS1_19
+    21300040: MIDHOUSES_ATLAS1_20
+    21300042: MIDHOUSES_ATLAS1_21
+    21300044: MIDHOUSES_ATLAS1_22
+    21300046: MIDHOUSES_ATLAS1_23
+    21300048: MIDHOUSES_ATLAS1_24
+    21300050: MIDHOUSES_ATLAS1_25
+    21300052: MIDHOUSES_ATLAS1_26
+    21300054: MIDHOUSES_ATLAS1_27
+    21300056: MIDHOUSES_ATLAS1_28
+    21300058: MIDHOUSES_ATLAS1_29
+    21300060: MIDHOUSES_ATLAS1_30
+    21300062: MIDHOUSES_ATLAS1_31
+    21300064: MIDHOUSES_ATLAS1_32
+    21300066: MIDHOUSES_ATLAS1_33
+    21300068: MIDHOUSES_ATLAS1_34
+    21300070: MIDHOUSES_ATLAS1_35
+    21300072: MIDHOUSES_ATLAS1_36
+    21300074: MIDHOUSES_ATLAS1_37
+    21300076: MIDHOUSES_ATLAS1_38
+    21300078: MIDHOUSES_ATLAS1_39
+    21300080: MIDHOUSES_ATLAS1_40
+    21300082: MIDHOUSES_ATLAS1_41
+    21300084: MIDHOUSES_ATLAS1_42
+    21300086: MIDHOUSES_ATLAS1_43
+    21300088: MIDHOUSES_ATLAS1_44
+    21300090: MIDHOUSES_ATLAS1_45
+    21300092: MIDHOUSES_ATLAS1_46
+    21300094: MIDHOUSES_ATLAS1_47
+    21300096: MIDHOUSES_ATLAS1_48
+    21300098: MIDHOUSES_ATLAS1_49
+    21300100: MIDHOUSES_ATLAS1_50
+    21300102: MIDHOUSES_ATLAS1_51
+    21300104: MIDHOUSES_ATLAS1_52
+    21300106: MIDHOUSES_ATLAS1_53
+    21300108: MIDHOUSES_ATLAS1_54
+    21300110: MIDHOUSES_ATLAS1_55
+    21300112: MIDHOUSES_ATLAS1_56
+    21300114: MIDHOUSES_ATLAS1_57
+    21300116: MIDHOUSES_ATLAS1_58
+    21300118: MIDHOUSES_ATLAS1_59
+    21300120: MIDHOUSES_ATLAS1_60
+    21300122: MIDHOUSES_ATLAS1_61
+    21300124: MIDHOUSES_ATLAS1_62
+    21300126: MIDHOUSES_ATLAS1_63
+    21300128: MIDHOUSES_ATLAS1_64
+    21300130: MIDHOUSES_ATLAS1_65
+    21300132: MIDHOUSES_ATLAS1_66
+    21300134: MIDHOUSES_ATLAS1_67
+    21300136: MIDHOUSES_ATLAS1_68
+    21300138: MIDHOUSES_ATLAS1_69
+    21300140: MIDHOUSES_ATLAS1_70
+    21300142: MIDHOUSES_ATLAS1_71
+    21300144: MIDHOUSES_ATLAS1_72
+    21300146: MIDHOUSES_ATLAS1_73
+    21300148: MIDHOUSES_ATLAS1_74
+    21300150: MIDHOUSES_ATLAS1_75
+    21300152: MIDHOUSES_ATLAS1_76
+    21300154: MIDHOUSES_ATLAS1_77
+    21300156: MIDHOUSES_ATLAS1_78
+    21300158: MIDHOUSES_ATLAS1_79
+    21300160: MIDHOUSES_ATLAS1_80
+    21300162: MIDHOUSES_ATLAS1_81
+    21300164: MIDHOUSES_ATLAS1_82
+    21300166: MIDHOUSES_ATLAS1_83
+    21300168: MIDHOUSES_ATLAS1_84
+    21300170: MIDHOUSES_ATLAS1_85
+    21300172: MIDHOUSES_ATLAS1_86
+    21300174: MIDHOUSES_ATLAS1_87
+    21300176: MIDHOUSES_ATLAS1_88
+    21300178: MIDHOUSES_ATLAS1_89
+    21300180: MIDHOUSES_ATLAS1_90
+    21300182: MIDHOUSES_ATLAS1_91
+    21300184: MIDHOUSES_ATLAS1_92
+    21300186: MIDHOUSES_ATLAS1_93
+    21300188: MIDHOUSES_ATLAS1_94
+    21300190: MIDHOUSES_ATLAS1_95
+    21300192: MIDHOUSES_ATLAS1_96
+    21300194: MIDHOUSES_ATLAS1_97
+    21300196: MIDHOUSES_ATLAS1_98
+    21300198: MIDHOUSES_ATLAS1_99
+    21300200: MIDHOUSES_ATLAS1_100
+    21300202: MIDHOUSES_ATLAS1_101
+    21300204: MIDHOUSES_ATLAS1_102
+    21300206: MIDHOUSES_ATLAS1_103
+    21300208: MIDHOUSES_ATLAS1_104
+    21300210: MIDHOUSES_ATLAS1_105
+    21300212: MIDHOUSES_ATLAS1_106
+    21300214: MIDHOUSES_ATLAS1_107
+    21300216: MIDHOUSES_ATLAS1_108
+    21300218: MIDHOUSES_ATLAS1_109
+    21300220: MIDHOUSES_ATLAS1_110
+    21300222: MIDHOUSES_ATLAS1_111
+    21300224: MIDHOUSES_ATLAS1_112
+    21300226: MIDHOUSES_ATLAS1_113
+    21300228: MIDHOUSES_ATLAS1_114
+    21300230: MIDHOUSES_ATLAS1_115
+    21300232: MIDHOUSES_ATLAS1_116
+    21300234: MIDHOUSES_ATLAS1_117
+    21300236: MIDHOUSES_ATLAS1_118
+    21300238: MIDHOUSES_ATLAS1_119
+    21300240: MIDHOUSES_ATLAS1_120
+    21300242: MIDHOUSES_ATLAS1_121
+    21300244: MIDHOUSES_ATLAS1_122
+    21300246: MIDHOUSES_ATLAS1_123
+    21300248: MIDHOUSES_ATLAS1_124
+    21300250: MIDHOUSES_ATLAS1_125
+    21300252: MIDHOUSES_ATLAS1_126
+    21300254: MIDHOUSES_ATLAS1_127
+    21300256: MIDHOUSES_ATLAS1_128
+    21300258: MIDHOUSES_ATLAS1_129
+    21300260: MIDHOUSES_ATLAS1_130
+    21300262: MIDHOUSES_ATLAS1_131
+    21300264: MIDHOUSES_ATLAS1_132
+    21300266: MIDHOUSES_ATLAS1_133
+    21300268: MIDHOUSES_ATLAS1_134
+    21300270: MIDHOUSES_ATLAS1_135
+    21300272: MIDHOUSES_ATLAS1_136
+    21300274: MIDHOUSES_ATLAS1_137
+    21300276: MIDHOUSES_ATLAS1_138
+    21300278: MIDHOUSES_ATLAS1_139
+    21300280: MIDHOUSES_ATLAS1_140
+    21300282: MIDHOUSES_ATLAS1_141
+    21300284: MIDHOUSES_ATLAS1_142
+    21300286: MIDHOUSES_ATLAS1_143
+    21300288: MIDHOUSES_ATLAS1_144
+    21300290: MIDHOUSES_ATLAS1_145
+    21300292: MIDHOUSES_ATLAS1_146
+    21300294: MIDHOUSES_ATLAS1_147
+    21300296: MIDHOUSES_ATLAS1_148
+    21300298: MIDHOUSES_ATLAS1_149
+    21300300: MIDHOUSES_ATLAS1_150
+    21300302: MIDHOUSES_ATLAS1_151
+    21300304: MIDHOUSES_ATLAS1_152
+    21300306: MIDHOUSES_ATLAS1_153
+    21300308: MIDHOUSES_ATLAS1_154
+    21300310: MIDHOUSES_ATLAS1_155
+    21300312: MIDHOUSES_ATLAS1_156
+    21300314: MIDHOUSES_ATLAS1_157
+    21300316: MIDHOUSES_ATLAS1_158
+    21300318: MIDHOUSES_ATLAS1_159
+    21300320: MIDHOUSES_ATLAS1_160
+    21300322: MIDHOUSES_ATLAS1_161
+    21300324: MIDHOUSES_ATLAS1_162
+    21300326: MIDHOUSES_ATLAS1_163
+    21300328: MIDHOUSES_ATLAS1_164
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -82,7 +247,3087 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3baabad8ee3def4ebe49fd33285fc4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10729a550a7301b45a88236119264806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_2
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 3011
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf006ad5532f0d4680dfbe14bdc6c91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_3
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 3011
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef258e5da33c3c4384648f95dfb4743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d03f4cd9c3f6504088444ac0de5af33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_5
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2715cef9955cdb04c9710c59cbf5108b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_6
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2281ceffe47a13e4ba7d83ddf6302e48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_7
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8ebe45ee867934abebdc28b0d9ea1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_8
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4942fbc8d652d0347bf59d93ff279453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_9
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46708f112abe3eb4581c6254532151de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_10
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95f2a1e58d041e49a5b57e171a90cd5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_11
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642385f29e15555459aa76718ab8dfe0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_12
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 3011
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea464f600e130b458866a07f46dbb77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb909f6434ab85f49a955f18c6975219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b043a1bbdde4246a3fd19c0b105412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2758
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed15ef30b8ec38849b9af66af4df9e13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_16
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2758
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dfd6489600c7f469ab908a7b76e476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1175a61b08f5822408988b233be4ae26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_18
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835a671b770a5a445be068bacf9b93b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_19
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59d71da953bdc148a7dda6628dc5116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_20
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2510442363a6494e9126199c677fb5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_21
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8979f46d59a27429a83469d2d01cac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_22
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6915f2edd675e4d489f5ef1a74d54a8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_23
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0fbb3c4666da947ad3c44ca8ab8f20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_24
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61123509c38fc749875f7872f00509d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_25
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 2758
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e86e67766fd6e74e9985472b7bb5f1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83d99a31ca2ad54fa90cdc26aaa249d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_27
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50a150646ee00d42bc99f43289fd925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_28
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2505
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63879f6becef3754f867db4ce1ce21b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_29
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2505
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c561859e56cba8c43ad6ee36fee1d185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_30
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298d85d80755cca4cbe59d93e5484bef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_31
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d58a8dd946a1b43b5d46532e63a7a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_32
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2711cbb05811d6341aee216330b2957e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_33
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229ff3b01daa60044a51c678f10de19b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_34
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61ab0f681b6a7d4a824f445b61cb74f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_35
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1acbd9210860244099a0eadcec54beb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_36
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2111389cd70389340b45a97bd67e823a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_37
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2505
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4010d61c5fdbf34ea31caa3785c4a9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3137bfbff5176b489e8b6364cc862ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_39
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00597c32391f54c45b752de04fd1ee6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_40
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2252
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03685f35b835d0348a1bf09d3321c880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_41
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 2252
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdee0a159297cb46880d7783e539417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_42
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507f153a624e1514486a6aed6e93a257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_43
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94114a66063d3c74db1a7068833c4c21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_44
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3575c8663ff567049b1b01e93f8a87f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_45
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d75bf7752ecbab4a8620cffaa73ebcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_46
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde83f55582184841b47b68f874c79cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_47
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6049e717719c3ce44be7f42356998c24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_48
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8081ce9f2ec838a4a8259e5fbeccb5e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_49
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2252
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118fafa0f5a28594e9de7c9aaaa96535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d22d444fc980c341ba08f5634e0c288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_51
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81752c94bfa8ab24e9878f34cda27c38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_52
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1999
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b2fbcf6bd6c2e40a8ac9eaa2b91e05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_53
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1999
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fcd9abeab270240b9ee5db42283442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_54
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5caa4bde9cc4e254bbf2b38963ef7e73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_55
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8fa266fdf080c489850325e6ff38d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_56
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dd1821d6324bb41b4f72a690ba4f69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_57
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8509387e688f75e42b633100b0b90674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_58
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316b44e40eb68e54a951f0cfe253606d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_59
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18fcdea029d448a4e945beebeda627df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_60
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dbc788a9dce0c42a647f0292900131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_61
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3615016c5e11b064eb09375d18e8116e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_62
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c02a6dc05ec87140908ab9c9c7adfc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_63
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb853ff79e121114fb19da2b9edbd2a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_64
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 1999
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a4579288046a54aa1595a924db315d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6680e5f06d153b4fa31cac3d36350dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_66
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf279cdf7265f2a45982ee82202b61ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_67
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1746
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afaa133bfb73534ba4649673f30f961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_68
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1746
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7126312db2b5eb40b948e75c495c191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_69
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce7abcf5c37c064a8308d584b6de0f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_70
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32753f5170f9b24ea008ece417b7008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_71
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feab2c6c9e875c449883df8bf00f3433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_72
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03b57ceaad350e46ae1636036edbd4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_73
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236cb45ca510e8741b74ae3e09f9ffcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_74
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696c4de77ca2295458faaad3cc4fcd70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_75
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9434940e896903a44898e9951cc0a31f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_76
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfef7eb1a3f0f54185c0323da8457f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_77
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6f4300c6cdadd4fb41ac347e1acb31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_78
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e846a6cb53f265c44abc9518a413062b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_79
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 1746
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5233580dd77ddb94a90c104ac5d03afd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e580c49704633c4b873790b8c816d60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_81
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7869c33b07fe1e2419f75efb6a584a1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_82
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1493
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1140e83f0fd4512459187774a6c80917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_83
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1493
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f6ffc958a64f64fb5a267c4db38a20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_84
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8fd3f42340d74097193f1c6a4face
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_85
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e113aa2ca89dbee44bb64823b1304783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_86
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c651699e2e1618a40b6be2fef40abe64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_87
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4171546cecf39464fa06fc811d5119da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_88
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659591401085e1e4abf1b2751eb2a5ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_89
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3753ed54ab58a4c832c83651e3af16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_90
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b1e4449f58b7d4f9f0ddaf33fb122b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_91
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fb8505710a0ca45a6994ec58617572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_92
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab29be8a8a211e4ab68b2333280aa97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_93
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9c8eb882b698e4eb225353c8b2d4ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_94
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 1493
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9232e19ea5819145bf243e4bdb63061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0be92e7820866419e2b3c4b03608b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_96
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aad864728f03894b8d3156a1ed4d63c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_97
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1240
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6194aa481d1e04593a63be5062a772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_98
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1240
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2213adc5c51afdf48986113661857ae4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_99
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838ccf643c47e7c4991b7e540477875a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_100
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ab2571d58f8e0489f3ad2ac73c0974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_101
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7ae867b1be422409de9f3fa78b030f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_102
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b9822d706892543ab29a49bbe58d41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_103
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e2987ce87ca654287e349be1a766c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_104
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04be2dc1fd9b76845a2de207b9260324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_105
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71275e1057780f4982d745c9c98ea55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_106
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1be4b09a6604274baceae872531e47d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_107
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a350d0dbda484c84b859a40afc6b1266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_108
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2159a1c6752d4d4d8074b297ce0ab38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_109
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 1240
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d0526e1265a184c8203d061a01ab0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3405439db2a70469feed0432801bff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_111
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0823f3b90353a3b448780174d52a4a70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_112
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 987
+        width: 248
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038e2e397478a054689ae832c834839e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_113
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 987
+        width: 262
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2658671b57f90244fab41ee73f47a81e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_114
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8412f7d72ea8e3d44bccd8882563c50b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_115
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ab7f271801e234599f536ff356ba0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_116
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9050a712752d36d46bc38c75fc91eccb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_117
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c75e04856a64840b4811e6fa20be94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_118
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fe52be0a6d38d4496baccbe1f51ca5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_119
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8572b43625ea03d40ae2e54ad625baaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_120
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6e412f08853b9459eb1ce123121b4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_121
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024ee24f893ec4447ad970e655d06241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_122
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e3063637938ed4d8e933602eeca519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_123
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672803f274dde9b40bb70966ec1e4fbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_124
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 987
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b74057089562b42a4dd7c05fb5b728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_130
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2849f8eb28a98e41885ddcadc32abec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_131
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1684c7f34bbf1144a1cd86aff27fb66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_132
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd988942221ad41488f8e3fec1168b9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_133
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b26b8e852e6aad4dbf64641f8cc2024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_134
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3cba7210a5b33479799b3fbb676b51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_135
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e51123d47a184496baf9c82b288f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_136
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b593f5593311de469894f7708bd997e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_137
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 734
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2d19b5ccf05e248b9fcd65a16ed2fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_143
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaff6c5ef55d60469d450f415927352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_144
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d2be4b812080f458ab54029bddf8d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_145
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4fe6f791eb03044980bad29aa9003f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_146
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be5b1126fb515e409db75823b5e5bca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_147
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03c15818c3c91540af181334782d58e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_148
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71095ba034412a34b9c3510d16fdbdfa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_149
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69fa7ad6fa16bc64c8c08b7b6304b6b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_150
+      rect:
+        serializedVersion: 2
+        x: 3315
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8874ddd6c0d27543965c2870afb3d30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_151
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 481
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dc84d418d559a40a89acffafdfd4b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faba5e23f4f2cc4ba204b8f03564642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_153
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65c9713dac880c41abd7c62b68e4a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_154
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c802eadbaa67b7408bcc6cd1fe3112d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_155
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ea9b40499354840b7c9afdaf2451b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_156
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2defec0bbbbe2240b8b69cf983827e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_157
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b23d3a1f9b2264f9e2226a5c9bf2c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_158
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ef6447f575de44b8ba5124648d8599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_159
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c638757cade2b1c4ab25ed1bd2700ae0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_160
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7540e3abc8eb3f34db478bc674ec992d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_161
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4986f505a85923c498beafd936c6bd8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_162
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4bf505a7b7922458d314ce8ca5af44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_163
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 228
+        width: 255
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efb9f75126bd5649bee07985c0ab50a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
