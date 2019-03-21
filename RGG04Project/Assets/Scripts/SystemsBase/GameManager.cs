@@ -393,7 +393,7 @@ public class GameManager : MonoBehaviour {
     //-----------------------------------------------
     // Increasing of Score. Checks amount of donuts collected, if enough then opens win door. 
 
-    public void IncreaseScore(int scoreAmount, int donutAmount) {
+    public void IncreaseScore(int scoreAmount, int donutAmount = 0) {
 
         currentScore += scoreAmount;
 
