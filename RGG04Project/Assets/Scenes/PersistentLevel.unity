@@ -247,18 +247,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
-      propertyPath: isDebugging
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 121118571, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: minAmountOfCollectiblesRequired
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1120256360, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 121118572, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
