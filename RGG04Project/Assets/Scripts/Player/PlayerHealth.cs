@@ -12,7 +12,11 @@ public class PlayerHealth : HealthBase
 
 	void Start()
 	{
+		//This should be moved to the game manager. You can find this component easily in 
+		//the game manager by writing "GameObject.Find("PlayerCharacter").GetComponent<PlayerHealth>()"
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+		EventOnDeath += gameManager.LostGame;
+
 
 		base.Start();
 		PlayerStateHandler myHandler = gameObject.GetComponentInParent<PlayerStateHandler>();
@@ -34,18 +38,8 @@ public class PlayerHealth : HealthBase
 	{
 		if (!invincible)
 		{
-			base.DecreaseHealth(Amount);
-
-            if (base.health == 0) {
-
-                isDead = true;
-                gameManager.LostGame();
-                
-
-            }
-
-            return true;
-            //Debug.Log("Player Current Health: " + currentHealth);
+			bool tookDamage = base.DecreaseHealth(Amount);
+            return tookDamage;
         }
         else
         {
@@ -58,9 +52,15 @@ public class PlayerHealth : HealthBase
 		if (!invincible)
 		{
 			base.DecreaseHealth(Amount);
-			//Debug.Log("Player Current Health: " + currentHealth);
 		}
 	}
 
-    
+	//This function is bound to the delegate "EventOnDeath" so it is automatically called when the player health reaches 0
+	protected override void OnDeath()
+	{
+		base.OnDeath();
+		isDead = true;
+	}
+
+
 }

@@ -25,7 +25,7 @@ public class PolicePatrolArea : MonoBehaviour
         if (collision.gameObject == player)
         {
             SetPoliceChasePlayer();
-            Debug.Log("Player entered patrol area");
+            //Debug.Log("Player entered patrol area");
         }
     }
 

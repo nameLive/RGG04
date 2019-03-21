@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class Damager : MonoBehaviour
 {
-    public bool canDealDamage = true;
+	public bool canDealDamage = true;
 
-    [SerializeField]
-    [Tooltip("This is the damage it deals at the interval of \"DamageInterval\" ")]
-    int damageAmount = 1;
+	[SerializeField]
+	[Tooltip("This is the damage it deals at the interval of \"DamageInterval\" ")]
+	int damageAmount = 1;
 
-    [SerializeField]
-    [Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
-    float damageInterval = 0.1f;
+	[SerializeField]
+	[Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
+	float damageInterval = 0.1f;
 
-    HealthBase targetHealth;
+	HealthBase targetHealth;
 
-    [SerializeField]
-    [Tooltip("This is the collider that checks for damageable objects")]
-    Collider2D colliderReference;
+	[SerializeField]
+	[Tooltip("This is the collider that checks for damageable objects")]
+	Collider2D colliderReference;
 
-    GameObject damagedObject;
+	GameObject damagedObject;
 
-    public delegate void DidDamage(GameObject ToObject);
-    public event DidDamage EventOnDidDamage;
+	public delegate void DidDamage(GameObject ToObject);
+	public event DidDamage EventOnDidDamage;
 
 
-    protected void Start()
-    {
-        EventOnDidDamage += EventOnDidDamagePlaceholder;
-    }
+	protected virtual void Start()
+	{
+		EventOnDidDamage += EventOnDidDamagePlaceholder;
+	}
 
-    /*
+	/*
         private void OnTriggerEnter2D(Collider2D collision)
         {
             Debug.Log("Overlapped Thing: " + collision.gameObject.name);
@@ -48,69 +48,75 @@ public class Damager : MonoBehaviour
             }
         }*/
 
-/*
+	/*
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+		private void OnTriggerEnter2D(Collider2D collision)
+		{
 
-        StartCoroutine("DealDamageThing");
-    }
+			StartCoroutine("DealDamageThing");
+		}
 
-    int myInt = 0;
+		int myInt = 0;
 
-    IEnumerator DealDamageThing()
-    {
-        while (true)
-        {
-            Debug.Log("Damage Coroutine");
-            myInt++;
-            if (myInt >= 10)
-            {
-                StopCoroutine("DealDamageThing");
-            }
-            else
-            {
-                yield return new WaitForSeconds(damageInterval);
+		IEnumerator DealDamageThing()
+		{
+			while (true)
+			{
+				Debug.Log("Damage Coroutine");
+				myInt++;
+				if (myInt >= 10)
+				{
+					StopCoroutine("DealDamageThing");
+				}
+				else
+				{
+					yield return new WaitForSeconds(damageInterval);
 
-            }
-        }
-    }*/
+				}
+			}
+		}*/
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
+	private void OnTriggerStay2D(Collider2D collision)
+	{
 
-        if (collision.gameObject != damagedObject)
-        {
+		if (collision.gameObject != damagedObject)
+		{
 
-            damagedObject = collision.gameObject;
-            targetHealth = damagedObject.GetComponent<HealthBase>();
-        }
+			damagedObject = collision.gameObject;
+			targetHealth = damagedObject.GetComponent<HealthBase>();
+		}
 
-        if (targetHealth)
-        {
-            DealDamage();
-        }
-    }
+		if (targetHealth)
+		{
+			DealDamage();
+		}
+	}
 
-    void DealDamage()
-    {
-        if (canDealDamage)
-        {
-            //Debug.Log("Deals Damage");
-            if (targetHealth.DecreaseHealth(damageAmount))
-            {
+	void DealDamage()
+	{
+		if (canDealDamage)
+		{
+			bool didDamage = false;
+			didDamage = targetHealth.DecreaseHealth(damageAmount);
+			if (didDamage)
+			{
+				//CallEventOnDidDamage(damagedObject);
+				//EventOnDidDamagePlaceholder(damagedObject);
+				EventOnDidDamage(damagedObject);
 
-                EventOnDidDamage(damagedObject);
-
-            }
-
-
-        }
-    }
+			}
 
 
-    protected virtual void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
-    {
-        //blabla
-    }
+		}
+	}
+
+	protected void CallEventOnDidDamage(GameObject DidDamageToObject)
+	{
+	}
+
+
+	protected virtual void EventOnDidDamagePlaceholder(GameObject DidDamageTo)
+	{
+		//blabla
+	}
 }

@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 865607647}
   - component: {fileID: 865607649}
-  - component: {fileID: 632926986}
   - component: {fileID: 632926985}
   - component: {fileID: 632926987}
   - component: {fileID: 447095941}
@@ -66,22 +65,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3023758, y: 1.3962061}
   m_EdgeRadius: 0
---- !u!114 &632926986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865607646}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6d49f07674b12545bc967cdd71a4caa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canDealDamage: 1
-  damageAmount: 1
-  damageInterval: 1
-  colliderReference: {fileID: 865607649}
 --- !u!114 &632926985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +205,7 @@ MonoBehaviour:
   damageAmount: 1
   damageInterval: 0.1
   colliderReference: {fileID: 865607649}
-  onHitStopDuration: 2
+  onHitStopDuration: 1
 --- !u!95 &1474857380871370693
 Animator:
   serializedVersion: 3
