@@ -303,7 +303,7 @@ public class GameManager : MonoBehaviour {
 
         maxAmountOfCollectibles = GameObject.FindObjectsOfType<MajorDonut>().Length;
 
-        scoreText.text = "Score: " + currentScore;
+        scoreText.text = "" + currentScore;
         donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
     }
     
@@ -407,7 +407,7 @@ public class GameManager : MonoBehaviour {
 
         currentScore += scoreAmount;
 
-        scoreText.text = "Score: " + currentScore;
+        scoreText.text = "" + currentScore;
 
         currentAmountOfDonutsPickedUp += donutAmount;
 
