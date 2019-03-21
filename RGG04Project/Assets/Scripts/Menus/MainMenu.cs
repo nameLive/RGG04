@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour {
 
     public GameObject PressEnterImage;
 
+    public GameObject grafitti;
+
     //----------------------------------------------
 
     void Start() {
@@ -28,6 +30,15 @@ public class MainMenu : MonoBehaviour {
         StartCoroutine(ButtonDelay(2));
 
         StartCoroutine(CopyrightDelay(15));
+
+        StartCoroutine(Graffitti(3));
+    }
+
+    IEnumerator Graffitti (float delay) {
+
+        yield return new WaitForSeconds(delay);
+
+        grafitti.SetActive(true);
     }
 
     IEnumerator ButtonDelay (float delay) {
