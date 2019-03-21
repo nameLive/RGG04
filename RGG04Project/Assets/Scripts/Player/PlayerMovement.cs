@@ -159,14 +159,16 @@ public class PlayerMovement : MonoBehaviour
         {
             grounded = true;
             anim.ResetTrigger("HasDoubleJumped");
+            
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+   private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.layer == 9 && grounded)
         {
             grounded = false;
+            
         }
     }
 
