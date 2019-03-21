@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3524733488395500917}
   - component: {fileID: 7398807901190282937}
   - component: {fileID: 3830511028697954542}
+  - component: {fileID: 7753313100961887464}
   m_Layer: 0
   m_Name: CableSprite
   m_TagString: Untagged
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 1036f7e5885ea024192b344bfbbaead5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -110,7 +111,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.058725715, y: 0.23490262}
+  m_Offset: {x: 0.0027368069, y: -0.027708292}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -121,8 +122,27 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2093108, y: 0.6807809}
+  m_Size: {x: 1.86273, y: 0.46845865}
   m_EdgeRadius: 0
+--- !u!95 &7753313100961887464
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845806960848295518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 494959f8e3b5c0c4997c827eef91b720, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5007083074370635662
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,8 +167,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5007083074370635662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9412878, y: 6.0060835, z: -0.36518136}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.9412878, y: 6.0060835, z: 0}
+  m_LocalScale: {x: 1.5518, y: 1.5518, z: 1.5518}
   m_Children:
   - {fileID: 8075602598005287133}
   m_Father: {fileID: 0}
