@@ -106,14 +106,67 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
 
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            
-            if (gameState == GameState.InGame)
+        if (Input.GetButtonDown("Cancel")) {
 
+            /*if (gameState == GameState.InGame)
+                PauseGame(true);
+                */
+            if (gameState == GameState.InPauseMenu) {
+
+                PauseGame(true);
+
+                SetScenesToUnload(level1);
+
+                ScreenFade(false, .5f, BackToMenu);
+
+            }
+
+            else if (gameState == GameState.AtLoseScreen) {
+
+                SetScenesToUnload(new string[] { "LoseScreen" });
+                BackToMenu();
+            }
+
+            else if (gameState == GameState.AtWinScreen) {
+
+                SetScenesToUnload(new string[] { "WinScreen" });
+                BackToMenu();
+            }
+
+            else if (gameState == GameState.InMainMenu) {
+
+                Application.Quit();
+            }
+
+        }
+
+        else if (Input.GetButtonDown("Submit")) {
+
+            if (gameState == GameState.InGame)
                 PauseGame(true);
 
             else if (gameState == GameState.InPauseMenu)
                 PauseGame(true);
+
+            else if (gameState == GameState.AtLoseScreen) {
+
+                SetScenesToUnload(new string[] { "LoseScreen" });
+                currentScore = 0;
+                StartGame();
+            }
+
+            else if (gameState == GameState.AtWinScreen) {
+
+                SetScenesToUnload(new string[] { "WinScreen" });
+                StartGame();
+            }
+
+            else if (gameState == GameState.InMainMenu) {
+
+                SetScenesToUnload(new string[] { "MainMenu" });
+
+                StartGame();
+            }
         }
     }
 
@@ -451,7 +504,8 @@ public class GameManager : MonoBehaviour {
         
         wonGamesInARow++;
 
-        PoliceEnemy.movementSpeed += originalEnemyMovementSpeed * enemySpeedMultiplier;
+        if (PoliceEnemy.movementSpeed < .11f)
+            PoliceEnemy.movementSpeed += originalEnemyMovementSpeed * enemySpeedMultiplier;
 
         gameState = GameState.AtWinScreen;
     }
