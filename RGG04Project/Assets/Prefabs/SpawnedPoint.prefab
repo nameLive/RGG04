@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8512635833094708590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 71.66, y: 4.41, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreAmount: 0
   pointSprites:
-  - {fileID: 21300000, guid: 5b1a64ea234fb2343b8d0686c51280de, type: 3}
-  - {fileID: 21300000, guid: 49b611e658efbf443b686a4036f74fe3, type: 3}
-  - {fileID: 21300000, guid: eb5f6e2757c821940b69cf1456f7865a, type: 3}
+  - {fileID: 21300006, guid: 0eb8827f77555724f9c9b90127ece25d, type: 3}
+  - {fileID: 21300000, guid: 0eb8827f77555724f9c9b90127ece25d, type: 3}
+  - {fileID: 21300004, guid: 0eb8827f77555724f9c9b90127ece25d, type: 3}
+  - {fileID: 21300002, guid: 0eb8827f77555724f9c9b90127ece25d, type: 3}

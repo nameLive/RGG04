@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectibleType: 1
-  scoreValue: 20
+  scoreValue: 1500
   spawnPoints: {fileID: 8512635833094708590, guid: 12cbc02ad31607f41b9d7c1f9dfeb5af,
     type: 3}
 --- !u!61 &2568124543530490762
