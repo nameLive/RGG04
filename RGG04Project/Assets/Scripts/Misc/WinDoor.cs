@@ -7,19 +7,27 @@ public class WinDoor : MonoBehaviour {
     GameManager gameManager;
 
     public GameObject winDoorSprite;
+    Animator anim;
+    bool isOpen = false;
 
 
     void Start() {
 
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        anim = GetComponentInChildren<Animator>();
     }
 
+    void Update()
+    {
+        anim.SetBool("DoorOpen", isOpen);
+    }
 
     //-------------------------------
 
     public void OpenDoor() {
 
         StartCoroutine(OpenDoorAnim(3f));
+        isOpen = true;
     }
 
     //-------------------------------
@@ -56,6 +64,7 @@ public class WinDoor : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
 
             //GetComponent<AudioSource>().Play();
+            isOpen = false;
 
             gameManager.EnteredWinTrigger();
         }
