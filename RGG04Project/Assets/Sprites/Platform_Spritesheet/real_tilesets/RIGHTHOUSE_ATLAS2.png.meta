@@ -1,7 +1,98 @@
 fileFormatVersion: 2
 guid: eb05c4df0014cb04880b9f3e9af21a0a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: RIGHTHOUSE_ATLAS2_0
+    21300002: RIGHTHOUSE_ATLAS2_1
+    21300004: RIGHTHOUSE_ATLAS2_2
+    21300006: RIGHTHOUSE_ATLAS2_3
+    21300008: RIGHTHOUSE_ATLAS2_4
+    21300010: RIGHTHOUSE_ATLAS2_5
+    21300012: RIGHTHOUSE_ATLAS2_6
+    21300014: RIGHTHOUSE_ATLAS2_7
+    21300016: RIGHTHOUSE_ATLAS2_8
+    21300018: RIGHTHOUSE_ATLAS2_9
+    21300020: RIGHTHOUSE_ATLAS2_10
+    21300022: RIGHTHOUSE_ATLAS2_11
+    21300024: RIGHTHOUSE_ATLAS2_12
+    21300026: RIGHTHOUSE_ATLAS2_13
+    21300028: RIGHTHOUSE_ATLAS2_14
+    21300030: RIGHTHOUSE_ATLAS2_15
+    21300032: RIGHTHOUSE_ATLAS2_16
+    21300034: RIGHTHOUSE_ATLAS2_17
+    21300036: RIGHTHOUSE_ATLAS2_18
+    21300038: RIGHTHOUSE_ATLAS2_19
+    21300040: RIGHTHOUSE_ATLAS2_20
+    21300042: RIGHTHOUSE_ATLAS2_21
+    21300044: RIGHTHOUSE_ATLAS2_22
+    21300046: RIGHTHOUSE_ATLAS2_23
+    21300048: RIGHTHOUSE_ATLAS2_24
+    21300050: RIGHTHOUSE_ATLAS2_25
+    21300052: RIGHTHOUSE_ATLAS2_26
+    21300054: RIGHTHOUSE_ATLAS2_27
+    21300056: RIGHTHOUSE_ATLAS2_28
+    21300058: RIGHTHOUSE_ATLAS2_29
+    21300060: RIGHTHOUSE_ATLAS2_30
+    21300062: RIGHTHOUSE_ATLAS2_31
+    21300064: RIGHTHOUSE_ATLAS2_32
+    21300066: RIGHTHOUSE_ATLAS2_33
+    21300068: RIGHTHOUSE_ATLAS2_34
+    21300070: RIGHTHOUSE_ATLAS2_35
+    21300072: RIGHTHOUSE_ATLAS2_36
+    21300074: RIGHTHOUSE_ATLAS2_37
+    21300076: RIGHTHOUSE_ATLAS2_38
+    21300078: RIGHTHOUSE_ATLAS2_39
+    21300080: RIGHTHOUSE_ATLAS2_40
+    21300082: RIGHTHOUSE_ATLAS2_41
+    21300084: RIGHTHOUSE_ATLAS2_44
+    21300086: RIGHTHOUSE_ATLAS2_45
+    21300088: RIGHTHOUSE_ATLAS2_46
+    21300090: RIGHTHOUSE_ATLAS2_47
+    21300092: RIGHTHOUSE_ATLAS2_48
+    21300094: RIGHTHOUSE_ATLAS2_49
+    21300096: RIGHTHOUSE_ATLAS2_50
+    21300098: RIGHTHOUSE_ATLAS2_51
+    21300100: RIGHTHOUSE_ATLAS2_52
+    21300102: RIGHTHOUSE_ATLAS2_53
+    21300104: RIGHTHOUSE_ATLAS2_54
+    21300106: RIGHTHOUSE_ATLAS2_55
+    21300108: RIGHTHOUSE_ATLAS2_56
+    21300110: RIGHTHOUSE_ATLAS2_57
+    21300112: RIGHTHOUSE_ATLAS2_58
+    21300114: RIGHTHOUSE_ATLAS2_59
+    21300116: RIGHTHOUSE_ATLAS2_60
+    21300118: RIGHTHOUSE_ATLAS2_61
+    21300120: RIGHTHOUSE_ATLAS2_62
+    21300122: RIGHTHOUSE_ATLAS2_63
+    21300124: RIGHTHOUSE_ATLAS2_64
+    21300126: RIGHTHOUSE_ATLAS2_65
+    21300128: RIGHTHOUSE_ATLAS2_66
+    21300130: RIGHTHOUSE_ATLAS2_67
+    21300132: RIGHTHOUSE_ATLAS2_68
+    21300134: RIGHTHOUSE_ATLAS2_69
+    21300136: RIGHTHOUSE_ATLAS2_70
+    21300138: RIGHTHOUSE_ATLAS2_71
+    21300140: RIGHTHOUSE_ATLAS2_72
+    21300142: RIGHTHOUSE_ATLAS2_73
+    21300144: RIGHTHOUSE_ATLAS2_74
+    21300146: RIGHTHOUSE_ATLAS2_75
+    21300148: RIGHTHOUSE_ATLAS2_76
+    21300150: RIGHTHOUSE_ATLAS2_77
+    21300152: RIGHTHOUSE_ATLAS2_78
+    21300154: RIGHTHOUSE_ATLAS2_79
+    21300156: RIGHTHOUSE_ATLAS2_80
+    21300158: RIGHTHOUSE_ATLAS2_81
+    21300160: RIGHTHOUSE_ATLAS2_82
+    21300162: RIGHTHOUSE_ATLAS2_83
+    21300164: RIGHTHOUSE_ATLAS2_84
+    21300166: RIGHTHOUSE_ATLAS2_85
+    21300168: RIGHTHOUSE_ATLAS2_86
+    21300170: RIGHTHOUSE_ATLAS2_87
+    21300172: RIGHTHOUSE_ATLAS2_88
+    21300174: RIGHTHOUSE_ATLAS2_42
+    21300176: RIGHTHOUSE_ATLAS2_43
+    21300178: RIGHTHOUSE_ATLAS2_89
+    21300180: RIGHTHOUSE_ATLAS2_90
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +131,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,10 +151,21 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +173,1827 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e680e4e418f37d247b1b3317289bfeba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a12abcc438ac0f429c8a7a231678a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c5c98bf8e29134685acdb5eae15036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0af6200816900145be3dbc771b994ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27dcfa7f3d9c89499fbaca082aafa85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d66b49d8c07e54aa2f63875405302f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2a3591b9adbc641b2a5c23b3067c8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151f9b7a7668c8f44be158ae52695d3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a10eca2a99bad74f9c513001c3264a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2186
+        width: 160
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b040f5ca1f8e4ac4aa5e5bf3167e30e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_10
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1927
+        width: 135
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb6f2239281c594f87a4ab525ce332c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11646674370e0f8438d90863e782286e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82ede34ebfcf4f449f9abbf9cd6bd8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1880bb6df247334b82b12a08164b73e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820b765292c99874792b367768759bbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7213baa717062f2449c78750e0c55112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804a1ea05e80e7344a676f4a02dee693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e440c27408db4a94e86b41333dbb1f19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_18
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a334970c3bd1c64081e85d7deca96c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e88d7d90589f0e46bf6858fa03d9bc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_20
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1927
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e1fb2733356dc43ab2e3790294439b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_21
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 1927
+        width: 167
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1202d4d4ce88b804f8c51c41195faa5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d228865c84a4cce46886b30b13ab0798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c22502db5ac93d4080e3082f4144741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67964d19630e5f6459b0f6d4b884191e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5f818ac7275e2439d236ae8246cb64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a52bbfae31ff034085f5843b72f2e9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_27
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd6bc6c3cf439d46b204722caa3e845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_28
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb4f2c79eb44234280a2baa040f61ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_29
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97300abfaef7a4429edbf7f92944645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_30
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bea24891bce915419cccab32b4fb49d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_31
+      rect:
+        serializedVersion: 2
+        x: 2768
+        y: 1667
+        width: 135
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7f7652f788d574bb65a55110d100d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_32
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1667
+        width: 256
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257d063e10d03f948b1f8725190c1af0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2ff3ec65b6374895fc5f8c0e6ec78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9742a1ac0d95b0343b196e39272733f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0726f0b83d7816b4c8bd525b04dd548e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_36
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622f3e111a5cbea43aa05d92869ed9cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee79b6708b703a499a635b02f6c4d2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f095147e81a3b44b90796f3dc3ec508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5f8060c082656458b7291c2de1180d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_40
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6971fafd2429ae94a8cf9911cadf225d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_41
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1475fbb1efbf248831a9de6ca8419f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680000c758e49d340b2b58793bd392f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73026c97a716c1443969df84803eca6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4b0356d1da5014da10b26cefb6b528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_47
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fec4f48018f9514db5a0cc3ea86c9a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e3c6984f69e1a48aa3d6eb0a20cac8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_49
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3694f201a7f0004489dd7b6106bb2764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_50
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11deb8b44f9815448b387ba8b76465b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_51
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed007919cafe00941a995dea19c2afc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3917aecd546987647aa6e5560857d181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1a22ae643e34044ac415b5b4029869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_54
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e570008d5b3f644788e1e1284aed4af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_55
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3d590c5ef063349ab2634aefbef252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc254db1a3a29744a986f051f26b158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_57
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651290a9a7155b54ead64a12c2a57830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff960a06051fb764fb7935f7681e9132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_59
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2501f1c805680ae46af2003a691dd601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_60
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c83f1b00b4871c4ab4f10edce81d12a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_61
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd2c2cea7ad3b1479ae3cd7ccd6f4a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7d7d5a0befa6d4ba38cde5e64fd8e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_63
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3409a111d21fee043ae455fbe142ba49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_64
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c20d62a4d28f4142a4c1a75941b1a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_65
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dc5d66fa9b0a5448a9a7b3fe3d9581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_66
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a2044c631f0794e993b989c6a1d382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_67
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8382b25ff9013449ba760d5aa16bfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_68
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144386fc86a0f484998f5a9f68957cf5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_69
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d4d75da7852dd498200db0dd235377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_70
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1871b90278a1c5f419af86d2fa2649f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2185b705c1dd2774f948be7e78b86d80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7e1d982421bfd4c881568128092f2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_73
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426b3dbc3260d904590a09f57d4d6153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_74
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ff6e40509087b46a081a11c984f721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_75
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f43770b6f256545978769471f932db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_76
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde1dec9125c5514faac70a1032cf219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_77
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93ec63044fb7f240b5243a8922da2a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_78
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c1a0ac67a3588448787a32c723b420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_79
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3415b88bdf13774ca94058914ee86e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244a24497d3956342a8a1281f720c987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d195d3ea793a16f4e8d2cf84f1d16126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_82
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a7a7955f971344798b12a466878106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8856593681c7214b88b1aa868cd2e87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_84
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473001537cc2dc24287b3495cccb923e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_85
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c793cca0d1ba84748ab4f35daf43f1c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_86
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b4124f6b7a0df4cb0eff226cc84adf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_87
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a48886b26308d1489c9c100b2a1d59b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_88
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede3abc0a45e8da4cbdc3d1ed2f9089d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_42
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1667
+        width: 135
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d670d3a6ade224e845e73007c305e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_43
+      rect:
+        serializedVersion: 2
+        x: 2468
+        y: 2205
+        width: 220
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4306335965fde7b4e976d6c1e4058fef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_89
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 534
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a00a2d3383111148bf3d10b20a3eb57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RIGHTHOUSE_ATLAS2_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 531
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac22938cbb2a704883d54bdadcdfb28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
