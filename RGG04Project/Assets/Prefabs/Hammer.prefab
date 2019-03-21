@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectibleType: 3
-  scoreValue: 50
+  scoreValue: 100
   hammerDuration: 5
   spawnPoints: {fileID: 8512635833094708590, guid: 12cbc02ad31607f41b9d7c1f9dfeb5af,
     type: 3}

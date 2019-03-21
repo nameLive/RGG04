@@ -18,16 +18,20 @@ public class SpawnedPoints : MonoBehaviour {
 
         switch (scoreAmount) {
 
-            case 5:
+            case 50:
                 spriteRenderer.sprite = pointSprites[0];
                 break;
 
-            case 20:
+            case 100:
                 spriteRenderer.sprite = pointSprites[1];
                 break;
 
-            case 50:
+            case 500:
                 spriteRenderer.sprite = pointSprites[2];
+                break;
+
+            case 1500:
+                spriteRenderer.sprite = pointSprites[3];
                 break;
         }
 
