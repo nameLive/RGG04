@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1837868785}
   - component: {fileID: 1837868787}
-  - component: {fileID: 1837868788}
   - component: {fileID: 1837868786}
+  - component: {fileID: 1812199878}
   m_Layer: 13
   m_Name: HammerComponent
   m_TagString: Untagged
@@ -59,22 +59,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 2.5}
   m_EdgeRadius: 0
---- !u!114 &1837868788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837868784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6d49f07674b12545bc967cdd71a4caa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canDealDamage: 1
-  damageAmount: 1
-  damageInterval: 1
-  colliderReference: {fileID: 1837868787}
 --- !u!114 &1837868786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +72,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasHammer: 0
+--- !u!114 &1812199878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837868784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753cf2ed637423448bf7e80c8b907b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDealDamage: 1
+  damageAmount: 1
+  damageInterval: 0.1
+  colliderReference: {fileID: 1837868787}
 --- !u!1 &2079646842
 GameObject:
   m_ObjectHideFlags: 0
