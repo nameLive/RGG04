@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121118572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1031,6 +1031,8 @@ MonoBehaviour:
   - {fileID: 901025620}
   - {fileID: 687997039}
   - {fileID: 311288641}
+  heartSpriteFull: {fileID: 21300000, guid: 36b47baebb80d12409e67d63456532c2, type: 3}
+  heartSpriteEmpty: {fileID: 21300000, guid: 285498fc14026174ca73c8cc13bacb5d, type: 3}
 --- !u!1 &1975994054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.2, y: -0.7}
+  m_AnchoredPosition: {x: 48.9, y: -0.4}
   m_SizeDelta: {x: 67.02, y: 17.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2094085608
@@ -1686,8 +1688,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -180, y: -43}
-  m_SizeDelta: {x: 60.859985, y: 10}
+  m_AnchoredPosition: {x: 176.2, y: -87.1}
+  m_SizeDelta: {x: 60.86, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4875415556856475706
 CanvasRenderer:

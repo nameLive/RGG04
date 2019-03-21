@@ -8,12 +8,16 @@ public class HealthHUD : MonoBehaviour {
 
     public Image[] hearts;
 
+    [SerializeField]
+    private Sprite heartSpriteFull;
+
+    [SerializeField]
+    private Sprite heartSpriteEmpty;
+
     private PlayerHealth playerHealth;
+    
 
-    void Start() {
-
-        
-    }
+    //------------------------------------
 
     void OnEnable() {
 
@@ -21,28 +25,29 @@ public class HealthHUD : MonoBehaviour {
 
         playerHealth.EventOnHealthDecreased += HealthDecreased;
 
-        // set ful heart  health here. Can be a prob if HUD is hidden when at pause menu though. 
+        for (int i = 0; i < hearts.Length; i++) {
 
-        // 
+                hearts[i].sprite = heartSpriteFull;
+        }
+
+        // Can be a prob if HUD is hidden when at pause menu though. 
     }
+
+    //------------------------------------
 
     void OnDisable() {
         
         // Reset Health here
     }
 
+    //------------------------------------
+
     void HealthDecreased() {
-
-        // Cgabge heart sprite to empty depending on HP.
-
-        //playerHealth.health
 
         for (int i = 0; i < hearts.Length; i++) {
 
-            if (i < playerHealth.health)
-                Debug.Log("Test");
+            if (i > playerHealth.health - 1)
+                hearts[i].sprite = heartSpriteEmpty;
         }
-
-        //hearts[playerHealth.health - 1]
     }
 }

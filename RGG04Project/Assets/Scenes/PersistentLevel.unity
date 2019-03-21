@@ -245,11 +245,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6182972744296171984, guid: 6475fba23952efc479d2344c1edbd96a,
-        type: 3}
-      propertyPath: isDebugging
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1120256360, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -262,43 +257,24 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2086038177, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2094085609, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 48.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2094085609, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6305022802271692495, guid: 6475fba23952efc479d2344c1edbd96a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: 60.7
       objectReference: {fileID: 0}
     - target: {fileID: 2945642268804601980, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2945642268804601980, guid: 6475fba23952efc479d2344c1edbd96a,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 60.86
+      value: -189.7
       objectReference: {fileID: 0}
     - target: {fileID: 2945642268804601980, guid: 6475fba23952efc479d2344c1edbd96a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -87.1
+      value: -44.8
       objectReference: {fileID: 0}
-    - target: {fileID: 1019619634078116263, guid: 6475fba23952efc479d2344c1edbd96a,
-        type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 2094085607, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
+      propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 21300000, guid: 1ba25ea540143ae40881b382ce3cb8a5,
+      objectReference: {fileID: 12800000, guid: 6584f71aabda60a44aa4d5eb93c459f8,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6475fba23952efc479d2344c1edbd96a, type: 3}
