@@ -53,7 +53,7 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (!hasHammer)
 		{
-            Debug.Log("Start Hammer state");
+           // Debug.Log("Start Hammer state");
 			damager.canDealDamage = true;
             hasHammer = true; 
 		}
@@ -63,7 +63,7 @@ public class PlayerHammerState : MonoBehaviour
 	{
 		if (hasHammer)
 		{
-            Debug.Log("End hammer state");
+           // Debug.Log("End hammer state");
 			damager.canDealDamage = false;
             hasHammer = false;
 		}

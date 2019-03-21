@@ -34,28 +34,27 @@ public class HealthBase : MonoBehaviour
 
 	public virtual bool DecreaseHealth(int Amount)
 	{
-		if (!canTakeDamage) return false; 
+		if (!canTakeDamage) return false;
 
-		currentHealth -= Mathf.Abs(Amount);
-		EventOnHealthDecreased();
+		canTakeDamage = false;
 		if (currentHealth == 0)
 		{
 			EventOnDeath();
-			canTakeDamage = false;
+			return false;
 		}
-        else
-        {
-            canTakeDamage = false;
-            Invoke("CanTakeDamageReset", 1f);
-        }
+		currentHealth -= Mathf.Abs(Amount);
+		EventOnHealthDecreased();
 
-        return true;
+		Invoke("CanTakeDamageReset", 1f);
+
+
+		return true;
 	}
 
-    void CanTakeDamageReset()
-    {
-        canTakeDamage = true;
-    }
+	void CanTakeDamageReset()
+	{
+		canTakeDamage = true;
+	}
 
 	public virtual void IncreaseHealth(int Amount)
 	{

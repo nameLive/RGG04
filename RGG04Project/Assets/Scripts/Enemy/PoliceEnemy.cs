@@ -110,7 +110,7 @@ public class PoliceEnemy : MonoBehaviour
         previousState = currentState;
         currentState = NewState;
 
-		Debug.Log("New State: " + currentState + " Previous State: " + previousState);
+		//Debug.Log("New State: " + currentState + " Previous State: " + previousState);
     }
 
     public void SetStateChasePlayer()
