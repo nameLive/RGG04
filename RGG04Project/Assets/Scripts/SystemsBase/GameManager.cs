@@ -525,7 +525,7 @@ public class GameManager : MonoBehaviour {
 
             // Play Death Animation
 
-            StartCoroutine(PauseDelayBeforeGettingToScreen(1f, "LoseScreen"));
+            StartCoroutine(PauseDelayBeforeGettingToScreen(1.75f, "LoseScreen"));
         }
     }
 
