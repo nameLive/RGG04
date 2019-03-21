@@ -15,7 +15,7 @@ public class WinScreen : MonoBehaviour {
     void Start() {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
-        scoreText.text = "Total Score: " + gameManager.currentScore;
+        scoreText.text = "" + gameManager.currentScore;
     }
 
     //---------------------------------------
