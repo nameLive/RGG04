@@ -35,3 +35,7 @@ sysinfo.txt
 *.apk
 *.unitypackage
 RGG04Project/ProjectSettings/ProjectVersion.txt
+
+RGG04Project/Assets/Scenes/Onealtesting2\.unity
+
+RGG04Project/Assets/Scenes/Onealtesting2\.unity\.meta
