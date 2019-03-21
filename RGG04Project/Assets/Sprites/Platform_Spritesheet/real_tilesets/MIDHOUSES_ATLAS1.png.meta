@@ -1786,7 +1786,7 @@ TextureImporter:
         serializedVersion: 2
         x: 2359
         y: 1478
-        width: 256
+        width: 768
         height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1796,46 +1796,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6c925652c6293254186c02d81ce88884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MIDHOUSES_ATLAS1_108
-      rect:
-        serializedVersion: 2
-        x: 2615
-        y: 1478
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b15660c5fff88034c95094862cf7dd65
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MIDHOUSES_ATLAS1_109
-      rect:
-        serializedVersion: 2
-        x: 2871
-        y: 1478
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d25ea54285af96d46a074d40271fba96
       vertices: []
       indices: 
       edges: []
@@ -2549,7 +2509,7 @@ TextureImporter:
         width: 531
         height: 163
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
