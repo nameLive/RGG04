@@ -7,6 +7,7 @@ public class EnemyBobbingMovement : BobbingMovement
     // Start is called before the first frame update
     void Start()
     {
+		base.Start();
         EnemyStunState enemyStunState = GetComponent<EnemyStunState>();
         enemyStunState.EventOnBeginStun += BeginStun;
         enemyStunState.EventOnEndStun += EndStun;
