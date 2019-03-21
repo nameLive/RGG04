@@ -291,6 +291,8 @@ public class GameManager : MonoBehaviour {
 
     void InGame() {
 
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerHealth>().EventOnDeath += LostGame;
+
         winDoor = GameObject.FindGameObjectWithTag("WinDoor");
 
         gameState = GameState.InGame;

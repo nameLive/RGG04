@@ -578,6 +578,11 @@ PrefabInstance:
       propertyPath: spriteToAffect
       value: 
       objectReference: {fileID: 1594158603047232358}
+    - target: {fileID: 1108131024885738758, guid: 581e0123f3fd5e94c9b4ade0eb72310f,
+        type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 581e0123f3fd5e94c9b4ade0eb72310f, type: 3}
 --- !u!4 &1837268014277233777 stripped

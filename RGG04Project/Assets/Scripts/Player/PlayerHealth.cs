@@ -8,15 +8,7 @@ public class PlayerHealth : HealthBase
 	public bool invincible = false;
     public bool isDead = false;
 
-    GameManager gameManager;
-
-	void Start()
-	{
-		//This should be moved to the game manager. You can find this component easily in 
-		//the game manager by writing "GameObject.Find("PlayerCharacter").GetComponent<PlayerHealth>()"
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-		EventOnDeath += gameManager.LostGame;
-
+	void Start() {
 
 		base.Start();
 		PlayerStateHandler myHandler = gameObject.GetComponentInParent<PlayerStateHandler>();
