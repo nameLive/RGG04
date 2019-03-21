@@ -291,6 +291,8 @@ public class GameManager : MonoBehaviour {
 
     void InGame() {
 
+        GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerHealth>().EventOnDeath += LostGame;
+
         winDoor = GameObject.FindGameObjectWithTag("WinDoor");
 
         gameState = GameState.InGame;
@@ -304,7 +306,7 @@ public class GameManager : MonoBehaviour {
         maxAmountOfCollectibles = GameObject.FindObjectsOfType<MajorDonut>().Length;
 
         scoreText.text = "" + currentScore;
-        donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
+        donutsText.text = "" + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
     }
     
     //-----------------------------------------------
@@ -411,7 +413,7 @@ public class GameManager : MonoBehaviour {
 
         currentAmountOfDonutsPickedUp += donutAmount;
 
-        donutsText.text = "Donuts: " + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
+        donutsText.text = "" + currentAmountOfDonutsPickedUp + " / " + maxAmountOfCollectibles;
 
 
         if (donutAmount > 0) {

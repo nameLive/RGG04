@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canTakeDamage: 1
-  maxHealth: 10
+  maxHealth: 5
   invincible: 0
+  isDead: 0
 --- !u!61 &1108131024885738757
 BoxCollider2D:
   m_ObjectHideFlags: 0

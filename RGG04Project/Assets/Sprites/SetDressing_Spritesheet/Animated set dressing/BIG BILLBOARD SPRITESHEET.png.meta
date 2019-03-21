@@ -5,6 +5,7 @@ TextureImporter:
     21300000: BIG BILLBOARD SPRITESHEET_0
     21300002: BIG BILLBOARD SPRITESHEET_1
     21300004: BIG BILLBOARD SPRITESHEET_2
+    21300006: BIG BILLBOARD SPRITESHEET_3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -92,10 +93,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 731
+        width: 730
         height: 445
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,12 +111,12 @@ TextureImporter:
       name: BIG BILLBOARD SPRITESHEET_1
       rect:
         serializedVersion: 2
-        x: 731
+        x: 730
         y: 0
-        width: 731
+        width: 729
         height: 445
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,9 +131,29 @@ TextureImporter:
       name: BIG BILLBOARD SPRITESHEET_2
       rect:
         serializedVersion: 2
-        x: 1462
+        x: 1459
         y: 0
-        width: 731
+        width: 729
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291e48e269bae8d4894f4a76dc76d925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BIG BILLBOARD SPRITESHEET_3
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 0
+        width: 730
         height: 445
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,7 +162,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 291e48e269bae8d4894f4a76dc76d925
+      spriteID: 1182a74edbbd68d47a69de46dd5064ff
       vertices: []
       indices: 
       edges: []
