@@ -1,7 +1,98 @@
 fileFormatVersion: 2
 guid: 335539feb8edfed46ae095f7782e7d9a
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: LEFTHOUSE_ATLAS1_0
+    21300002: LEFTHOUSE_ATLAS1_1
+    21300004: LEFTHOUSE_ATLAS1_2
+    21300006: LEFTHOUSE_ATLAS1_3
+    21300008: LEFTHOUSE_ATLAS1_4
+    21300010: LEFTHOUSE_ATLAS1_5
+    21300012: LEFTHOUSE_ATLAS1_6
+    21300014: LEFTHOUSE_ATLAS1_7
+    21300016: LEFTHOUSE_ATLAS1_8
+    21300018: LEFTHOUSE_ATLAS1_9
+    21300020: LEFTHOUSE_ATLAS1_10
+    21300022: LEFTHOUSE_ATLAS1_11
+    21300024: LEFTHOUSE_ATLAS1_12
+    21300026: LEFTHOUSE_ATLAS1_13
+    21300028: LEFTHOUSE_ATLAS1_14
+    21300030: LEFTHOUSE_ATLAS1_15
+    21300032: LEFTHOUSE_ATLAS1_16
+    21300034: LEFTHOUSE_ATLAS1_17
+    21300036: LEFTHOUSE_ATLAS1_18
+    21300038: LEFTHOUSE_ATLAS1_19
+    21300040: LEFTHOUSE_ATLAS1_20
+    21300042: LEFTHOUSE_ATLAS1_21
+    21300044: LEFTHOUSE_ATLAS1_22
+    21300046: LEFTHOUSE_ATLAS1_23
+    21300048: LEFTHOUSE_ATLAS1_24
+    21300050: LEFTHOUSE_ATLAS1_25
+    21300052: LEFTHOUSE_ATLAS1_26
+    21300054: LEFTHOUSE_ATLAS1_27
+    21300056: LEFTHOUSE_ATLAS1_28
+    21300058: LEFTHOUSE_ATLAS1_29
+    21300060: LEFTHOUSE_ATLAS1_30
+    21300062: LEFTHOUSE_ATLAS1_31
+    21300064: LEFTHOUSE_ATLAS1_32
+    21300066: LEFTHOUSE_ATLAS1_33
+    21300068: LEFTHOUSE_ATLAS1_34
+    21300070: LEFTHOUSE_ATLAS1_35
+    21300072: LEFTHOUSE_ATLAS1_36
+    21300074: LEFTHOUSE_ATLAS1_37
+    21300076: LEFTHOUSE_ATLAS1_38
+    21300078: LEFTHOUSE_ATLAS1_39
+    21300080: LEFTHOUSE_ATLAS1_40
+    21300082: LEFTHOUSE_ATLAS1_41
+    21300084: LEFTHOUSE_ATLAS1_43
+    21300086: LEFTHOUSE_ATLAS1_44
+    21300088: LEFTHOUSE_ATLAS1_45
+    21300090: LEFTHOUSE_ATLAS1_46
+    21300092: LEFTHOUSE_ATLAS1_47
+    21300094: LEFTHOUSE_ATLAS1_48
+    21300096: LEFTHOUSE_ATLAS1_49
+    21300098: LEFTHOUSE_ATLAS1_50
+    21300100: LEFTHOUSE_ATLAS1_51
+    21300102: LEFTHOUSE_ATLAS1_52
+    21300104: LEFTHOUSE_ATLAS1_54
+    21300106: LEFTHOUSE_ATLAS1_55
+    21300108: LEFTHOUSE_ATLAS1_56
+    21300110: LEFTHOUSE_ATLAS1_57
+    21300112: LEFTHOUSE_ATLAS1_58
+    21300114: LEFTHOUSE_ATLAS1_59
+    21300116: LEFTHOUSE_ATLAS1_60
+    21300118: LEFTHOUSE_ATLAS1_61
+    21300120: LEFTHOUSE_ATLAS1_62
+    21300122: LEFTHOUSE_ATLAS1_64
+    21300124: LEFTHOUSE_ATLAS1_65
+    21300126: LEFTHOUSE_ATLAS1_66
+    21300128: LEFTHOUSE_ATLAS1_67
+    21300130: LEFTHOUSE_ATLAS1_68
+    21300132: LEFTHOUSE_ATLAS1_69
+    21300134: LEFTHOUSE_ATLAS1_70
+    21300136: LEFTHOUSE_ATLAS1_71
+    21300138: LEFTHOUSE_ATLAS1_72
+    21300140: LEFTHOUSE_ATLAS1_74
+    21300142: LEFTHOUSE_ATLAS1_75
+    21300144: LEFTHOUSE_ATLAS1_76
+    21300146: LEFTHOUSE_ATLAS1_77
+    21300148: LEFTHOUSE_ATLAS1_78
+    21300150: LEFTHOUSE_ATLAS1_79
+    21300152: LEFTHOUSE_ATLAS1_80
+    21300154: LEFTHOUSE_ATLAS1_81
+    21300156: LEFTHOUSE_ATLAS1_82
+    21300158: LEFTHOUSE_ATLAS1_84
+    21300160: LEFTHOUSE_ATLAS1_85
+    21300162: LEFTHOUSE_ATLAS1_86
+    21300164: LEFTHOUSE_ATLAS1_87
+    21300166: LEFTHOUSE_ATLAS1_88
+    21300168: LEFTHOUSE_ATLAS1_89
+    21300170: LEFTHOUSE_ATLAS1_90
+    21300172: LEFTHOUSE_ATLAS1_91
+    21300174: LEFTHOUSE_ATLAS1_92
+    21300176: LEFTHOUSE_ATLAS1_94
+    21300178: LEFTHOUSE_ATLAS1_95
+    21300180: LEFTHOUSE_ATLAS1_96
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +131,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,10 +151,21 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +173,1827 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878d6498327f5494db395ddfa1146383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c28aedc413814144ad625c4d1bcc004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85c12c9015d8cf48935fdee93849583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392cbd97e42a2f640aee42fcb6037e1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f701187ba4e4e04aa96425d36e2e70d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8420666fbc446c44a7504257aca4d3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d171ee68b01a14c4eb14967bae880194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f50aa8bf3a43d489a10cf65ad8bdd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2206
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de59db85cca882a419434ee37742e1c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 2186
+        width: 161
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c323ceb21f25a43b9918547dcaf938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_10
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 2205
+        width: 221
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e16cd75de1941f4a9f9e112f8a54e8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e4347bd00930c42beec408f6130fef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4e0f3dc0fd6234eb171c93adaa6ea4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4262eecda1150aa4b95b8d4785af9a14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5052ae170b44154eb68fb369429f305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_15
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15603d2e93940ab4cb924799662bd2f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230d0a1bd071bc1429404e45a9d8d039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_17
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dd420264fd3e34482b681c4088bd28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_18
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cfe34db76fd6944b6e8eaed3be4259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_19
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1951
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82634a5fbe2c054a881fd99cb93d2f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_20
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1929
+        width: 135
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381c9e14f044e8c4c9d525d230f44926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_21
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1930
+        width: 169
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223f80a37a66d4b40a17bb690ef4de86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffd2acfec3ccfe428f5f51a3036722d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8740a3b14225e9048b7749e0a1d3b3ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e744266ec976aee418870b83617908cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0bff9fc7bc4bd40bace6c5d64b3d99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b27d2b2390d0a4f9cb6ffb450854d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_27
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370a8c696a8c0cf4a85c223509341916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_28
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7293ee7cdd23e469652bf242d00b30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_29
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477d51d32edde1446943b50eb22a4a05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_30
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1696
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926181b18301692408dfd12f2e04b063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_31
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 1671
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ccfea6522f4049bceeb5f968ac014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_32
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1671
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafb883e0ace0764cbc4e44b2fdd83db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832510763e8fce940ad3b5a2516cbce0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bb80b158b76d541bb55f0e5e5cc26d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2550661c4540284b9c095a9ec166766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_36
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d43438cb49f33944a06390f4c778cf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0e574b0b39fdd488bb47a393b64022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4047434aa22904c8ca74012997bfb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_39
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991363e89dfd0f6429534da6ce7c587a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_40
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4640121a0e2558241b7f09d55e2e8dba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_41
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1441
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63ca2853a210dc4e9ffe8ca708c1835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_43
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1671
+        width: 134
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591388cce91141e4f8b166f530179d0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38de708b2db4944ab62c8b6badd0186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61abe0fe56bb8e428e19e50b677e1d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a74a73067f5f374d89fc77b03b0d036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_47
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602dc554a13364043b280e6c3356d86c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1226a3a7fcac1f47b5a87c9f964fe9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_49
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8169c1708073884498efd8b614293fcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_50
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7215f723be9c104aafe73030634f10c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_51
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3716c424f9f8dc8489cacf49c99950d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1186
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de141be0d8f6be14c890a614387ff1a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a250f74cfc0e0d443b48259f4d5e6c63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_55
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8012e007aa3751841806c2c0b27f8f62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cde58a4301cc40408305d872d14e51d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b442474f56915a42b01965da2bfdca3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_58
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9928f6c05d0678d45a6d492f4d6146c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_59
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f9887608437524cad4e6447a9d75e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_60
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a4768c50dece54d82bcf7a36bcb692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_61
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a77c9c3a10cb6843b8ec467fbbe654a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_62
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 931
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276c7cbee8ef39149b468178604d0e0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa0f5fa74cf5bd41b6d7ee3bf50b164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d511f78f087ae48b74221baa81053e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_66
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e27a184893681845bff594c1ee7a890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_67
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642011b4bdb718c40a1816f0fac8603d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_68
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c630f7b201cb18b4b8a2aec8bba4b485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_69
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37057b653a444f448baca39c6eec8cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_70
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7537eb5a77738524886fd9993e0bd645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_71
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c8dfe6744f7be40ab8e97e252f1bb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_72
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 676
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca6676c1e73e6042a78bd3d45c8ee1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb4cc5041033eb45b0f1b72b63e81be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400fc54bd6e04b64386e02971cfe2df7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df98edf43aab4114bbf1c0a77483711f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_77
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ed6b085aa86e94995d2de6cea16e2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_78
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f22ba0f2ad51d4e83bd256cbff46c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79942f44f65bd54a823b0ca2fffc219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_80
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64733fc37d49224bb63be331469f183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_81
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996afd673f3f6f54ea8de39ced5375c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_82
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 421
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aa449e1cfa717419e7a1e0db3aebfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86afe72349dc7ea44bdaee9890929fd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_85
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61099b948c6413498430f62c95f835e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_86
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bddc1940e92e14ca83264dba36a12c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_87
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7463434c2650127448c59687cd2e872e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_88
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cbe54bb3cfd8c48ad06a1067cd2ce7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_89
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2ffa1b2e9dd5b4ca8dbe830f121155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_90
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbb50931a2a3e1479daebd30fc3afc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_91
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd09ab3ab1b21e04ea19a69baeb7f018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_92
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 166
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924c4bf251132524bb8d790410d31b1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_94
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 532
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f190ef7468852a3409d2f63f73ba96bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 531
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78489e6542aea3f4d95655ddd0c5d018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LEFTHOUSE_ATLAS1_96
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1930
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb72f65e9fbdee4281d1623f59e84b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
