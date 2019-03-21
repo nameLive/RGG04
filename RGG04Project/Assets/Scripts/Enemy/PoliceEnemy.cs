@@ -60,7 +60,7 @@ public class PoliceEnemy : MonoBehaviour
     private void Update()
     {
         anim.SetBool("FacingRight", movingRight);
-        //if (gameManager.gameState != GameState.InPauseMenu && gameManager.gameState != GameState.WonGame) return;
+        if (gameManager.gameState == GameState.InPauseMenu || gameManager.gameState == GameState.WonGame) return;
 
         if (currentState != PatrolingPoliceStateEnum.Stunned && currentState != PatrolingPoliceStateEnum.None)
         {
