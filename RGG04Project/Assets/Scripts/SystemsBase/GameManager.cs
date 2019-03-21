@@ -410,7 +410,7 @@ public class GameManager : MonoBehaviour {
 
                 if (!hasPickedUpMinimum) {
 
-                    winDoor.GetComponent<WinDoor>().OpenDoor();
+                    winDoor.GetComponent<WinDoor>().ActivateWinZone();
 
                     Instantiate(arrowPointingToDoor, transform.position, Quaternion.identity);
 
