@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoseScreen.unity
     guid: b5595ff0ef8ae5446bcf935e20415376
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Antonia.unity
     guid: 378df211b69880645988c144734f0dd0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Josie.unity
     guid: 9f3d3cbf5cfc0624f89a3ac7132d8994
   m_configObjects: {}
