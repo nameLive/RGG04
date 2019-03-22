@@ -2245,9 +2245,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3581
-        y: 960
+        y: 1472
         width: 513
-        height: 1536
+        height: 1024
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2516,6 +2516,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5adafd265346242499530cf884725ccc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MIDHOUSES_ATLAS1_11
+      rect:
+        serializedVersion: 2
+        x: 3581
+        y: 960
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94ab37d0b37778408d334d6589182da
       vertices: []
       indices: 
       edges: []
