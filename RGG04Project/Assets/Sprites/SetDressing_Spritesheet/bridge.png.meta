@@ -90,10 +90,10 @@ TextureImporter:
       name: bridge_0
       rect:
         serializedVersion: 2
-        x: 68
-        y: 51
-        width: 845
-        height: 864
+        x: 22
+        y: 16
+        width: 263
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,7 +101,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f035f0f7d360fc4799ba4fda11c9304
+      spriteID: 05301500d55714b4da01fefbfcf7bcf1
       vertices: []
       indices: 
       edges: []
@@ -110,10 +110,10 @@ TextureImporter:
       name: bridge_1
       rect:
         serializedVersion: 2
-        x: 913
-        y: 51
-        width: 771
-        height: 864
+        x: 285
+        y: 16
+        width: 241
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +121,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 198cf38087d09ab4cae20156f924c17e
+      spriteID: 57c269b894a15f64e99f5e9ae24a5fff
       vertices: []
       indices: 
       edges: []
@@ -130,10 +130,10 @@ TextureImporter:
       name: bridge_2
       rect:
         serializedVersion: 2
-        x: 1684
-        y: 51
-        width: 783
-        height: 864
+        x: 526
+        y: 16
+        width: 245
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,7 +141,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5c5b930f38f5f645af9a807fab5aef3
+      spriteID: af6b13e69e139984b837536b6afc0f19
       vertices: []
       indices: 
       edges: []
