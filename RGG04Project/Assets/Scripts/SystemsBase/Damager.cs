@@ -11,7 +11,7 @@ public class Damager : MonoBehaviour
 	int damageAmount = 1;
 
 	[SerializeField]
-	[Tooltip("This is the interval(In Seconds) at which it deals damage if still overlapping")]
+	[Tooltip("This is the interval(In Seconds) at which it deals damage if overlapping is continuous")]
 	float damageInterval = 0.1f;
 
 	HealthBase targetHealth;

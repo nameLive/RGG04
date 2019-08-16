@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PatrolingPoliceStateEnum
+public enum PoliceEnemyStateEnum
 {
     None,
     ChasePlayer,

@@ -27,7 +27,7 @@ public class PlayerDamager : Damager
 		if (policeEnemyHit)
 		{
 			
-			if (policeEnemyHit.state == PatrolingPoliceStateEnum.Stunned)
+			if (policeEnemyHit.State == PoliceEnemyStateEnum.Stunned)
 			{
 				gameManager.IncreaseScore(OnEnemyStunScoreValue);
 			}

@@ -5,145 +5,164 @@ using UnityEngine;
 public class PoliceEnemy : MonoBehaviour
 {
 
-    //PRIVATE VARIABLES
+	private PoliceEnemyStateEnum currentState = PoliceEnemyStateEnum.ChasePlayer;
+	private PoliceEnemyStateEnum previousState = PoliceEnemyStateEnum.ChasePlayer;
+	public PoliceEnemyStateEnum State { get { return currentState; } }
 
-    PatrolingPoliceStateEnum currentState = PatrolingPoliceStateEnum.ChasePlayer;
-    PatrolingPoliceStateEnum previousState = PatrolingPoliceStateEnum.ChasePlayer;
+	//Defaults to the player
+	GameObject chaseTarget = null;
+	Vector3 targetLocation;
 
+	private GameObject playerChaseTarget = null;
 
-	public PatrolingPoliceStateEnum state
-	{
-		get { return currentState; }
-	}
-
-    //the location of this object is the location the enemy is headed towards
-    GameObject targetLocationObject = null;
-    Vector3 targetLocation;
-
-    GameManager gameManager;
-    Animator anim;
+	private GameManager gameManager = null;
+	private Animator anim = null;
 
 	[HideInInspector]
 	public bool movingRight = true;
 
-    //EDITABLE VARIABLES
+	[SerializeField]
+	[Tooltip("The speed of which the enemy moves towards the player when in range")]
+	[Range(0.0f, 0.5f)]
+	public static float movementSpeed = 0.045f;
 
-    [SerializeField]
-    [Tooltip("The speed of which the enemy moves towards the player when in range")]
-    [Range(0.0f, 0.5f)]
-    public static float movementSpeed = 0.045f;
+	//[SerializeField] Can be made visible again if it needs to be changed
+	[Tooltip("The enemy will always keep this distance to the player no matter how fast the player moves")]
+	float maxDistanceToPlayer = 20f;
 
-    [SerializeField]
-    [Tooltip("The enemy will always keep this distance to the player no matter how fast the player moves")]
-    float maxDistanceToPlayer = 20f;
+	//[SerializeField]
+	float minDistanceToPlayer = 5f;
 
-    [SerializeField]
-    float minDistanceToPlayer = 5f;
+	//FUNCTIONS
 
-    //FUNCTIONS
+	private void Start()
+	{
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		anim = GetComponentInChildren<Animator>();
 
-    private void Start()
-    {
-        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        anim = GetComponentInChildren<Animator>();
+		playerChaseTarget = GameObject.Find("PlayerCharacter/EnemyTargetLocation");
 
-        if (targetLocationObject == null)
-        {
-            SetTargetLocationPlayer();
-        }
+		if (chaseTarget == null)
+		{
+			chaseTarget = playerChaseTarget;
+		}
 
-        EnemyStunState stunState = GetComponentInChildren<EnemyStunState>();
-        stunState.EventOnBeginStun += SetStateStunned;
-        stunState.EventOnEndStun += EndStateStunned;
-    }
+		EnemyStunState stunState = GetComponentInChildren<EnemyStunState>();
+		stunState.EventOnBeginStun += SetStateStunned;
+		stunState.EventOnEndStun += EndStateStunned;
+	}
 
-    private void Update()
-    {
-        anim.SetBool("FacingRight", movingRight);
-        if (gameManager.gameState == GameState.InPauseMenu || gameManager.gameState == GameState.WonGame || gameManager.gameState == GameState.LostGame) return;
+	private void Update()
+	{
 
-        if (currentState != PatrolingPoliceStateEnum.Stunned && currentState != PatrolingPoliceStateEnum.None)
-        {
-            UpdateTargetLocation();
-            MoveToTargetLocation();
+		//Game Manager stuff
+		if (gameManager.gameState == GameState.InPauseMenu || gameManager.gameState == GameState.WonGame || gameManager.gameState == GameState.LostGame)
+			return;
 
-			movingRight = isMovingRight();
+		else if (currentState == PoliceEnemyStateEnum.Stunned || currentState == PoliceEnemyStateEnum.None)
+			return;
 
-            if (currentState == PatrolingPoliceStateEnum.ChasePlayer)
-            {
-                ChasePlayerUpdate();
-            }
-        }
-    }
 
-    void UpdateTargetLocation()
-    {
-        targetLocation = targetLocationObject.transform.position;
-    }
+		movingRight = isMovingRight();
 
-    void ChasePlayerUpdate()
-    {
-        if (!IsWithinPlayerMaxRange())
-        {
-            transform.position = MaxRangeTargetLocation();
-        }
-    }
+		anim.SetBool("FacingRight", movingRight);
 
-    void MoveToTargetLocation()
-    {
-        if (!ArrivedAtTargetLocation())
-        {
-            Vector3 NewPosition = Vector3.MoveTowards(transform.position, targetLocation, movementSpeed);
-            transform.position = NewPosition;
-        }
-    }
+		Vector3 newPosition = Vector3.MoveTowards(transform.position, chaseTarget.transform.position, movementSpeed);
 
-    public void SetTargetLocationObject(GameObject NewTargetLocationObject)
-    {
-        targetLocationObject = NewTargetLocationObject;
-    }
+		if (currentState == PoliceEnemyStateEnum.ChasePlayer)
+		{
 
-    void SetTargetLocationPlayer()
-    {
-        SetTargetLocationObject(GameObject.Find("EnemyTargetLocation"));
-    }
 
-    //Intended for internal use only
-    private void SetState(PatrolingPoliceStateEnum NewState)
-    {
+			
+			//funkar ej än
+
+			float distanceToPlayer = Vector3.Distance(transform.position, chaseTarget.transform.position);
+			bool isWithinPlayerRange = distanceToPlayer <= maxDistanceToPlayer;
+
+
+			if (!isWithinPlayerRange)
+			{
+
+			}
+
+
+
+			Vector3 directionToTarget = newPosition - chaseTarget.transform.position;
+			directionToTarget = Vector3.ClampMagnitude(newPosition, maxDistanceToPlayer);
+			newPosition =  directionToTarget;
+
+			//newTargetLocation *= maxDistanceToPlayer;
+
+			//newTargetLocation += chaseTarget.transform.position;
+
+
+
+		/*	if (currentState == PoliceEnemyStateEnum.ChasePlayer)
+			{
+				ChasePlayerUpdate();
+			}*/
+
+		}
+		
+
+
+		transform.position = newPosition;
+	}
+
+	void ChasePlayerUpdate()
+	{
+		if (!IsWithinPlayerMaxRange())
+		{
+			transform.position = MaxRangeTargetLocation();
+		}
+	}
+
+	public void SetTargetLocationObject(GameObject NewTargetLocationObject)
+	{
+		chaseTarget = NewTargetLocationObject;
+	}
+
+	void SetTargetLocationPlayer()
+	{
+		SetTargetLocationObject(GameObject.Find("EnemyTargetLocation"));
+	}
+
+	//Intended for internal use only
+	private void SetState(PoliceEnemyStateEnum NewState)
+	{
 		if (currentState == NewState) return;
 
-        previousState = currentState;
-        currentState = NewState;
+		previousState = currentState;
+		currentState = NewState;
 
 		//Debug.Log("New State: " + currentState + " Previous State: " + previousState);
-    }
+	}
 
-    public void SetStateChasePlayer()
-    {
-        SetState(PatrolingPoliceStateEnum.ChasePlayer);
-        SetTargetLocationPlayer();
-    }
+	public void SetStateChasePlayer()
+	{
+		SetState(PoliceEnemyStateEnum.ChasePlayer);
+		SetTargetLocationPlayer();
+	}
 
-    public void SetStatePatroling(GameObject TargetLocationObject)
-    {
-        SetState(PatrolingPoliceStateEnum.Patroling);
-        SetTargetLocationObject(TargetLocationObject);
-    }
+	public void SetStatePatroling(GameObject TargetLocationObject)
+	{
+		SetState(PoliceEnemyStateEnum.Patroling);
+		SetTargetLocationObject(TargetLocationObject);
+	}
 
-    public void SetStateStunned()
-    {
-        SetState(PatrolingPoliceStateEnum.Stunned);
-    }
+	public void SetStateStunned()
+	{
+		SetState(PoliceEnemyStateEnum.Stunned);
+	}
 
-    void EndStateStunned()
-    {
-        SetState(previousState);
-    }
+	void EndStateStunned()
+	{
+		SetState(previousState);
+	}
 
 	public void SetStateNoneForDuration(float Duration)
 	{
-		SetState(PatrolingPoliceStateEnum.None);
+		SetState(PoliceEnemyStateEnum.None);
 		Invoke("ResetState", Duration);
 	}
 
@@ -153,52 +172,53 @@ public class PoliceEnemy : MonoBehaviour
 	}
 
 
-    bool ArrivedAtTargetLocation()
-    {
-        float distanceToTargetLocation = Vector3.Distance(targetLocationObject.transform.position, transform.position);
+	bool ArrivedAtTargetLocation()
+	{
+		float distanceToTargetLocation = Vector3.Distance(chaseTarget.transform.position, transform.position);
 
-        if (distanceToTargetLocation <= 1f)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+		if (distanceToTargetLocation <= 1f)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 
-    bool IsWithinPlayerMaxRange()
-    {
-        float distanceToPlayer = Vector3.Distance(gameObject.transform.position, targetLocationObject.transform.position);
+	bool IsWithinPlayerMaxRange()
+	{
+		float distanceToPlayer = Vector3.Distance(gameObject.transform.position, chaseTarget.transform.position);
 
-        if (distanceToPlayer <= maxDistanceToPlayer) return true;
-        else return false;
-    }
+		if (distanceToPlayer <= maxDistanceToPlayer) return true;
+		else return false;
+	}
 
-    bool IsWithinPlayerMinRange()
-    {
-        float distanceToPlayer = Vector3.Distance(gameObject.transform.position, targetLocationObject.transform.position);
+	bool IsWithinPlayerMinRange()
+	{
+		float distanceToPlayer = Vector3.Distance(gameObject.transform.position, chaseTarget.transform.position);
 
-        if (distanceToPlayer <= minDistanceToPlayer) return true;
-        else return false;
-    }
+		if (distanceToPlayer <= minDistanceToPlayer) return true;
+		else return false;
+	}
 
-    //calculates the point that is positioned between target location and this enemy, exactly maxDistanceToPlayer-units away from the player
-    Vector3 MaxRangeTargetLocation()
-    {
-        Vector3 directionToTarget = transform.position - targetLocationObject.transform.position;
-        Vector3 newTargetLocation = Vector3.Normalize(directionToTarget);
+	//calculates the point that is positioned between target location and this enemy, exactly maxDistanceToPlayer-units away from the player
+	//Keeps enemy within visual range
+	Vector3 MaxRangeTargetLocation()
+	{
+		Vector3 directionToTarget = transform.position - chaseTarget.transform.position;
+		Vector3 newTargetLocation = Vector3.Normalize(directionToTarget);
 
-        newTargetLocation *= maxDistanceToPlayer;
+		newTargetLocation *= maxDistanceToPlayer;
 
-        newTargetLocation += targetLocationObject.transform.position;
+		newTargetLocation += chaseTarget.transform.position;
 
-        return newTargetLocation;
-    }
+		return newTargetLocation;
+	}
 
 	bool isMovingRight()
 	{
-		Vector3 movementDirection = transform.position - targetLocationObject.transform.position;
+		Vector3 movementDirection = transform.position - chaseTarget.transform.position;
 
 		float dot = Vector3.Dot(movementDirection, transform.right);
 
