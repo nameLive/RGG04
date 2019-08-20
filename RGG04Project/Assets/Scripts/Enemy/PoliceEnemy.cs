@@ -28,7 +28,7 @@ public class PoliceEnemy : MonoBehaviour
 
 	//[SerializeField] Can be made visible again if it needs to be changed
 	[Tooltip("The enemy will always keep this distance to the player no matter how fast the player moves")]
-	float maxDistanceToPlayer = 20f;
+	float maxDistanceToPlayer = 25f;
 
 	//[SerializeField]
 	float minDistanceToPlayer = 5f;
@@ -73,23 +73,41 @@ public class PoliceEnemy : MonoBehaviour
 		{
 
 
-			
+
 			//funkar ej än
 
 			float distanceToPlayer = Vector3.Distance(transform.position, chaseTarget.transform.position);
-			bool isWithinPlayerRange = distanceToPlayer <= maxDistanceToPlayer;
+			bool isWithinPlayerRange = distanceToPlayer < maxDistanceToPlayer;
 
+
+			Debug.Log($"Is within Player Range: {isWithinPlayerRange}");
+			Debug.Log($"Enemy State: {currentState}");
 
 			if (!isWithinPlayerRange)
 			{
 
+				Debug.Log($"Distance to player:{distanceToPlayer}");
+
+				Vector3 directionToTarget = newPosition - chaseTarget.transform.position;
+				directionToTarget = Vector3.Normalize(directionToTarget);
+				directionToTarget *= maxDistanceToPlayer;
+				newPosition = directionToTarget + chaseTarget.transform.position;
+
 			}
 
 
+			/*
+						Vector3 directionToTarget = transform.position - chaseTarget.transform.position;
+						Vector3 newTargetLocation = Vector3.Normalize(directionToTarget);
 
-			Vector3 directionToTarget = newPosition - chaseTarget.transform.position;
-			directionToTarget = Vector3.ClampMagnitude(newPosition, maxDistanceToPlayer);
-			newPosition =  directionToTarget;
+						newTargetLocation *= maxDistanceToPlayer;
+
+						newTargetLocation += chaseTarget.transform.position;*/
+
+
+
+
+
 
 			//newTargetLocation *= maxDistanceToPlayer;
 
@@ -97,13 +115,13 @@ public class PoliceEnemy : MonoBehaviour
 
 
 
-		/*	if (currentState == PoliceEnemyStateEnum.ChasePlayer)
-			{
-				ChasePlayerUpdate();
-			}*/
+			/*	if (currentState == PoliceEnemyStateEnum.ChasePlayer)
+				{
+					ChasePlayerUpdate();
+				}*/
 
 		}
-		
+
 
 
 		transform.position = newPosition;
