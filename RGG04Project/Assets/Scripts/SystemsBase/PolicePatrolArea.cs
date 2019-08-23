@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//BUG: If the player exits the area, sometimes is stops moving towards the patrolIdleLocation
 public class PolicePatrolArea : MonoBehaviour
 {
     [SerializeField]
@@ -12,21 +13,26 @@ public class PolicePatrolArea : MonoBehaviour
 
     GameObject player;
 
-    // Start is called before the first frame update
     void Start()
     {
-        SetPolicePatrolling();
+		foreach (PoliceEnemy enemy in patrollingPoliceEnemies)
+		{
+			enemy.SetStatePatroling(patrolIdleLocation);
+		}
 
-        player = GameObject.Find("PlayerCharacter");
+		player = GameObject.Find("PlayerCharacter");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == player)
         {
-            SetPoliceChasePlayer();
-            //Debug.Log("Player entered patrol area");
-        }
+			foreach (PoliceEnemy enemy in patrollingPoliceEnemies)
+			{
+				enemy.SetStateChasePlayer();
+			}
+			//Debug.Log("Player entered patrol area");
+		}
     }
 
 
@@ -34,25 +40,11 @@ public class PolicePatrolArea : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            SetPolicePatrolling();
-        }
-    }
-
-
-    void SetPoliceChasePlayer()
-    {
-        foreach (PoliceEnemy enemy in patrollingPoliceEnemies)
-        {
-            enemy.SetStateChasePlayer();
-        }
-    }
-
-    void SetPolicePatrolling()
-    {
-        foreach (PoliceEnemy enemy in patrollingPoliceEnemies)
-        {
-            enemy.SetStatePatroling(patrolIdleLocation);
-        }
+			foreach (PoliceEnemy enemy in patrollingPoliceEnemies)
+			{
+				enemy.SetStatePatroling(patrolIdleLocation);
+			}
+		}
     }
 
 }
